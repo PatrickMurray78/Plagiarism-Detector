@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<!-- 
+	************** READ THE FOLLOWING **************
+	The root element of the GUI is the following VBox. Note that the controller 
+	is specified as the attribute fx:controller="ie.gmit.sw.Controller"
+-->
+<VBox fx:id="container" prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ie.gmit.sw.Controller">
+	<padding>
+        <Insets top="10" bottom="10" left="10" right="10"/>
+    </padding>
+  	<children>
+		<TitledPane text="Query Document">
+			<HBox spacing="5">
+				<children>
+					<TextField fx:id="txtFile" prefWidth="400" />
+					<Button fx:id="btnOpen" mnemonicParsing="false" text="Select File" />
+					<Button fx:id="btnCompare" mnemonicParsing="false" text="Compare Document" />
+				</children>
+			</HBox>
+		</TitledPane>	
+	
+		<VBox fx:id="chartArea">
+			<children>
+				<!-- We'll dynamically add a pie chart here -->
+			</children>
+		</VBox>	
+		<Button fx:id="btnClose" mnemonicParsing="false" text="Close" />
+	</children>
+</VBox>
