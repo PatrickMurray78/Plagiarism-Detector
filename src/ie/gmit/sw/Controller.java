@@ -93,9 +93,14 @@ public class Controller {
 			
 			hashShingles = hc.hash(shingles);
 			
-			for (Integer hash : hashShingles) {
-				System.out.println(hash);
-			}
+			// Parse file title from path
+			File f = new File(txtFile.getText());
+			String title = f.getName();
+			int size = title.length();
+			title = title.substring(0, (size - 4));
+			
+			// Create a document object with the hashShingles and title
+			Document d = new Document(title, hashShingles);
 			
 			ObservableList<PieChart.Data> data = FXCollections.observableArrayList(
 		            new PieChart.Data("War and Peace", 20),
