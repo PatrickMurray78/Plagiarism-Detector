@@ -3,8 +3,8 @@ package ie.gmit.sw;
 import java.nio.file.Paths;
 import java.util.*;
 
-//import one.microstream.storage.types.EmbeddedStorage;
-import one.microstream.storage.*;
+import one.microstream.storage.types.EmbeddedStorage;
+import one.microstream.storage.types.EmbeddedStorageManager;
 
 
 // This class focuses handles saving documents to the 
