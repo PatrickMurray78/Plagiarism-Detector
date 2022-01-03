@@ -1,6 +1,12 @@
 package ie.gmit.sw;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -47,6 +53,26 @@ public class Controller {
 			 * for the Pie Chart. *** Do not hard-code these values *** as shown below.
 			 * The data needs to be computed dynamically.
 			 */
+			
+			DocumentParser dp = new DocumentParser();
+			
+			BufferedReader br = null;
+			List<String> words = new ArrayList<String>();
+			
+			// Try to read file path and create a buffered reader if found
+			try {
+				br = new BufferedReader(new FileReader(txtFile.getText()));
+			} catch (FileNotFoundException e1) {
+				e1.printStackTrace();
+			}
+			
+			// Parse the document
+			try {
+				words = dp.readDocument(br);
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+			
 			ObservableList<PieChart.Data> data = FXCollections.observableArrayList(
 		            new PieChart.Data("War and Peace", 20),
 		            new PieChart.Data("De Bello Gallico", 10),
