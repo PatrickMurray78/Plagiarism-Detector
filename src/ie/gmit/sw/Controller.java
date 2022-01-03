@@ -58,6 +58,7 @@ public class Controller {
 			
 			BufferedReader br = null;
 			List<String> words = new ArrayList<String>();
+			List<String> shingles = new ArrayList<String>();
 			
 			// Try to read file path and create a buffered reader if found
 			try {
@@ -72,6 +73,17 @@ public class Controller {
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}
+			
+			System.out.println(words.size());
+			
+			// Add shingles
+			Shingleator s = new Shingleator();
+			
+			shingles = s.shingler(words);
+			
+			// I used a shingle size of 3 and this list is 1/3 the size of
+			// words, so it is working as expected
+			System.out.println(shingles.size());
 			
 			ObservableList<PieChart.Data> data = FXCollections.observableArrayList(
 		            new PieChart.Data("War and Peace", 20),
