@@ -7,6 +7,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -84,6 +86,16 @@ public class Controller {
 			// I used a shingle size of 3 and this list is 1/3 the size of
 			// words, so it is working as expected
 			System.out.println(shingles.size());
+			
+			// Hash each shingle
+			HashCoder hc = new HashCoder();
+			Set<Integer> hashShingles = new TreeSet<Integer>();
+			
+			hashShingles = hc.hash(shingles);
+			
+			for (Integer hash : hashShingles) {
+				System.out.println(hash);
+			}
 			
 			ObservableList<PieChart.Data> data = FXCollections.observableArrayList(
 		            new PieChart.Data("War and Peace", 20),
