@@ -46,5 +46,17 @@ public class Database {
 		}
 	}
 	
-	
+	public void getAllDocuments() {
+		System.out.println("Get all documents");
+		db = EmbeddedStorage.start(Paths.get("./data"));
+		if(db.root() == null)
+		{
+		    System.out.println("Database is empty");
+		}
+		else
+		{    
+		    //MyRoot root = (MyRoot) db.root();
+			System.out.println(db.root().toString());
+		}
+	}
 }

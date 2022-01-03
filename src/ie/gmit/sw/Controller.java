@@ -105,6 +105,7 @@ public class Controller {
 			Database db = new Database();
 			
 			db.addDocument(d);
+			db.getAllDocuments();
 			
 			
 			ObservableList<PieChart.Data> data = FXCollections.observableArrayList(
