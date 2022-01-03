@@ -17,33 +17,26 @@ public class Database {
 	private static Database instance = null;
 	
 	// Default constructor
-	private Database() {
+	public Database() {
 
 	}
 
 	// Creates an instance of a database if one doesn't already exist.
-	public static Database getInstance() {
+	/*public static Database getInstance() {
 		if (instance == null) {
 			instance = new Database();
 			System.out.println("Created a database instance");
 		}
 		// return the single instance
 		return instance;
-	}
+	}*/
 	
 	// Add document to database
 	public boolean addDocument(Document d) {
-		System.out.println("Open Microsoft Stream");
-		db = EmbeddedStorage.start(d, Paths.get("./data"));
-		return false;
-	}
-	
-	// Add document to database
-	/*public boolean addDocument(Document d) {
-		System.out.println("Open Microsoft Stream");
 		try {
 			db = EmbeddedStorage.start(d, Paths.get("./data"));
 			db.storeRoot();
+			System.out.println("Added to database");
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -51,7 +44,7 @@ public class Database {
 		} finally {
 			db.shutdown();
 		}
-	}*/
+	}
 	
 	
 }

@@ -102,6 +102,11 @@ public class Controller {
 			// Create a document object with the hashShingles and title
 			Document d = new Document(title, hashShingles);
 			
+			Database db = new Database();
+			
+			db.addDocument(d);
+			
+			
 			ObservableList<PieChart.Data> data = FXCollections.observableArrayList(
 		            new PieChart.Data("War and Peace", 20),
 		            new PieChart.Data("De Bello Gallico", 10),
