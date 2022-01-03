@@ -1,6 +1,14 @@
 package ie.gmit.sw;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -47,6 +55,53 @@ public class Controller {
 			 * for the Pie Chart. *** Do not hard-code these values *** as shown below.
 			 * The data needs to be computed dynamically.
 			 */
+			
+			DocumentParser dp = new DocumentParser();
+			
+			BufferedReader br = null;
+			List<String> words = new ArrayList<String>();
+			List<String> shingles = new ArrayList<String>();
+			
+			// Try to read file path and create a buffered reader if found
+			try {
+				br = new BufferedReader(new FileReader(txtFile.getText()));
+			} catch (FileNotFoundException e1) {
+				e1.printStackTrace();
+			}
+			
+			// Parse the document
+			try {
+				words = dp.readDocument(br);
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+			
+			System.out.println(words.size());
+			
+			// Add shingles
+			Shingleator s = new Shingleator();
+			
+			shingles = s.shingler(words);
+			
+			// I used a shingle size of 3 and this list is 1/3 the size of
+			// words, so it is working as expected
+			System.out.println(shingles.size());
+			
+			// Hash each shingle
+			HashCoder hc = new HashCoder();
+			Set<Integer> hashShingles = new TreeSet<Integer>();
+			
+			hashShingles = hc.hash(shingles);
+			
+			// Parse file title from path
+			File f = new File(txtFile.getText());
+			String title = f.getName();
+			int size = title.length();
+			title = title.substring(0, (size - 4));
+			
+			// Create a document object with the hashShingles and title
+			Document d = new Document(title, hashShingles);
+			
 			ObservableList<PieChart.Data> data = FXCollections.observableArrayList(
 		            new PieChart.Data("War and Peace", 20),
 		            new PieChart.Data("De Bello Gallico", 10),
