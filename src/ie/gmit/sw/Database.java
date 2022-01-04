@@ -14,7 +14,6 @@ public class Database {
 	private EmbeddedStorageManager db = null;
 	// The instance of the database
 	private static Database instance = null;
-	private Jaccard jc = new Jaccard();
 	
 	// Default constructor
 	public Database() {
@@ -32,24 +31,8 @@ public class Database {
 	}
 	
 	// Add document to database
-	/*public boolean addDocument(Document d) {
-		root.add(d);
-		System.out.println(root.size());
-		try {
-			db = EmbeddedStorage.start(root, Paths.get("./storage"));
-			db.storeRoot();
-			System.out.println("Added to database");
-			query();
-			return true;
-		} catch (Exception e) {
-			e.printStackTrace();
-			return false;
-		} finally {
-			db.shutdown();
-		}
-	}*/
-	
-	public boolean addDocument(Document d) {
+	public void addDocument(Document d) {
+		query();
 		root.add(d);
 		// If there is no active database, initialise one
 		if(db == null) {
@@ -57,15 +40,11 @@ public class Database {
 				db = EmbeddedStorage.start(root, Paths.get("./storage"));
 			} catch (Exception e) {
 				e.printStackTrace();
-				return false;
 			}
 		}
 		
 		System.out.println("Added to database");
 		db.storeRoot();
-		query();
-		
-		return true;
 	}
 	
 	private void query() {
@@ -74,30 +53,65 @@ public class Database {
 			.forEach(System.out::println);
 	}
 	
+	// Get amount of documents in database
 	public int getCount() {
 		return root.size();
 	}
 	
-	public PlagiarismResult compare() {
-		if(getCount() == 1) {
-			return new PlagiarismResult("Not Plagiarised", 100);
-		}
-		
+	// Iterates through the database and compares the most recently
+	// stored document against the rest to check for plagiarism and
+	// returns a list of plagiarism results
+	public List<PlagiarismResult> compare() {
+		List<PlagiarismResult> results = new ArrayList<>();
 		Jaccard j = new Jaccard();
 		Set<Integer> hashToCompare = new TreeSet<Integer>();
 		Set<Integer> hashToCompareAgainst = new TreeSet<Integer>();
+		double result;
+		double totalResult = 0;
+		double noPlagiarismResult = 100;
 		
-		hashToCompare = root.get(getCount() - 1).getHashes();
-		hashToCompareAgainst = root.get(0).getHashes();
-		
-		double result = j.compareSimilarity(hashToCompare, hashToCompareAgainst);
-		result = Math.round(result * 100.0);
-	
-		// Fully plagiarised
-		if(result == 100 && getCount() > 1) {
-			root.remove(getCount() - 1);
-			db.storeRoot();
+		if(getCount() == 1) {
+			results.add(new PlagiarismResult("Not Plagiarised", 100));
 		}
-		return new PlagiarismResult(root.get(0).getTitle(), result);
+		
+		// Get document to compare
+		Document doc = root.get(getCount() - 1);
+		
+		hashToCompare = doc.getHashes();
+		
+		// Loop through all documents except the most recently added one
+		for(int i = 0; i < getCount() - 1; i++) {
+			// Get the hashedShingles set
+			hashToCompareAgainst = root.get(i).getHashes();
+			
+			// Call the compareSimilarity method in the jaccard class to compare both hashedShingles
+			result = j.compareSimilarity(hashToCompare, hashToCompareAgainst) * 100;
+			
+			System.out.println(doc.getTitle() + " plagiarises " + root.get(i).getTitle() + " by " + result + "%");
+			
+			// Only show result if plagiarism is above 0.5%
+			if(result > 0.5) {
+				totalResult += result;
+				results.add(new PlagiarismResult(root.get(i).getTitle(), result));
+			}
+			
+			// If the document has 100% plagiarism with another, remove it
+			// from the database as one already exists there
+			if(result == 100) {
+				root.remove(getCount() - 1);
+				db.storeRoot();
+			}
+		}
+		
+		// If the total plagiarism result was less than 100 and
+		// there is more than one document in the database
+		// Then calculate the percentage that is not plagiarised
+		if(totalResult < 100 && getCount() != 1) {
+			noPlagiarismResult -= totalResult;
+			System.out.println(noPlagiarismResult + "% of the document is not plagiarised");
+			results.add(new PlagiarismResult("Not Plagiarised", noPlagiarismResult));
+		}
+		
+		return results;
 	}
 }

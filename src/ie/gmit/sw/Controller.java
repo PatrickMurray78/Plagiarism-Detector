@@ -109,30 +109,15 @@ public class Controller {
 			db.addDocument(d);
 			
 			// Compare
-			double plagiarised = 100;
-			PlagiarismResult result = db.compare();
-			System.out.println("Result is: " + result.getResult());
-			
-			int numDocs = db.getCount();
-			// Add data to PieChart
-			//data.add(new PieChart.Data(result.getTitle(), result.getResult()));
-		
-			/*ObservableList<PieChart.Data> data = FXCollections.observableArrayList(
-					new PieChart.Data(result.getTitle(), result.getResult())
-		            /*new PieChart.Data("War and Peace", 20),
-		            new PieChart.Data("De Bello Gallico", 10),
-		            new PieChart.Data("The Divine Comedy", 10),
-		            new PieChart.Data("Not Plagiarised", 60)
-			);*/
+			List<PlagiarismResult> results = new ArrayList<>();
+			results = db.compare();
 			
 			ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
-			data.add(new PieChart.Data(result.getTitle(), result.getResult()));
-			if(!(result.getResult() == 100)) {
-				data.add(new PieChart.Data("Not Plagiarised", (100 - result.getResult())));
+			
+			for (PlagiarismResult result : results) {
+				data.add(new PieChart.Data(result.getTitle(), result.getResult()));
 			}
-			
-			
-			
+		
 			
 			//Display the results in a pie chart
 			PieChart chart = new PieChart(data); //Use PieChart from javafx.scene.chart
