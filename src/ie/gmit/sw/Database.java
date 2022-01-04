@@ -14,6 +14,7 @@ public class Database {
 	private EmbeddedStorageManager db = null;
 	// The instance of the database
 	private static Database instance = null;
+	private Jaccard jc = new Jaccard();
 	
 	// Default constructor
 	public Database() {
@@ -63,17 +64,40 @@ public class Database {
 		System.out.println("Added to database");
 		db.storeRoot();
 		query();
+		
 		return true;
 	}
 	
 	private void query() {
 		System.out.println("\n[Query] Show all documents");
 		root.stream()
-			.sorted((s, t) -> s.getTitle().compareTo(t.getTitle()))
 			.forEach(System.out::println);
 	}
 	
 	public int getCount() {
 		return root.size();
+	}
+	
+	public PlagiarismResult compare() {
+		if(getCount() == 1) {
+			return new PlagiarismResult("Not Plagiarised", 100);
+		}
+		
+		Jaccard j = new Jaccard();
+		Set<Integer> hashToCompare = new TreeSet<Integer>();
+		Set<Integer> hashToCompareAgainst = new TreeSet<Integer>();
+		
+		hashToCompare = root.get(getCount() - 1).getHashes();
+		hashToCompareAgainst = root.get(0).getHashes();
+		
+		double result = j.compareSimilarity(hashToCompare, hashToCompareAgainst);
+		result = Math.round(result * 100.0);
+	
+		// Fully plagiarised
+		if(result == 100 && getCount() > 1) {
+			root.remove(getCount() - 1);
+			db.storeRoot();
+		}
+		return new PlagiarismResult(root.get(0).getTitle(), result);
 	}
 }

@@ -35,7 +35,7 @@ public class Controller {
 	
 	
 	@FXML public void initialize() {
-		ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
+		//ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
 		
 		/*
 		 * Plant an observer on the button btnClose. The event dispatch thread (the
@@ -108,19 +108,30 @@ public class Controller {
 			
 			db.addDocument(d);
 			
-			int numDocs = db.getCount();
+			// Compare
+			double plagiarised = 100;
+			PlagiarismResult result = db.compare();
+			System.out.println("Result is: " + result.getResult());
 			
-			// Display no plagiarism if one doc in database after it has been saved
-			if(numDocs == 1) {
-				data.add(new PieChart.Data("Not Plagiarised", 100));
-			} 
+			int numDocs = db.getCount();
+			// Add data to PieChart
+			//data.add(new PieChart.Data(result.getTitle(), result.getResult()));
 		
 			/*ObservableList<PieChart.Data> data = FXCollections.observableArrayList(
-		            new PieChart.Data("War and Peace", 20),
+					new PieChart.Data(result.getTitle(), result.getResult())
+		            /*new PieChart.Data("War and Peace", 20),
 		            new PieChart.Data("De Bello Gallico", 10),
 		            new PieChart.Data("The Divine Comedy", 10),
 		            new PieChart.Data("Not Plagiarised", 60)
 			);*/
+			
+			ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
+			data.add(new PieChart.Data(result.getTitle(), result.getResult()));
+			if(!(result.getResult() == 100)) {
+				data.add(new PieChart.Data("Not Plagiarised", (100 - result.getResult())));
+			}
+			
+			
 			
 			
 			//Display the results in a pie chart
