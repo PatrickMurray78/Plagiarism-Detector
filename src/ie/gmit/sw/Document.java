@@ -39,4 +39,9 @@ public class Document {
 	public void setHashes(Set<Integer> hashes) {
 		this.hashes = hashes;
 	}
+	
+	@Override
+	public String toString() {
+		return "Text: " + title;
+	}
 }

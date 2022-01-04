@@ -440,3 +440,8 @@
 0000000000001000061 java.util.Collections$EmptyList{}
 0000000000001000062 java.util.Collections$EmptySet{}
 0000000000001000063 java.util.Collections$EmptyMap{}
+0000000000001000064 ie.gmit.sw.Document{
+	java.lang.String ie.gmit.sw.Document#title ,
+	java.util.Set    ie.gmit.sw.Document#hashes,
+}
+0000000000001000065 java.util.Set{}

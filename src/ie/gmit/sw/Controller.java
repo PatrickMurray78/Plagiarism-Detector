@@ -35,6 +35,8 @@ public class Controller {
 	
 	
 	@FXML public void initialize() {
+		ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
+		
 		/*
 		 * Plant an observer on the button btnClose. The event dispatch thread (the
 		 * application thread in JavaFX) will call the action specified by the lambda
@@ -76,7 +78,7 @@ public class Controller {
 				e1.printStackTrace();
 			}
 			
-			System.out.println(words.size());
+			//System.out.println(words.size());
 			
 			// Add shingles
 			Shingleator s = new Shingleator();
@@ -85,7 +87,7 @@ public class Controller {
 			
 			// I used a shingle size of 3 and this list is 1/3 the size of
 			// words, so it is working as expected
-			System.out.println(shingles.size());
+			//System.out.println(shingles.size());
 			
 			// Hash each shingle
 			HashCoder hc = new HashCoder();
@@ -102,18 +104,23 @@ public class Controller {
 			// Create a document object with the hashShingles and title
 			Document d = new Document(title, hashShingles);
 			
-			Database db = new Database();
+			Database db = Database.getInstance();
 			
 			db.addDocument(d);
-			db.getAllDocuments();
 			
+			int numDocs = db.getCount();
 			
-			ObservableList<PieChart.Data> data = FXCollections.observableArrayList(
+			// Display no plagiarism if one doc in database after it has been saved
+			if(numDocs == 1) {
+				data.add(new PieChart.Data("Not Plagiarised", 100));
+			} 
+		
+			/*ObservableList<PieChart.Data> data = FXCollections.observableArrayList(
 		            new PieChart.Data("War and Peace", 20),
 		            new PieChart.Data("De Bello Gallico", 10),
 		            new PieChart.Data("The Divine Comedy", 10),
 		            new PieChart.Data("Not Plagiarised", 60)
-			);
+			);*/
 			
 			
 			//Display the results in a pie chart

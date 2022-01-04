@@ -10,7 +10,6 @@ import java.util.List;
 public class DocumentParser {
 	// List of words which make up document
 	private List<String> words = new ArrayList<String>();
-	
 	// Default Constructor
 	public DocumentParser() {
 		
