@@ -9,5 +9,5 @@ import java.util.List;
 public interface Parserator {
 	// Reads the contents of a document and parses its contents into
 	// a list of words excluding spaces
-	public List<String> readDocument(BufferedReader br) throws IOException;
+	public List<String> parse(BufferedReader br) throws IOException;
 }

@@ -73,7 +73,7 @@ public class Controller {
 			
 			// Parse the document
 			try {
-				words = dp.readDocument(br);
+				words = dp.parse(br);
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}
@@ -81,9 +81,9 @@ public class Controller {
 			//System.out.println(words.size());
 			
 			// Add shingles
-			Shingleator s = new Shingleator();
+			Shingler s = new Shingler();
 			
-			shingles = s.shingler(words);
+			shingles = s.getShingles(words);
 			
 			// I used a shingle size of 3 and this list is 1/3 the size of
 			// words, so it is working as expected

@@ -18,7 +18,7 @@ public class Parser implements Parserator {
 	
 	// Reads text file and returns list of words
 	@Override
-	public List<String> readDocument(BufferedReader br) throws IOException {
+	public List<String> parse(BufferedReader br) throws IOException {
 		String line = "";
 		try {
 			// While there are lines to be read, read them
