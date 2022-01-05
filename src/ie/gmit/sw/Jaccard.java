@@ -3,7 +3,7 @@ package ie.gmit.sw;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class Jaccard implements Comparator {
+public class Jaccard implements SimilarityAlgo {
 	private Set<Integer> n;
 	// | A N B |
 	private int intersectionCardinality;
