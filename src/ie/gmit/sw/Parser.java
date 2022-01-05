@@ -7,15 +7,17 @@ import java.util.List;
 
 // Purpose of this class is to parse the uploaded text document into a
 // list of words which are then returned back to controller.
-public class DocumentParser {
+public class Parser implements Parserator {
 	// List of words which make up document
 	private List<String> words = new ArrayList<String>();
+	
 	// Default Constructor
-	public DocumentParser() {
+	public Parser() {
 		
 	}
 	
 	// Reads text file and returns list of words
+	@Override
 	public List<String> readDocument(BufferedReader br) throws IOException {
 		String line = "";
 		try {

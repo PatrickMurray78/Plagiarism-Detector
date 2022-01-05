@@ -58,7 +58,7 @@ public class Controller {
 			 * The data needs to be computed dynamically.
 			 */
 			
-			DocumentParser dp = new DocumentParser();
+			Parser dp = new Parser();
 			
 			BufferedReader br = null;
 			List<String> words = new ArrayList<String>();
