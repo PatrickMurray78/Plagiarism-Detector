@@ -3,7 +3,7 @@ package ie.gmit.sw;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class Jaccard {
+public class Jaccard implements Comparator {
 	private Set<Integer> n;
 	// | A N B |
 	private int intersectionCardinality;
@@ -15,6 +15,7 @@ public class Jaccard {
 
 	}
 
+	@Override
 	public double compareSimilarity(Set<Integer> a, Set<Integer> b) {
 		// Unioncardinatlity is size of a and b
 		unionCardinality = a.size() + b.size();
