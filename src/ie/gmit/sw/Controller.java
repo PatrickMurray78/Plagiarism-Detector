@@ -106,19 +106,29 @@ public class Controller {
 			
 			Database db = Database.getInstance();
 			
-			db.addDocument(d);
+			List<Document> documents = new ArrayList<>();
+			documents = db.getAllDocuments();
+			
+			SimilarityCalculator sc = new SimilarityCalculator();
+			Jaccard j = new Jaccard();
 			
 			// Compare
 			List<PlagiarismResult> results = new ArrayList<>();
-			results = db.compare();
+			results = sc.calculateAllDocs(documents, hashShingles, j);
 			
 			ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
 			
 			for (PlagiarismResult result : results) {
+				System.out.println("Add " + result.getTitle() + " to pie chart");
 				data.add(new PieChart.Data(result.getTitle(), result.getResult()));
+				
+				if(result.getTitle().equalsIgnoreCase("Not Plagiarised")) {
+					if(result.getResult() <= 100) {
+						db.addDocument(d);
+					}
+				}
 			}
 		
-			
 			//Display the results in a pie chart
 			PieChart chart = new PieChart(data); //Use PieChart from javafx.scene.chart
 			chartArea.getChildren().clear(); //Remove any existing chart
