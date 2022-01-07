@@ -1,5 +1,6 @@
 package ie.gmit.sw;
 
+import java.io.File;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -26,8 +27,12 @@ public class Document {
 	}
 	
 	// Set Title
-	public void setTitle(String title) {
-		this.title = title;
+	public void setTitle(String filePath) {
+		File f = new File(filePath);
+		String tempTitle = f.getName();
+		int size = tempTitle.length();
+		tempTitle = tempTitle.substring(0, (size - 4));
+		this.title = tempTitle;
 	}
 
 	// Get Hashes

@@ -7,7 +7,7 @@ import java.util.List;
 // the parsed text document.
 public class Shingler implements Shingleator{
 	// Constant shingle size 3
-	private final int SHINGLE_SIZE = 3;
+	private final int SHINGLE_SIZE = 2;
 		
 	// List of shingled words
 	private List<String> shingles = new ArrayList<String>();

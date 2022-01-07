@@ -2,6 +2,7 @@ package ie.gmit.sw;
 
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.stream.Collectors;
 
 import one.microstream.storage.types.EmbeddedStorage;
 import one.microstream.storage.types.EmbeddedStorageManager;
@@ -24,7 +25,6 @@ public class Database {
 	public static Database getInstance() {
 		if (instance == null) {
 			instance = new Database();
-			System.out.println("Created a database instance");
 		}
 		// return the single instance
 		return instance;
@@ -43,15 +43,23 @@ public class Database {
 			}
 		}
 		
-		System.out.println("\nAdded to database");
-		query();
+		//System.out.println("\nAdd doc query is called");
+		//query();
 		db.storeRoot();
 	}
 	
-	private void query() {
-		System.out.println("\n[Query] Show all documents");
-		root.stream()
-			.forEach(System.out::println);
+	public void query() {
+		System.out.println("[Query] Show all documents");
+		
+		/*root.stream()
+			.forEach(System.out::println);*/
+		
+		// display all the titles
+		Collection<String> titles = root.stream()
+		.map(d ->d.getTitle())
+		.collect(Collectors.toCollection(LinkedList::new));
+
+		System.out.println(titles);
 	}
 	
 	// Get amount of documents in database
@@ -62,9 +70,10 @@ public class Database {
 	// Returns a list of all documents in database
 	public List<Document> getAllDocuments() {
 		if(root.isEmpty()) {
-			System.out.println("Database empty, so not plagiarism");
-			System.out.println("Save to Database");
-		}
+			
+		} 
+		//System.out.println("\nGet all docs query called");
+		//query();
 		return root;
 	}
 }
