@@ -4,10 +4,20 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.List;
 
-// Interface which describes each parserator object.
-// Parserator objects are used to parse documents.
+/**
+ * Parserator is an interface which describes each parserator
+ * object. Parserator objects are used to parse documents.
+ * Follows the SRP.
+ */
 public interface Parserator {
-	// Reads the contents of a document and parses its contents into
-	// a list of words excluding spaces
+	/**
+	 * This method parses the contents of the document which is now in the 
+	 * form of a BufferedReader and produces a list of words separated
+	 * by spaces.
+	 * 
+	 * @param br - BufferedReader containing the document contents
+	 * @return a list of words
+	 * @throws IOException - File handling
+	 */
 	public List<String> parse(BufferedReader br) throws IOException;
 }

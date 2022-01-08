@@ -5,25 +5,34 @@ import java.util.List;
 
 // This class simply creates shingles of size n from
 // the parsed text document.
+/**
+ * Implementation of Shingleator. This class simply creates
+ * shingles of size k. Shingler is-a Shingleator (Inheritance).
+ * Follows the SRP.
+ */
 public class Shingler implements Shingleator{
 	// Constant shingle size 3
-	private final int SHINGLE_SIZE = 2;
+	private final int SHINGLE_SIZE = 3;
 		
 	// List of shingled words
-	private List<String> shingles = new ArrayList<String>();
+	private List<String> shingles;;
 	
-	// Default constructor
+	/**
+	 * Default Constructor.
+	 */
 	public Shingler() {
 
 	}
 	
-	// Using list of words, create shingles of given size
 	@Override
 	public List<String> getShingles(List<String> words) {
+		// Instantiate shingles
+		shingles = new ArrayList<String>();
+		// Create a temp blank string to store each shingle
 		String shingle = "";
 		// Set the count to 0
 		int count = 0;
-		
+		// Loop over the list of words
 		for (int i = 0; i < words.size(); i++) {
 			// Add each word to the shingle
 			shingle += words.get(i);
@@ -31,8 +40,9 @@ public class Shingler implements Shingleator{
 			count++;
 			// If the count is the same size as the shingle size
 			if (count == SHINGLE_SIZE) {
-				// Add the temp string to shingles list
+				// Add the shingle to shingles
 				shingles.add(shingle);
+				// Reset string
 				shingle = "";
 				// Reset count
 				count = 0;

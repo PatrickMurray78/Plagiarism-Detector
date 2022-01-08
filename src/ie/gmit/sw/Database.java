@@ -7,54 +7,69 @@ import java.util.stream.Collectors;
 import one.microstream.storage.types.EmbeddedStorage;
 import one.microstream.storage.types.EmbeddedStorageManager;
 
-// This class focuses handles saving documents to the 
-// database and retrieving them
+/**
+ * Database provides a way of accessing the database for all other classes.
+ * A database should only be instantiated once, so for this reason I made it a 
+ * singleton. This will ensure we can access the same database from anywhere.
+ * This class follows the SRP.
+ */
 public class Database {
 	// ArrayList of Document Objects
 	private List<Document> root = new ArrayList<>();
+	// The EmbeddedStorageManager
 	private EmbeddedStorageManager db = null;
 	// The instance of the database
 	private static Database instance = null;
 	
-	// Default constructor
-	public Database() {
+	/**
+	 * Default Constructor which is private as we instantiate
+	 * Database in the getInstance method below.
+	 */
+	private Database() {
 
 	}
 
-	// Creates an instance of a database if one doesn't already exist.
+	/**
+	 * Creates an instance of the Database if one doesn't exist.
+	 * Singleton pattern.
+	 * 
+	 * @return an instance of the Database
+	 */
 	public static Database getInstance() {
+		// Create one instance if one does not exist. (Singleton behaviour)
 		if (instance == null) {
 			instance = new Database();
 		}
-		// return the single instance
+		// Return the instance
 		return instance;
 	}
 	
-	// Add document to database
+	/**
+	 * Adds a document to the microstream database.
+	 * 
+	 * @param d - Document object to be added to database
+	 */
 	public void addDocument(Document d) {
-		//query();
+		// Add Document d to the root
 		root.add(d);
 		// If there is no active database, initialise one
 		if(db == null) {
 			try {
 				db = EmbeddedStorage.start(root, Paths.get("./storage"));
 			} catch (Exception e) {
-				e.printStackTrace();
+				System.out.println(e);
 			}
 		}
-		
-		//System.out.println("\nAdd doc query is called");
-		//query();
+		// Store root in database
 		db.storeRoot();
 	}
 	
+	/**
+	 * Displays the titles of all documents in the database.
+	 */
 	public void query() {
 		System.out.println("[Query] Show all documents");
 		
-		/*root.stream()
-			.forEach(System.out::println);*/
-		
-		// display all the titles
 		Collection<String> titles = root.stream()
 		.map(d ->d.getTitle())
 		.collect(Collectors.toCollection(LinkedList::new));
@@ -62,18 +77,12 @@ public class Database {
 		System.out.println(titles);
 	}
 	
-	// Get amount of documents in database
-	public int getCount() {
-		return root.size();
-	}
-	
-	// Returns a list of all documents in database
+	/**
+	 * Gets a list of all the documents in database.
+	 * 
+	 * @return list of documents
+	 */
 	public List<Document> getAllDocuments() {
-		if(root.isEmpty()) {
-			
-		} 
-		//System.out.println("\nGet all docs query called");
-		//query();
 		return root;
 	}
 }

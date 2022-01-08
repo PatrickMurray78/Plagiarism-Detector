@@ -5,20 +5,27 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-// Purpose of this class is to parse the uploaded text document into a
-// list of words which are then returned back to controller.
+/**
+ * Implementation of Parserator. This class parses the document that we
+ * are going to compare. Parser is-a Parserator (Inheritance). This class also
+ * follows the SRP.
+ */
 public class Parser implements Parserator {
 	// List of words which make up document
-	private List<String> words = new ArrayList<String>();
+	private List<String> words;
 	
-	// Default Constructor
+	/**
+	 * Default Constructor.
+	 */
 	public Parser() {
 		
 	}
 	
-	// Reads text file and returns list of words
 	@Override
 	public List<String> parse(BufferedReader br) throws IOException {
+		// Instantiate words
+		words = new ArrayList<String>();
+		// Create a temp blank string
 		String line = "";
 		try {
 			// While there are lines to be read, read them
@@ -34,7 +41,7 @@ public class Parser implements Parserator {
 			// Close buffered reader
 			br.close();
 		}
-		
+		// Return the list of words
 		return words;
 	}
 }

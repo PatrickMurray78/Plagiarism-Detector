@@ -59,16 +59,21 @@ public class Controller {
 			 * for the Pie Chart. *** Do not hard-code these values *** as shown below.
 			 * The data needs to be computed dynamically.
 			 */
+			// Call the process method of ServiceHandler sh to handle all processing
+			// of the document. This will return a list of results to be displayed.
 			try {
-				results = sh.process(txtFile.getText(), HashingMethod.HASHCODE);
+				results = sh.process(txtFile.getText(), HashingMethod.MINHASH);
 			} catch (IOException ioe) {
 				ioe.printStackTrace();
 			}
 			
+			// Instantiate an ObservableList of PieChart Data
 			ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
 			
+			// For each result in the results of plagiarism calculations
 			for (PlagiarismResult result : results) {
-				System.out.println("Add " + result.getTitle() + " to pie chart");
+				// Add a new PieChart.Data object with the document name and the plagiarism
+				// percentage to the data ObservableList
 				data.add(new PieChart.Data(result.getTitle(), result.getResult()));
 			}
 		

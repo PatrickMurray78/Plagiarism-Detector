@@ -4,60 +4,64 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * SimilarityCalculator is a gateway method which is used to invoke an algorithm.
+ * This will allow me to use the strategy pattern in other classes by passing
+ * an instance of the SimilarityAlgo interface into the getResukts function.
+ */
 public class SimilarityCalculator {
 	// A list of plagiarism results that represents the comparison of all documents
-	//private List<PlagiarismResult> results = new ArrayList<PlagiarismResult>();
 	private List<PlagiarismResult> results;
 	// A composition of a similarity algo
 	private SimilarityAlgo similarityAlgo;
-	// A list of results of type PlagiarismResult that holds the document title
-	// and the result of its comparison
 	
-	public List<PlagiarismResult> calculateAllDocs(List<Document> documents, Set<Integer> a, SimilarityAlgo sa) {
-		//System.out.println(results.size() + " in list before any calc");
+	/**
+	 * Calculates the similarity of a set of hashes against all the other
+	 * documents sets of hashes in the database.
+	 * 
+	 * @param documents - List of documents
+	 * @param a - Set of hashes from the document we wish to compare
+	 * @param sa - Instance of similarityAlgo;
+	 * 
+	 * @return a list of PlagiarismResults
+	 */
+	public List<PlagiarismResult> getResults(List<Document> documents, Set<Integer> a, SimilarityAlgo sa) {
+		// Instantiate results
 		results = new ArrayList<>();
-		
-		/*if(results.size() > 0) {
-			for (PlagiarismResult r : results) {
-				System.out.println(r.getTitle() + " got " + r.getResult());
-			}
-			results.remove(0);
-		}*/
-		
-		double jaccardIndex;
-		double totalResult = 0;
-		double noPlagiarismResult = 1;
+		// Set similarityAlgo
 		similarityAlgo = sa;
-
-		// If it's the first document in the documents, return 100% not plagiarised
-		// to be displayed
+		// Stores jaccardIndex (0-1)
+		double jaccardIndex;
+		// Stores the total jaccardIndex of all documents
+		double totalResult = 0;
+		// Plagiarism Result (Starts at 1)
+		double noPlagiarismResult = 1;
+		
+		// If there are no stored documents yet, then call the addTitleAndResult
+		// method to add not plagiarised with a value of 1 as this document
+		// we wish to compare cant be plagiarised as no documents against to compare
+		// against
 		if (documents.size() == 0) {
 			addTitleAndResult("Not Plagiarised", 1);
 		} else {
-			System.out.println("There are " + documents.size() + " docs to loop through");
 			// Loop over the size of documents
 			for (int i = 0; i < documents.size(); i++) {
-				// Get the jaccard index by calling the compareSimilarity() method
-				System.out.println("Comparing this file with " + documents.get(i).getTitle());
-				//System.out.println("Hash Set 1: " + a.size() + " Hash Set 2: " + documents.get(i).getHashes().size());
-				jaccardIndex = sa.compareSimilarity(a, documents.get(i).getHashes());
-				System.out.println("Comparison is " + (jaccardIndex*100));
-				// If the jaccardIndex is greater than 0.05 (0.5% plagiarism), then
-				// add it to results
-				if(jaccardIndex > 0.05) {
+				// Get the jaccard index by calling the compareSimilarity method of similarityAlgo
+				jaccardIndex = similarityAlgo.compareSimilarity(a, documents.get(i).getHashes());
+				// If the jaccardIndex is greater than 0.02 (0.2% plagiarism), then
+				// add it to results (I dont want to see very small figures)
+				if(jaccardIndex > 0.02) {
+					// Increment the totalResult when we have a valid plagiarism value
 					totalResult += jaccardIndex;
-					System.out.println("Add it to results for " + documents.get(i).getTitle());
 					addTitleAndResult(documents.get(i).getTitle(), jaccardIndex);
-				} else {
-					jaccardIndex = 0;
-				}
+				} 
 			}
-			// If the total plagiarism result was less than 100 and
-			// there is more than one document in the database
+			// If the total plagiarism result was less than 1 and
+			// there is a document or more in the database.
 			// Then calculate the percentage that is not plagiarised
 			if(totalResult < 1 && documents.size() > 0) {
+				// 1 - totalResult
 				noPlagiarismResult -= totalResult;
-				System.out.println((noPlagiarismResult * 100) + "% of the document is not plagiarised");
 				addTitleAndResult("Not Plagiarised", noPlagiarismResult);
 			}
 		}
@@ -65,11 +69,19 @@ public class SimilarityCalculator {
 		return results;
 	}
 	
+	/**
+	 * Adds a PlagiarismResult to the list of results to
+	 * be displayed to the client.
+	 * 
+	 * @param title - Title of the document
+	 * @param jaccardIndex - Similarity amount (0-1)
+	 */
 	public void addTitleAndResult(String title, double jaccardIndex) {
 		
 		// The jaccard index is between 0 and 1. By multiplying it by 100, I will
-		// get a percentile which will make sense for the user
+		// get a percentile which will need to be used to display to the user
 		double result = jaccardIndex * 100;
+		// Add a new PlagiarismResult object to the results list
 		results.add(new PlagiarismResult(title, jaccardIndex));
 	}
 }
