@@ -56,8 +56,13 @@ public class Document {
 		// Using the size of the string, remove the last 4 characters
 		// which will remove the ".txt"
 		tempTitle = tempTitle.substring(0, (size - 4));
+		// The documents also contain the author name separated by a "-"
+		// so I will split this string by the "-" character to be left with
+		// the title followed by the author name so set the title to the
+		// first element of splitTitle array as this is the title post split
+		String[] splitTitle = tempTitle.split("-");
 		// Set title
-		this.title = tempTitle;
+		this.title = splitTitle[0];
 	}
 
 	/**

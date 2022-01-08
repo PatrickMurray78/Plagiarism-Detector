@@ -12,9 +12,7 @@ import java.util.TreeSet;
  */
 public class MinHasher implements HashingType {
 	// Stores the hashed value of shingles
-	private Set<Integer> hashedShingles;;
-	// Stores the random hashes
-	private Set<Integer> hashes;
+	private Set<Integer> hashedShingles;	private Set<Integer> hashes;
 	// Number of min hashes K. Although K can be computed, I chose
 	// to use a fixed size.
 	private final int K = 250;
@@ -35,7 +33,6 @@ public class MinHasher implements HashingType {
 		hashedShingles = new TreeSet<Integer>();
 		hashes = new TreeSet<Integer>();
 		
-		System.out.println("Using minhasher");
 		// Get sequence of random numbers
 		Random r = new Random(SEED);
 		// Generate K number of hashes to be added to the set

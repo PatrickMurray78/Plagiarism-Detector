@@ -15,12 +15,7 @@ public class Shingler implements Shingleator{
 	private final int SHINGLE_SIZE = 3;
 		
 	// List of shingled words
-	private List<String> shingles;;
-	
-	/**
-	 * Default Constructor.
-	 */
-	public Shingler() {
+	private List<String> shingles;	public Shingler() {
 
 	}
 	

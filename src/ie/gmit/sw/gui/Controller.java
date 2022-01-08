@@ -1,4 +1,4 @@
-package ie.gmit.sw;
+package ie.gmit.sw.gui;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -10,11 +10,16 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
+import ie.gmit.sw.HashingMethod;
+import ie.gmit.sw.PlagiarismResult;
+import ie.gmit.sw.ServiceHandler;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
@@ -32,9 +37,26 @@ public class Controller {
 	@FXML private Button btnClose;
 	@FXML private Button btnOpen;
 	@FXML private Button btnCompare;
+	@FXML private RadioButton hashcode, minhash;
 	
+	// Service handler instance
 	private ServiceHandler sh = new ServiceHandler();
+	// List of results of type PlagiarismResult
 	List<PlagiarismResult> results = new ArrayList<>();
+	// Enum which states hashingMethod to use
+	private HashingMethod hashingMethod;
+	
+	/**
+	 * Gets the HashingMethod the client wishes to use to hash
+	 * the documents. Default is MinHash
+	 */
+	public void getHasher() {
+		if(minhash.isSelected()) {
+			hashingMethod = HashingMethod.MINHASH;
+		} else if(hashcode.isSelected()) {
+			hashingMethod = HashingMethod.HASHCODE;
+		}
+	}
 	
 	@FXML public void initialize() {
 		//ObservableList<PieChart.Data> data = FXCollections.observableArrayList();
@@ -62,7 +84,7 @@ public class Controller {
 			// Call the process method of ServiceHandler sh to handle all processing
 			// of the document. This will return a list of results to be displayed.
 			try {
-				results = sh.process(txtFile.getText(), HashingMethod.MINHASH);
+				results = sh.process(txtFile.getText(), hashingMethod);
 			} catch (IOException ioe) {
 				ioe.printStackTrace();
 			}

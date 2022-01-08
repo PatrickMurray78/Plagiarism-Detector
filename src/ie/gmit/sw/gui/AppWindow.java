@@ -1,4 +1,4 @@
-package ie.gmit.sw;
+package ie.gmit.sw.gui;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

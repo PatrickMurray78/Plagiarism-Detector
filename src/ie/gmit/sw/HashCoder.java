@@ -16,7 +16,6 @@ public class HashCoder implements HashingType {
 	@Override
 	public Set<Integer> hash(List<String> shingles) {
 		// For each shingle in shingles
-		System.out.println("Using hashcode");
 		for (String shingle : shingles) {
 			// Get hash code of each shingle and add it to hashedShingles
 			hashedShingles.add(shingle.hashCode());

@@ -1,0 +1,2049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_zlpFMHCAEeytz63YvCMaqA">
+  <modelElement href="Plagiarism-Detector.uml#_0AVdIHCAEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BOA_YHCBEeytz63YvCMaqA" targetItem="_BOTTg3CBEeytz63YvCMaqA" sourceItem="_BN4cgHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BOKJUHCBEeytz63YvCMaqA" source="_BOTTQHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Hw60XCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BOKJUXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0Hxh4HCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BOKJUnCBEeytz63YvCMaqA" text=""/>
+    <sourceRole xmi:id="_BOKJU3CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0Hw60nCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOKJVHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BOKJVXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BOKJVnCBEeytz63YvCMaqA" aggregationKind="NONE" name="container" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HGMcHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOKJV3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOKJWHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BOLXcHCBEeytz63YvCMaqA" source="_BOTTQHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Hxh4XCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BOLXcXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0HyI8HCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BOLXcnCBEeytz63YvCMaqA" text=""/>
+    <sourceRole xmi:id="_BOLXc3CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0Hxh4nCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOLXdHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BOLXdXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BOLXdnCBEeytz63YvCMaqA" aggregationKind="NONE" name="chartArea" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HGzg3CAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOLXd3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOLXeHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BOMlkHCBEeytz63YvCMaqA" source="_BOTTQHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HywAHCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BOMlkXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0HzXEHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BOMlknCBEeytz63YvCMaqA" text=""/>
+    <sourceRole xmi:id="_BOMlk3CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0HywAXCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOMllHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BOMllXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BOMllnCBEeytz63YvCMaqA" aggregationKind="NONE" name="txtFile" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HHak3CAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOMll3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOMlmHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BONMoHCBEeytz63YvCMaqA" source="_BOTTQHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HzXEXCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BONMoXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0Hz-IHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BONMonCBEeytz63YvCMaqA" text=""/>
+    <sourceRole xmi:id="_BONMo3CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0HzXEnCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BONMpHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BONMpXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BONMpnCBEeytz63YvCMaqA" aggregationKind="NONE" name="btnClose" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HIosHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BONMp3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BONMqHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BOOawHCBEeytz63YvCMaqA" source="_BOTTQHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Hz-IXCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BOOawXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H0lMHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BOOawnCBEeytz63YvCMaqA" text=""/>
+    <sourceRole xmi:id="_BOOaw3CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0Hz-InCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOOaxHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BOOaxXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BOOaxnCBEeytz63YvCMaqA" aggregationKind="NONE" name="btnOpen" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HJPwnCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOOax3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOOayHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BOPB0HCBEeytz63YvCMaqA" source="_BOTTQHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H0lMXCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BOPB0XCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H1MQHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BOPB0nCBEeytz63YvCMaqA" text=""/>
+    <sourceRole xmi:id="_BOPB03CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H0lMnCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOPB1HCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BOPB1XCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BOPB1nCBEeytz63YvCMaqA" aggregationKind="NONE" name="btnCompare" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HJ20nCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOPB13CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOPB2HCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BOQP8HCBEeytz63YvCMaqA" source="_BOTTQHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H1MQXCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BOQP8XCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H2aYHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BOQP8nCBEeytz63YvCMaqA" text=""/>
+    <sourceRole xmi:id="_BOQP83CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H1MQnCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOQP9HCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BOQP9XCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BOQP9nCBEeytz63YvCMaqA" aggregationKind="NONE" name="hashcode" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HKd4nCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOQP93CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOQP-HCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BOQ3AHCBEeytz63YvCMaqA" sourceAnchor="201.0,0.0" targetAnchor="261.0,251.0" target="_BpQJ4HCBEeytz63YvCMaqA" source="_BOTTQHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H2aYXCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BOQ3AXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H3BcHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BOQ3AnCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCYbkHCBEeytz63YvCMaqA" position="2.0,-9.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_BOQ3A3CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H2aYnCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCXNcnCBEeytz63YvCMaqA" position="-17.0,-77.0"/>
+      <visibility xmi:id="_BOQ3BHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BOQ3BXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BOQ3BnCBEeytz63YvCMaqA" aggregationKind="NONE" name="sh" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HLsAnCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCYbkXCBEeytz63YvCMaqA" position="-29.0,31.0"/>
+      <visibility xmi:id="_BOQ3B3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOQ3CHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BOSFIHCBEeytz63YvCMaqA" sourceAnchor="0.0,14.0" targetAnchor="404.0,67.0" target="_BgvHEHCBEeytz63YvCMaqA" source="_BOTTQHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H3BcXCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BOSFIXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H3ogHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BOSFInCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCZpsHCBEeytz63YvCMaqA" position="-21.0,-19.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_BOSFI3CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H3BcnCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCZCoHCBEeytz63YvCMaqA" position="-29.0,-47.0"/>
+      <visibility xmi:id="_BOSFJHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BOSFJXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BOSFJnCBEeytz63YvCMaqA" aggregationKind="NONE" name="results" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HMTEXCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCaQwHCBEeytz63YvCMaqA" position="26.0,2.0"/>
+      <visibility xmi:id="_BOSFJ3CBEeytz63YvCMaqA" label="~"/>
+      <cardinality xmi:id="_BOSFKHCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BOSsMHCBEeytz63YvCMaqA" source="_BOTTQHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H-WMXCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BOSsMXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H-9QHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BOSsMnCBEeytz63YvCMaqA" text=""/>
+    <sourceRole xmi:id="_BOSsM3CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H-WMnCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOSsNHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BOSsNXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BOSsNnCBEeytz63YvCMaqA" aggregationKind="NONE" name="minhash" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HkGgnCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOSsN3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOSsOHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BQMwsHCBEeytz63YvCMaqA" targetItem="_BQUFcHCBEeytz63YvCMaqA" sourceItem="_BP_8YHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BQiu8HCBEeytz63YvCMaqA" sourceAnchor="0.0,65.0" targetAnchor="113.0,0.0" target="_BQ7JeXCBEeytz63YvCMaqA" source="_BQ7JeXCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HvFoHCAEeytz63YvCMaqA"/>
+    <bendpoints xmi:id="_ME07cHCCEeytz63YvCMaqA" sourceX="-61" targetX="-175" targetY="66"/>
+    <bendpoints xmi:id="_ME07cXCCEeytz63YvCMaqA" sourceX="-74" sourceY="-155" targetX="-188" targetY="-89"/>
+    <bendpoints xmi:id="_ME07cnCCEeytz63YvCMaqA" sourceX="114" sourceY="-153" targetY="-87"/>
+    <stereotypes xmi:id="_BQ3fEXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0HvssHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BQ24AHCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCbe4HCBEeytz63YvCMaqA" position="-21.0,121.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_BQ24AXCBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0HvFoXCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCa30HCBEeytz63YvCMaqA" position="-20.0,3.0"/>
+      <visibility xmi:id="_BQ4GIXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BQ4GIHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BQ3fEHCBEeytz63YvCMaqA" aggregationKind="NONE" name="instance" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0G1twXCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCcF8HCBEeytz63YvCMaqA" position="-69.0,-50.0"/>
+      <visibility xmi:id="_BQ4GI3CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BQ4GInCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BQzNoHCBEeytz63YvCMaqA" targetItem="_BQ7JeXCBEeytz63YvCMaqA" sourceItem="_BQtuEHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BQz0sHCBEeytz63YvCMaqA" sourceAnchor="229.0,0.0" targetAnchor="267.0,65.0" target="_BQ7JeXCBEeytz63YvCMaqA" source="_BpQJ4HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H6EwXCAEeytz63YvCMaqA"/>
+    <bendpoints xmi:id="_MEztUHCCEeytz63YvCMaqA" sourceX="-7" sourceY="-181" targetX="527" targetY="1"/>
+    <stereotypes xmi:id="_BQ3fFXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H6r0HCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BQ3fEnCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCiMkHCBEeytz63YvCMaqA" position="-270.0,-19.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_BQ3fE3CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H6EwnCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CChlgHCBEeytz63YvCMaqA" position="-16.0,-139.0"/>
+      <visibility xmi:id="_BQ4GJnCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BQ4GJXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BQ3fFHCBEeytz63YvCMaqA" aggregationKind="NONE" name="db" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HP9cnCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCizoHCBEeytz63YvCMaqA" position="32.0,-47.0"/>
+      <stereotypes xmi:id="_BQ4tMnCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HQkgHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BQ4tMXCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BQ4tMHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BQ1C0XCBEeytz63YvCMaqA" targetItem="_BQ7whXCBEeytz63YvCMaqA" sourceItem="_BQ1C0HCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BQ1p4XCBEeytz63YvCMaqA" targetItem="_BQ7wiHCBEeytz63YvCMaqA" sourceItem="_BQ1p4HCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BQ2Q8XCBEeytz63YvCMaqA" targetItem="_BQ7wjXCBEeytz63YvCMaqA" sourceItem="_BQ2Q8HCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BQ57UHCBEeytz63YvCMaqA" sourceAnchor="145.0,137.0" targetAnchor="167.0,0.0" target="_BSM703CBEeytz63YvCMaqA" source="_BQ7JeXCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HtQcHCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BQ57UXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0Ht3gHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BQ57UnCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCdUEHCBEeytz63YvCMaqA" position="-44.0,24.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_BQ57U3CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0HtQcXCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCctAHCBEeytz63YvCMaqA" position="-17.0,21.0"/>
+      <visibility xmi:id="_BQ57VHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BQ57VXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BQ57VnCBEeytz63YvCMaqA" aggregationKind="NONE" name="root" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0G0foHCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCd7IHCBEeytz63YvCMaqA" position="2.0,-67.0"/>
+      <visibility xmi:id="_BQ57V3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BQ57WHCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BQ7JcHCBEeytz63YvCMaqA" source="_BQ7JeXCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Ht3gXCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BQ7JcXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0HuekHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BQ7JcnCBEeytz63YvCMaqA" text=""/>
+    <sourceRole xmi:id="_BQ7Jc3CBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0Ht3gnCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BQ7JdHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BQ7JdXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BQ7JdnCBEeytz63YvCMaqA" aggregationKind="NONE" name="db" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0G1GsXCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BQ7Jd3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BQ7JeHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BR-5YHCBEeytz63YvCMaqA" targetItem="_BSM703CBEeytz63YvCMaqA" sourceItem="_BRtzoHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BSIDUHCBEeytz63YvCMaqA" sourceAnchor="0.0,85.0" targetAnchor="339.0,87.0" target="_BSM703CBEeytz63YvCMaqA" source="_BpQJ4HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H9vIXCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BSLts3CBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H-WMHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BSLtsHCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCkBwHCBEeytz63YvCMaqA" position="-34.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_BSLtsXCBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H9vInCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCjasHCBEeytz63YvCMaqA" position="-30.0,-47.0"/>
+      <visibility xmi:id="_BSMUwXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BSMUwHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BSLtsnCBEeytz63YvCMaqA" aggregationKind="NONE" name="d" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HRyonCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCkBwXCBEeytz63YvCMaqA" position="20.0,-46.999999999999886"/>
+      <stereotypes xmi:id="_BSM70nCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HSZsHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BSM70XCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BSM70HCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BSJRcXCBEeytz63YvCMaqA" targetItem="_BSNi8XCBEeytz63YvCMaqA" sourceItem="_BSJRcHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BSKfkHCBEeytz63YvCMaqA" targetItem="_BSNi_nCBEeytz63YvCMaqA" sourceItem="_BSJ4gHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BSLGoHCBEeytz63YvCMaqA" targetItem="_BSNjCnCBEeytz63YvCMaqA" sourceItem="_BSKfkXCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BTG6wHCBEeytz63YvCMaqA" targetItem="_BTZOoHCBEeytz63YvCMaqA" sourceItem="_BSrc8HCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_BTJ-EHCBEeytz63YvCMaqA" sourceAnchor="289.0,0.0" targetAnchor="289.0,205.0" dashed="true" superClass="_BTZOoHCBEeytz63YvCMaqA" subClass="_BpQJ4HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0F7HwHCAEeytz63YvCMaqA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BTLMMXCBEeytz63YvCMaqA" targetItem="_BTZOo3CBEeytz63YvCMaqA" sourceItem="_BTLMMHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BTLzQXCBEeytz63YvCMaqA" targetItem="_BTZOqXCBEeytz63YvCMaqA" sourceItem="_BTLzQHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BTLzQ3CBEeytz63YvCMaqA" targetItem="_BTZOrnCBEeytz63YvCMaqA" sourceItem="_BTLzQnCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BTMaUXCBEeytz63YvCMaqA" targetItem="_BTZOsXCBEeytz63YvCMaqA" sourceItem="_BTMaUHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BTNBYXCBEeytz63YvCMaqA" targetItem="_BTZOtnCBEeytz63YvCMaqA" sourceItem="_BTNBYHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BTNBY3CBEeytz63YvCMaqA" targetItem="_BTZOu3CBEeytz63YvCMaqA" sourceItem="_BTNBYnCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BTOPgHCBEeytz63YvCMaqA" targetItem="_BTZOwXCBEeytz63YvCMaqA" sourceItem="_BTNocHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BTO2kXCBEeytz63YvCMaqA" targetItem="_BTZOzHCBEeytz63YvCMaqA" sourceItem="_BTO2kHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BTQrwXCBEeytz63YvCMaqA" targetItem="_BpQJ4HCBEeytz63YvCMaqA" sourceItem="_BTQrwHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BTRS0HCBEeytz63YvCMaqA" sourceAnchor="0.0,225.0" targetAnchor="200.0,0.0" target="_BgvHEHCBEeytz63YvCMaqA" source="_BpQJ4HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H3ogXCAEeytz63YvCMaqA"/>
+    <bendpoints xmi:id="_MEztUXCCEeytz63YvCMaqA" sourceX="-294" targetY="-172"/>
+    <stereotypes xmi:id="_BTWLU3CBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H4PkHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BTWLUHCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCl28HCBEeytz63YvCMaqA" position="1.0,41.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_BTWLUXCBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H3ognCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CClP4HCBEeytz63YvCMaqA" position="-34.0,2.0"/>
+      <visibility xmi:id="_BTYAgXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BTYAgHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BTWLUnCBEeytz63YvCMaqA" aggregationKind="NONE" name="plagiarismResults" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HOvUHCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCl28XCBEeytz63YvCMaqA" position="2.0,-77.0"/>
+      <visibility xmi:id="_BTYAg3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BTYAgnCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BTRS0XCBEeytz63YvCMaqA" source="_BpQJ4HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H4PkXCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_BTWLV3CBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H5dsHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BTWLVHCBEeytz63YvCMaqA" text=""/>
+    <sourceRole xmi:id="_BTWLVXCBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H4PknCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BTYAhnCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BTYAhXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BTWLVnCBEeytz63YvCMaqA" aggregationKind="NONE" name="br" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HPWYHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BTYnkHCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BTYAh3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BTSg8HCBEeytz63YvCMaqA" targetItem="_BpQKDnCBEeytz63YvCMaqA" sourceItem="_BTR54HCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BU0yAHCBEeytz63YvCMaqA" targetItem="_BVI7EHCBEeytz63YvCMaqA" sourceItem="_BUASoHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BWVN4HCBEeytz63YvCMaqA" targetItem="_BWqlEHCBEeytz63YvCMaqA" sourceItem="_BVijsHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BWm6sHCBEeytz63YvCMaqA" sourceAnchor="0.0,125.0" targetAnchor="149.0,0.0" target="_BWqlEHCBEeytz63YvCMaqA" source="_BpQJ4HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H758XCAEeytz63YvCMaqA"/>
+    <bendpoints xmi:id="_MEztUnCCEeytz63YvCMaqA" sourceX="-622" targetY="-124"/>
+    <stereotypes xmi:id="_BWov43CBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H8hAHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BWov4HCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCnFEXCBEeytz63YvCMaqA" position="41.0,1.0000000000001137"/>
+    </nameVisual>
+    <sourceRole xmi:id="_BWov4XCBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H758nCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCnFEHCBEeytz63YvCMaqA" position="-54.0,-47.0"/>
+      <visibility xmi:id="_BWpW8XCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BWpW8HCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BWov4nCBEeytz63YvCMaqA" aggregationKind="NONE" name="hasher" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HRLkXCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCnsIHCBEeytz63YvCMaqA" position="1.0,-82.99999999999989"/>
+      <visibility xmi:id="_BWpW83CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BWpW8nCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BYw20HCBEeytz63YvCMaqA" targetItem="_BZCjoHCBEeytz63YvCMaqA" sourceItem="_BYOEQHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_BZAucHCBEeytz63YvCMaqA" sourceAnchor="164.0,0.0" targetAnchor="109.0,71.0" dashed="true" superClass="_BZCjoHCBEeytz63YvCMaqA" subClass="_BVI7EHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0FWgAHCAEeytz63YvCMaqA"/>
+    <bendpoints xmi:id="_ME07dHCCEeytz63YvCMaqA" sourceY="-114" targetX="30" targetY="21"/>
+    <bendpoints xmi:id="_ME1igHCCEeytz63YvCMaqA" sourceX="-30" sourceY="-114" targetY="21"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BaWyQHCBEeytz63YvCMaqA" targetItem="_Ba1TYHCBEeytz63YvCMaqA" sourceItem="_BZw8YHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_BbXe4HCBEeytz63YvCMaqA" sourceAnchor="121.0,0.0" targetAnchor="109.0,71.0" dashed="true" superClass="_BZCjoHCBEeytz63YvCMaqA" subClass="_BcHFwHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Feb0XCAEeytz63YvCMaqA"/>
+    <bendpoints xmi:id="_ME1igXCCEeytz63YvCMaqA" sourceY="-22" targetX="348" targetY="21"/>
+    <bendpoints xmi:id="_ME1ignCCEeytz63YvCMaqA" sourceX="-348" sourceY="-22" targetY="21"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BcDbYHCBEeytz63YvCMaqA" targetItem="_BcHFwHCBEeytz63YvCMaqA" sourceItem="_BbzjwHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BdeXsHCBEeytz63YvCMaqA" targetItem="_Bd_8IXCBEeytz63YvCMaqA" sourceItem="_BdC54HCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Bd51gHCBEeytz63YvCMaqA" sourceAnchor="152.0,0.0" targetAnchor="135.0,72.0" dashed="true" superClass="_Beg5gHCBEeytz63YvCMaqA" subClass="_Bd_8IXCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Fg4EHCAEeytz63YvCMaqA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Bd-G8XCBEeytz63YvCMaqA" targetItem="_Beg5gHCBEeytz63YvCMaqA" sourceItem="_Bd-G8HCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Bd-uAHCBEeytz63YvCMaqA" sourceAnchor="529.0,53.0" targetAnchor="0.0,34.0" target="_Beg5gHCBEeytz63YvCMaqA" source="_BpQJ4HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H5dsXCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_Bd_VE3CBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H6EwHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Bd_VEHCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCphUHCBEeytz63YvCMaqA" position="-19.0,-19.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Bd_VEXCBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H5dsnCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCoTMHCBEeytz63YvCMaqA" position="12.0,2.0"/>
+      <visibility xmi:id="_Bd_VFXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_Bd_VFHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Bd_VEnCBEeytz63YvCMaqA" aggregationKind="NONE" name="parserator" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HP9cHCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCphUXCBEeytz63YvCMaqA" position="-87.0,2.0"/>
+      <visibility xmi:id="_Bd_VF3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_Bd_VFnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BgX6sHCBEeytz63YvCMaqA" targetItem="_BgvHEHCBEeytz63YvCMaqA" sourceItem="_Bfph8HCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BgsDwHCBEeytz63YvCMaqA" sourceAnchor="245.0,74.0" targetAnchor="228.0,119.0" target="_BgvHEHCBEeytz63YvCMaqA" source="_Boq7EHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HvssXCAEeytz63YvCMaqA"/>
+    <bendpoints xmi:id="_ME0UYnCCEeytz63YvCMaqA" sourceY="331" targetX="892" targetY="235"/>
+    <bendpoints xmi:id="_ME0UY3CCEeytz63YvCMaqA" sourceX="-891" sourceY="331" targetX="1" targetY="235"/>
+    <stereotypes xmi:id="_Bgt483CBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0HwTwHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Bgt48HCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCfJQHCBEeytz63YvCMaqA" position="-57.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Bgt48XCBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0HvssnCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCeiMHCBEeytz63YvCMaqA" position="-17.0,39.0"/>
+      <visibility xmi:id="_BgugAHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_Bgt49HCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Bgt48nCBEeytz63YvCMaqA" aggregationKind="NONE" name="results" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HE-UXCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCfJQXCBEeytz63YvCMaqA" position="41.0,1.0"/>
+      <stereotypes xmi:id="_BgugA3CBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HFlYHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BgugAnCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BgugAXCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BhulkHCBEeytz63YvCMaqA" targetItem="_BiEj0HCBEeytz63YvCMaqA" sourceItem="_BhQEcHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Bh_EQHCBEeytz63YvCMaqA" sourceAnchor="529.0,21.0" targetAnchor="0.0,30.0" target="_BiEj0HCBEeytz63YvCMaqA" source="_BpQJ4HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H6r0XCAEeytz63YvCMaqA"/>
+    <bendpoints xmi:id="_ME0UYHCCEeytz63YvCMaqA" sourceX="11" sourceY="1" targetX="-125" targetY="297"/>
+    <bendpoints xmi:id="_ME0UYXCCEeytz63YvCMaqA" sourceX="44" sourceY="-296" targetX="-92"/>
+    <stereotypes xmi:id="_BiD8wXCBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H758HCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BiDVsHCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCrWgHCBEeytz63YvCMaqA" position="-39.0,4.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_BiDVsXCBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H6r0nCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCqIYHCBEeytz63YvCMaqA" position="29.0,-86.0"/>
+      <visibility xmi:id="_BiD8w3CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BiD8wnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BiD8wHCBEeytz63YvCMaqA" aggregationKind="NONE" name="shingleator" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HQkgXCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCrWgXCBEeytz63YvCMaqA" position="-91.0,41.0"/>
+      <visibility xmi:id="_BiD8xXCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BiD8xHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_BizjoHCBEeytz63YvCMaqA" sourceAnchor="146.0,0.0" targetAnchor="128.0,72.0" dashed="true" superClass="_BiEj0HCBEeytz63YvCMaqA" subClass="_Bj698HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Fj7YHCAEeytz63YvCMaqA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Bj2FcHCBEeytz63YvCMaqA" targetItem="_Bj698HCBEeytz63YvCMaqA" sourceItem="_BjgHMHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Blo1MHCBEeytz63YvCMaqA" targetItem="_BmS8gHCBEeytz63YvCMaqA" sourceItem="_BlGpsHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_BmIkcHCBEeytz63YvCMaqA" sourceAnchor="313.0,67.0" targetAnchor="129.0,71.0" dashed="true" superClass="_BmS8gHCBEeytz63YvCMaqA" subClass="_Ba1TYHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Fb_kHCAEeytz63YvCMaqA"/>
+    <bendpoints xmi:id="_ME07c3CCEeytz63YvCMaqA" sourceX="174" targetY="80"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BmOrEHCBEeytz63YvCMaqA" sourceAnchor="493.0,38.0" targetAnchor="159.0,71.0" target="_BmS8gHCBEeytz63YvCMaqA" source="_Boq7EHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HwTwXCAEeytz63YvCMaqA"/>
+    <bendpoints xmi:id="_ME0UZHCCEeytz63YvCMaqA" sourceX="196" sourceY="-11" targetY="859"/>
+    <stereotypes xmi:id="_BmRuY3CBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0Hw60HCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_BmRuYHCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCgXYHCBEeytz63YvCMaqA" position="2.0,-445.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_BmRuYXCBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0HwTwnCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCfwUHCBEeytz63YvCMaqA" position="13.0,-47.0"/>
+      <visibility xmi:id="_BmSVcXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BmSVcHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_BmRuYnCBEeytz63YvCMaqA" aggregationKind="NONE" name="similarityAlgo" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HFlYXCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCg-cHCBEeytz63YvCMaqA" position="2.0,52.0"/>
+      <stereotypes xmi:id="_BmSVdHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HFlYnCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BmSVc3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BmSVcnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Bn-XgHCBEeytz63YvCMaqA" targetItem="_Boq7EHCBEeytz63YvCMaqA" sourceItem="_BnM7cHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_BofU4HCBEeytz63YvCMaqA" sourceAnchor="513.0,251.0" targetAnchor="133.0,0.0" target="_Boq7EHCBEeytz63YvCMaqA" source="_BpQJ4HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0H8hAXCAEeytz63YvCMaqA"/>
+    <stereotypes xmi:id="_Bops83CBEeytz63YvCMaqA" name="Reference">
+      <modelElement href="Plagiarism-Detector.uml#_0H9vIHCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Bops8HCBEeytz63YvCMaqA" text="">
+      <visualProperties xmi:id="_CCskoHCBEeytz63YvCMaqA" position="-44.0,17.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Bops8XCBEeytz63YvCMaqA" aggregationKind="NONE" name="">
+      <modelElement href="Plagiarism-Detector.uml#_0H8hAnCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCr9kHCBEeytz63YvCMaqA" position="-17.0,17.0"/>
+      <visibility xmi:id="_BoqUAXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BoqUAHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Bops8nCBEeytz63YvCMaqA" aggregationKind="NONE" name="sc" navigable="true">
+      <modelElement href="Plagiarism-Detector.uml#_0HRyoHCAEeytz63YvCMaqA"/>
+      <visualProperties xmi:id="_CCtLsHCBEeytz63YvCMaqA" position="2.0,-63.0"/>
+      <visibility xmi:id="_BoqUA3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BoqUAnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BompoHCBEeytz63YvCMaqA" targetItem="_Boq7G3CBEeytz63YvCMaqA" sourceItem="_BomCkHCBEeytz63YvCMaqA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_BopF4XCBEeytz63YvCMaqA" targetItem="_Boq7JHCBEeytz63YvCMaqA" sourceItem="_BopF4HCBEeytz63YvCMaqA"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BN4cgHCBEeytz63YvCMaqA" sourceConnectionVisual="_BOA_YHCBEeytz63YvCMaqA" text="Gets the HashingMethod the client wishes to use to hash&#xD;&#xA;&#x9; * the documents. Default is MinHash" item="_BOTTg3CBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HktkXCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BP_8YHCBEeytz63YvCMaqA" sourceConnectionVisual="_BQMwsHCBEeytz63YvCMaqA" text="Do not edit or change this class." item="_BQUFcHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HlUoHCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BQtuEHCBEeytz63YvCMaqA" sourceConnectionVisual="_BQzNoHCBEeytz63YvCMaqA" text="Database provides a way of accessing the database for all other classes.&#xD;&#xA;A database should only be instantiated once, so for this reason I made it a &#xD;&#xA;singleton. This will ensure we can access the same database from anywhere.&#xD;&#xA;This class follows the SRP." item="_BQ7JeXCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HhqQHCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BQ1C0HCBEeytz63YvCMaqA" sourceConnectionVisual="_BQ1C0XCBEeytz63YvCMaqA" text="Displays the titles of all documents in the database." item="_BQ7whXCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HhqQnCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BQ1p4HCBEeytz63YvCMaqA" sourceConnectionVisual="_BQ1p4XCBEeytz63YvCMaqA" text="Gets a list of all the documents in database.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return list of documents" item="_BQ7wiHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HhqQ3CAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BQ2Q8HCBEeytz63YvCMaqA" sourceConnectionVisual="_BQ2Q8XCBEeytz63YvCMaqA" text="Adds a document to the microstream database.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @param d - Document object to be added to database" item="_BQ7wjXCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HhqQXCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BRtzoHCBEeytz63YvCMaqA" sourceConnectionVisual="_BR-5YHCBEeytz63YvCMaqA" text="Document is an abstract template of what each document should look&#xD;&#xA;like. By templating objects, we provide some general OOP." item="_BSM703CBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HhqRHCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BSJRcHCBEeytz63YvCMaqA" sourceConnectionVisual="_BSJRcXCBEeytz63YvCMaqA" text="Set the title of document.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @param filePath - Manipulated to get document title" item="_BSNi8XCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HiRUHCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BSJ4gHCBEeytz63YvCMaqA" sourceConnectionVisual="_BSKfkHCBEeytz63YvCMaqA" text="Constructor with Fields.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @param title - Title of document&#xD;&#xA;&#x9; * @param hashes - Set of hashes" item="_BSNi_nCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HhqRXCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BSKfkXCBEeytz63YvCMaqA" sourceConnectionVisual="_BSLGoHCBEeytz63YvCMaqA" text="Set the hashes&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @param hashes - Used to compare against other documents" item="_BSNjCnCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HiRUXCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BSrc8HCBEeytz63YvCMaqA" sourceConnectionVisual="_BTG6wHCBEeytz63YvCMaqA" text="Interface which states what a Handleator should do. This interface follows the &#xD;&#xA;facade design pattern as it is composed of other interfaces which allows us to handle&#xD;&#xA;all functionality from the one place. As this application is quite complicated with&#xD;&#xA;the amount of classes that all abide by the SRP. I felt it would be beneficial to use&#xD;&#xA;an interface like this to connect everything together." item="_BTZOoHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HiRUnCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BTLMMHCBEeytz63YvCMaqA" sourceConnectionVisual="_BTLMMXCBEeytz63YvCMaqA" text="Reads document and adds it to a BufferedReader using filePath.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @param filePath - String containing the path to file" item="_BTZOo3CBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HiRU3CAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BTLzQHCBEeytz63YvCMaqA" sourceConnectionVisual="_BTLzQXCBEeytz63YvCMaqA" text="Responsible for getting the set of words that has been parsed.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return list of words" item="_BTZOqXCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HiRVnCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BTLzQnCBEeytz63YvCMaqA" sourceConnectionVisual="_BTLzQ3CBEeytz63YvCMaqA" text="Delegates work to Database to add a document." item="_BTZOrnCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HiRV3CAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BTMaUHCBEeytz63YvCMaqA" sourceConnectionVisual="_BTMaUXCBEeytz63YvCMaqA" text="Delegates work to the SimilarityCalculator where the similarity &#xD;&#xA;&#x9; * of the document compared to all other documents is calculated.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return list of PlagiarismResults" item="_BTZOsXCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HiRWHCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BTNBYHCBEeytz63YvCMaqA" sourceConnectionVisual="_BTNBYXCBEeytz63YvCMaqA" text="Checks if the document fully plagiarises any other document in the&#xD;&#xA;&#x9; * database. If it does we do not want to store it.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return boolean depending on if there is full plagiarism or not" item="_BTZOtnCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HiRWXCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BTNBYnCBEeytz63YvCMaqA" sourceConnectionVisual="_BTNBY3CBEeytz63YvCMaqA" text="Responsible for delegating work to the Shingler and Hasher to &#xD;&#xA;&#x9; * shingle and hash the document.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @param hashingMethod - Enum which states the hashing method to use" item="_BTZOu3CBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HiRVXCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BTNocHCBEeytz63YvCMaqA" sourceConnectionVisual="_BTOPgHCBEeytz63YvCMaqA" text="Responsible for calling all the other methods. In controller.java, the client can&#xD;&#xA;&#x9; * simply call the Process method instead of having to call each method individually.&#xD;&#xA;&#x9; * This helps the Handleator follow the facade pattern.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @param fileName - String containing the path to file&#xD;&#xA;&#x9; * @param hashingMethod - Enum which states the hashing method to use&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return list of PlagiarismResults&#xD;&#xA;&#x9; * @throws IOException - File handling" item="_BTZOwXCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Hi4YHCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BTO2kHCBEeytz63YvCMaqA" sourceConnectionVisual="_BTO2kXCBEeytz63YvCMaqA" text="Delegates work to the Parserator which parses the file using the &#xD;&#xA;&#x9; * BufferedReader.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @param title - Used to add title to document&#xD;&#xA;&#x9; * @param br - BufferedReader that contains file contents&#xD;&#xA;&#x9; * @throws IOException - File handling" item="_BTZOzHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HiRVHCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BTQrwHCBEeytz63YvCMaqA" sourceConnectionVisual="_BTQrwXCBEeytz63YvCMaqA" text="Implementation of Handleator. This is the main handler that connects&#xD;&#xA;all other classes together to allow the whole application to be ran from this&#xD;&#xA;class alone. The client sees nothing going on in this class as it is abstracted. This &#xD;&#xA;class follows the facade pattern." item="_BpQJ4HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HlUoXCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BTR54HCBEeytz63YvCMaqA" sourceConnectionVisual="_BTSg8HCBEeytz63YvCMaqA" text="Default Constructor which creates instances of other classes.&#xD;&#xA;&#x9; * If the ServiceHandler goes down, so does all the instantiated classes." item="_BpQKDnCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HlUonCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BUASoHCBEeytz63YvCMaqA" sourceConnectionVisual="_BU0yAHCBEeytz63YvCMaqA" text="Implementation of HashingType. HashCoder is a hashing function which performs&#xD;&#xA;a .hashCode() representation of shingles. HashCoder is-a HashingType (Inheritance).&#xD;&#xA;This class also follows the SRP." item="_BVI7EHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Hi4YXCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BVijsHCBEeytz63YvCMaqA" sourceConnectionVisual="_BWVN4HCBEeytz63YvCMaqA" text="Hasher is a gateway method which is used to invoke an algorithm.&#xD;&#xA;This will allow me to use the strategy pattern in other classes by passing&#xD;&#xA;an instance of the HashingType interface into the hash function." item="_BWqlEHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Hi4YnCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BYOEQHCBEeytz63YvCMaqA" sourceConnectionVisual="_BYw20HCBEeytz63YvCMaqA" text="Interface for all hashing methods. All classes which implement&#xD;&#xA;this interface provide a method of hashing a document for the jaccard &#xD;&#xA;calculations and also for creating a Document object which will be stored&#xD;&#xA;in the database. This interface follows the SRP." item="_BZCjoHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Hi4Y3CAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BZw8YHCBEeytz63YvCMaqA" sourceConnectionVisual="_BaWyQHCBEeytz63YvCMaqA" text="Implementation of SimilarityAlgo. This class uses the Jaccard&#xD;&#xA;index algorithm to calculate the jaccard index which informs us&#xD;&#xA;of the similarity between two sets. The algorithm is |A n B| / |A u B|.&#xD;&#xA;Jaccard is-a SimilarityAlgo (Inheritance). Upholds the SRP." item="_Ba1TYHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Hi4ZHCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BbzjwHCBEeytz63YvCMaqA" sourceConnectionVisual="_BcDbYHCBEeytz63YvCMaqA" text="Implementation of HashingType. MinHasher is a hashing function which hashes each&#xD;&#xA;shingle by getting their minimal hashcodes and storing the first 250.&#xD;&#xA;HashCoder is-a HashingType (Inheritance). This class also follows the SRP." item="_BcHFwHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_2cy4gHCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BdC54HCBEeytz63YvCMaqA" sourceConnectionVisual="_BdeXsHCBEeytz63YvCMaqA" text="Implementation of Parserator. This class parses the document that we&#xD;&#xA;are going to compare. Parser is-a Parserator (Inheritance). This class also&#xD;&#xA;follows the SRP." item="_Bd_8IXCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HjfcHCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Bd-G8HCBEeytz63YvCMaqA" sourceConnectionVisual="_Bd-G8XCBEeytz63YvCMaqA" text="Parserator is an interface which describes each parserator&#xD;&#xA;object. Parserator objects are used to parse documents.&#xD;&#xA;Follows the SRP." item="_Beg5gHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HjfcXCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Bfph8HCBEeytz63YvCMaqA" sourceConnectionVisual="_BgX6sHCBEeytz63YvCMaqA" text="PlagiarismResult is an abstract template of what each plagiarism result&#xD;&#xA;should look like. By templating objects, we provide some general OOP." item="_BgvHEHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HjfcnCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BhQEcHCBEeytz63YvCMaqA" sourceConnectionVisual="_BhulkHCBEeytz63YvCMaqA" text="Interface which describes each Shingleator object.&#xD;&#xA;Shingleator objects are used to create shingles from parsed documents.&#xD;&#xA;Follows the SRP." item="_BiEj0HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0Hjfc3CAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BjgHMHCBEeytz63YvCMaqA" sourceConnectionVisual="_Bj2FcHCBEeytz63YvCMaqA" text="Implementation of Shingleator. This class simply creates&#xD;&#xA;shingles of size k. Shingler is-a Shingleator (Inheritance).&#xD;&#xA;Follows the SRP." item="_Bj698HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_2cy4gXCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BlGpsHCBEeytz63YvCMaqA" sourceConnectionVisual="_Blo1MHCBEeytz63YvCMaqA" text="Interface which describes all SimilarityAlgo objects.&#xD;&#xA;A SimilarityAlgo is used to compare two documents and&#xD;&#xA;calculate their similarity. Follows the SRP." item="_BmS8gHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HjfdXCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BnM7cHCBEeytz63YvCMaqA" sourceConnectionVisual="_Bn-XgHCBEeytz63YvCMaqA" text="SimilarityCalculator is a gateway method which is used to invoke an algorithm.&#xD;&#xA;This will allow me to use the strategy pattern in other classes by passing&#xD;&#xA;an instance of the SimilarityAlgo interface into the getResukts function." item="_Boq7EHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HjfdnCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BomCkHCBEeytz63YvCMaqA" sourceConnectionVisual="_BompoHCBEeytz63YvCMaqA" text="Adds a PlagiarismResult to the list of results to&#xD;&#xA;&#x9; * be displayed to the client.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @param title - Title of the document&#xD;&#xA;&#x9; * @param jaccardIndex - Similarity amount (0-1)" item="_Boq7G3CBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HkGgXCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_BopF4HCBEeytz63YvCMaqA" sourceConnectionVisual="_BopF4XCBEeytz63YvCMaqA" text="Calculates the similarity of a set of hashes against all the other&#xD;&#xA;&#x9; * documents sets of hashes in the database.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @param documents - List of documents&#xD;&#xA;&#x9; * @param a - Set of hashes from the document we wish to compare&#xD;&#xA;&#x9; * @param sa - Instance of similarityAlgo;&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return a list of PlagiarismResults" item="_Boq7JHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0HkGgHCAEeytz63YvCMaqA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BpQJ4HCBEeytz63YvCMaqA" comments="_BTQrwHCBEeytz63YvCMaqA" targetConnectionVisual="_BTQrwXCBEeytz63YvCMaqA" name="ServiceHandler" associationsIn="_BOQ3AHCBEeytz63YvCMaqA" associationsOut="_BQz0sHCBEeytz63YvCMaqA _BSIDUHCBEeytz63YvCMaqA _BTRS0HCBEeytz63YvCMaqA _BTRS0XCBEeytz63YvCMaqA _BWm6sHCBEeytz63YvCMaqA _Bd-uAHCBEeytz63YvCMaqA _Bh_EQHCBEeytz63YvCMaqA _BofU4HCBEeytz63YvCMaqA" generalizations="_BTJ-EHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0CW2YHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BpQJ4XCBEeytz63YvCMaqA" position="1015.0,587.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BpQJ4nCBEeytz63YvCMaqA" label="+"/>
+    <attributes xmi:id="_BpQJ43CBEeytz63YvCMaqA" name="words">
+      <modelElement href="Plagiarism-Detector.uml#_0HOIQHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQJ5HCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HOIQnCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQJ5XCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BpQJ5nCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_BpQJ53CBEeytz63YvCMaqA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BpQJ6HCBEeytz63YvCMaqA" name="plagiarismResults">
+      <modelElement href="Plagiarism-Detector.uml#_0HOvUHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQJ6XCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HOvUnCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQJ6nCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BpQJ63CBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_BpQJ7HCBEeytz63YvCMaqA" name="PlagiarismResult">
+        <modelElement href="Plagiarism-Detector.uml#_0CAREHCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BpQJ7XCBEeytz63YvCMaqA" name="br">
+      <modelElement href="Plagiarism-Detector.uml#_0HPWYHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQJ7nCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HPWYXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQJ73CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BpQJ8HCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BpQJ8XCBEeytz63YvCMaqA" name="BufferedReader">
+        <modelElement href="Plagiarism-Detector.uml#_0FRngHCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BpQJ8nCBEeytz63YvCMaqA" name="parserator">
+      <modelElement href="Plagiarism-Detector.uml#_0HP9cHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQJ83CBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HP9cXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQJ9HCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BpQJ9XCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BpQJ9nCBEeytz63YvCMaqA" name="Parserator">
+        <modelElement href="Plagiarism-Detector.uml#_0B_C8HCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BpQJ93CBEeytz63YvCMaqA" name="db">
+      <modelElement href="Plagiarism-Detector.uml#_0HP9cnCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BpQJ-HCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BpQJ-XCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BpQJ-nCBEeytz63YvCMaqA" name="Database">
+        <modelElement href="Plagiarism-Detector.uml#_0BIuYHCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BpQJ-3CBEeytz63YvCMaqA" name="shingleator">
+      <modelElement href="Plagiarism-Detector.uml#_0HQkgXCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQJ_HCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HRLkHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQJ_XCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BpQJ_nCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BpQJ_3CBEeytz63YvCMaqA" name="Shingleator">
+        <modelElement href="Plagiarism-Detector.uml#_0CDUYHCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BpQKAHCBEeytz63YvCMaqA" name="hasher">
+      <modelElement href="Plagiarism-Detector.uml#_0HRLkXCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQKAXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HRLknCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQKAnCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BpQKA3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BpQKBHCBEeytz63YvCMaqA" name="Hasher">
+        <modelElement href="Plagiarism-Detector.uml#_0BabMHCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BpQKBXCBEeytz63YvCMaqA" name="sc">
+      <modelElement href="Plagiarism-Detector.uml#_0HRyoHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQKBnCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HRyoXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQKB3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BpQKCHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BpQKCXCBEeytz63YvCMaqA" name="SimilarityCalculator">
+        <modelElement href="Plagiarism-Detector.uml#_0CIz8HCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BpQKCnCBEeytz63YvCMaqA" name="d">
+      <modelElement href="Plagiarism-Detector.uml#_0HRyonCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BpQKC3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BpQKDHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BpQKDXCBEeytz63YvCMaqA" name="Document">
+        <modelElement href="Plagiarism-Detector.uml#_0BON8HCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_BpQKDnCBEeytz63YvCMaqA" comments="_BTR54HCBEeytz63YvCMaqA" targetConnectionVisual="_BTSg8HCBEeytz63YvCMaqA" name="ServiceHandler">
+      <modelElement href="Plagiarism-Detector.uml#_0CYrkHCAEeytz63YvCMaqA"/>
+      <keywords xmi:id="_BpQKD3CBEeytz63YvCMaqA" keyword="create"/>
+      <visibility xmi:id="_BpQKEHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BpQKEXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BpQKEnCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0CYrk3CAEeytz63YvCMaqA"/>
+        <type xmi:id="_BpQKE3CBEeytz63YvCMaqA" name="ServiceHandler">
+          <modelElement href="Plagiarism-Detector.uml#_0CW2YHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BpQKFHCBEeytz63YvCMaqA" name="readDocument">
+      <modelElement href="Plagiarism-Detector.uml#_0CZSoHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQKFXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0CZSonCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BpQKFnCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0CZ5sHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQKF3CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BpQKGHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BpQKGXCBEeytz63YvCMaqA" name="filePath">
+        <modelElement href="Plagiarism-Detector.uml#_0CZSoXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BpQKGnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BpQKG3CBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BpQKHHCBEeytz63YvCMaqA" name="displayDocument">
+      <modelElement href="Plagiarism-Detector.uml#_0CagwHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQKHXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0CbH0HCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BpQKHnCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0CbH0XCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQKH3CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BpQKIHCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BpQKIXCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0CagwXCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BpQKInCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BpQKI3CBEeytz63YvCMaqA" name="addDocument">
+      <modelElement href="Plagiarism-Detector.uml#_0CbH03CAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQKJHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0Cbu4HCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BpQKJXCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0Cbu4XCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQKJnCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BpQKJ3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_BpQKKHCBEeytz63YvCMaqA" name="compareSimilarity">
+      <modelElement href="Plagiarism-Detector.uml#_0Cbu43CAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQKKXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0CcV8XCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BpQKKnCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0Cc9AHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQKK3CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BpQKLHCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BpQKLXCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0Cbu5HCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BpQKLnCBEeytz63YvCMaqA" name="PlagiarismResult">
+          <modelElement href="Plagiarism-Detector.uml#_0CAREHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BpQKL3CBEeytz63YvCMaqA" name="checkForFullPlagiarism">
+      <modelElement href="Plagiarism-Detector.uml#_0Cc9AnCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQKMHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0CdkEHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BpQKMXCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0CdkEXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQKMnCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BpQKM3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BpQKNHCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0Cc9A3CAEeytz63YvCMaqA"/>
+        <type xmi:id="_BpQKNXCBEeytz63YvCMaqA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BpQKNnCBEeytz63YvCMaqA" name="processDocument">
+      <modelElement href="Plagiarism-Detector.uml#_0F8V4HCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQKN3CBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0F888HCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BpQKOHCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0F9kAHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQKOXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BpQKOnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BpQKO3CBEeytz63YvCMaqA" name="hashingMethod">
+        <modelElement href="Plagiarism-Detector.uml#_0F8V4XCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BpQKPHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BpQKPXCBEeytz63YvCMaqA" name="HashingMethod">
+          <modelElement href="Plagiarism-Detector.uml#_0BdegHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BpQKPnCBEeytz63YvCMaqA" name="process">
+      <modelElement href="Plagiarism-Detector.uml#_0F-LEHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQKP3CBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0F-yIHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BpQKQHCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0F_ZMHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQKQXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BpQKQnCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BpQKQ3CBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0F-LE3CAEeytz63YvCMaqA"/>
+        <type xmi:id="_BpQKRHCBEeytz63YvCMaqA" name="PlagiarismResult">
+          <modelElement href="Plagiarism-Detector.uml#_0CAREHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BpQKRXCBEeytz63YvCMaqA" name="filePath">
+        <modelElement href="Plagiarism-Detector.uml#_0F-LEXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BpQKRnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BpQKR3CBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_BpQKSHCBEeytz63YvCMaqA" name="hashingMethod">
+        <modelElement href="Plagiarism-Detector.uml#_0F-LEnCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BpQKSXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BpQKSnCBEeytz63YvCMaqA" name="HashingMethod">
+          <modelElement href="Plagiarism-Detector.uml#_0BdegHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BpQKS3CBEeytz63YvCMaqA" name="parseDocument">
+      <modelElement href="Plagiarism-Detector.uml#_0GuZAHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BpQKTHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0GvAEHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BpQKTXCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0GvnIHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BpQKTnCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BpQKT3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BpQKUHCBEeytz63YvCMaqA" name="title">
+        <modelElement href="Plagiarism-Detector.uml#_0GuZAXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BpQKUXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BpQKUnCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_BpQKU3CBEeytz63YvCMaqA" name="br">
+        <modelElement href="Plagiarism-Detector.uml#_0GuZAnCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BpQKVHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BpQKVXCBEeytz63YvCMaqA" name="BufferedReader">
+          <modelElement href="Plagiarism-Detector.uml#_0FRngHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_BmS8gHCBEeytz63YvCMaqA" comments="_BlGpsHCBEeytz63YvCMaqA" targetConnectionVisual="_Blo1MHCBEeytz63YvCMaqA" name="SimilarityAlgo" associationsIn="_BmOrEHCBEeytz63YvCMaqA" subclassedBy="_BmIkcHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0CG-wHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BmS8gXCBEeytz63YvCMaqA" position="1925.0,31.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BmS8gnCBEeytz63YvCMaqA" label="+"/>
+    <operations xmi:id="_BmS8g3CBEeytz63YvCMaqA" name="compareSimilarity">
+      <modelElement href="Plagiarism-Detector.uml#_0GjZ4HCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BmS8hHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BmS8hXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BmS8hnCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0GjZ43CAEeytz63YvCMaqA"/>
+        <type xmi:id="_BmS8h3CBEeytz63YvCMaqA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BmS8iHCBEeytz63YvCMaqA" name="a">
+        <modelElement href="Plagiarism-Detector.uml#_0GjZ4XCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BmS8iXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BmS8inCBEeytz63YvCMaqA" name="Set">
+          <modelElement href="Plagiarism-Detector.uml#_0FN9IHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_BmS8i3CBEeytz63YvCMaqA" name="b">
+        <modelElement href="Plagiarism-Detector.uml#_0GjZ4nCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BmS8jHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BmS8jXCBEeytz63YvCMaqA" name="Set">
+          <modelElement href="Plagiarism-Detector.uml#_0FN9IHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_BTZOoHCBEeytz63YvCMaqA" comments="_BSrc8HCBEeytz63YvCMaqA" targetConnectionVisual="_BTG6wHCBEeytz63YvCMaqA" name="Handleator" subclassedBy="_BTJ-EHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0BSfYHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BTZOoXCBEeytz63YvCMaqA" position="1015.0,123.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BTZOonCBEeytz63YvCMaqA" label="+"/>
+    <operations xmi:id="_BTZOo3CBEeytz63YvCMaqA" comments="_BTLMMHCBEeytz63YvCMaqA" targetConnectionVisual="_BTLMMXCBEeytz63YvCMaqA" name="readDocument">
+      <modelElement href="Plagiarism-Detector.uml#_0BTtgHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BTZOpHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BTZOpXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BTZOpnCBEeytz63YvCMaqA" name="filePath">
+        <modelElement href="Plagiarism-Detector.uml#_0BTtgXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BTZOp3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BTZOqHCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BTZOqXCBEeytz63YvCMaqA" comments="_BTLzQHCBEeytz63YvCMaqA" targetConnectionVisual="_BTLzQXCBEeytz63YvCMaqA" name="displayDocument">
+      <modelElement href="Plagiarism-Detector.uml#_0BUUkHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BTZOqnCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BTZOq3CBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BTZOrHCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0BUUkXCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BTZOrXCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BTZOrnCBEeytz63YvCMaqA" comments="_BTLzQnCBEeytz63YvCMaqA" targetConnectionVisual="_BTLzQ3CBEeytz63YvCMaqA" name="addDocument">
+      <modelElement href="Plagiarism-Detector.uml#_0BU7oHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BTZOr3CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BTZOsHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_BTZOsXCBEeytz63YvCMaqA" comments="_BTMaUHCBEeytz63YvCMaqA" targetConnectionVisual="_BTMaUXCBEeytz63YvCMaqA" name="compareSimilarity">
+      <modelElement href="Plagiarism-Detector.uml#_0BU7oXCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BTZOsnCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BTZOs3CBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BTZOtHCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0BU7onCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BTZOtXCBEeytz63YvCMaqA" name="PlagiarismResult">
+          <modelElement href="Plagiarism-Detector.uml#_0CAREHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BTZOtnCBEeytz63YvCMaqA" comments="_BTNBYHCBEeytz63YvCMaqA" targetConnectionVisual="_BTNBYXCBEeytz63YvCMaqA" name="checkForFullPlagiarism">
+      <modelElement href="Plagiarism-Detector.uml#_0BVisHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BTZOt3CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BTZOuHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BTZOuXCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0BVisXCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BTZOunCBEeytz63YvCMaqA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BTZOu3CBEeytz63YvCMaqA" comments="_BTNBYnCBEeytz63YvCMaqA" targetConnectionVisual="_BTNBY3CBEeytz63YvCMaqA" name="processDocument">
+      <modelElement href="Plagiarism-Detector.uml#_0FUq0HCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BTZOvHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BTZOvXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BTZOvnCBEeytz63YvCMaqA" name="hashingMethod">
+        <modelElement href="Plagiarism-Detector.uml#_0FUq0XCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BTZOv3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BTZOwHCBEeytz63YvCMaqA" name="HashingMethod">
+          <modelElement href="Plagiarism-Detector.uml#_0BdegHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BTZOwXCBEeytz63YvCMaqA" comments="_BTNocHCBEeytz63YvCMaqA" targetConnectionVisual="_BTOPgHCBEeytz63YvCMaqA" name="process">
+      <modelElement href="Plagiarism-Detector.uml#_0FUq0nCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BTZOwnCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BTZOw3CBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BTZOxHCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0FVR4nCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BTZOxXCBEeytz63YvCMaqA" name="PlagiarismResult">
+          <modelElement href="Plagiarism-Detector.uml#_0CAREHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BTZOxnCBEeytz63YvCMaqA" name="fileName">
+        <modelElement href="Plagiarism-Detector.uml#_0FVR4HCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BTZOx3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BTZOyHCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_BTZOyXCBEeytz63YvCMaqA" name="hashingMethod">
+        <modelElement href="Plagiarism-Detector.uml#_0FVR4XCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BTZOynCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BTZOy3CBEeytz63YvCMaqA" name="HashingMethod">
+          <modelElement href="Plagiarism-Detector.uml#_0BdegHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BTZOzHCBEeytz63YvCMaqA" comments="_BTO2kHCBEeytz63YvCMaqA" targetConnectionVisual="_BTO2kXCBEeytz63YvCMaqA" name="parseDocument">
+      <modelElement href="Plagiarism-Detector.uml#_0GPQ0HCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BTZOzXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BTZOznCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BTZOz3CBEeytz63YvCMaqA" name="title">
+        <modelElement href="Plagiarism-Detector.uml#_0GPQ0XCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BTZO0HCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BTZO0XCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_BTZO0nCBEeytz63YvCMaqA" name="br">
+        <modelElement href="Plagiarism-Detector.uml#_0GPQ0nCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BTZO03CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BTZO1HCBEeytz63YvCMaqA" name="BufferedReader">
+          <modelElement href="Plagiarism-Detector.uml#_0FRngHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BgvHEHCBEeytz63YvCMaqA" comments="_Bfph8HCBEeytz63YvCMaqA" targetConnectionVisual="_BgX6sHCBEeytz63YvCMaqA" name="PlagiarismResult" associationsIn="_BOSFIHCBEeytz63YvCMaqA _BTRS0HCBEeytz63YvCMaqA _BgsDwHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0CAREHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BgvHEXCBEeytz63YvCMaqA" position="520.0,985.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BgvHEnCBEeytz63YvCMaqA" label="+"/>
+    <attributes xmi:id="_BgvHE3CBEeytz63YvCMaqA" name="title">
+      <modelElement href="Plagiarism-Detector.uml#_0HCiEXCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BgvHFHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BgvHFXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BgvHFnCBEeytz63YvCMaqA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BgvHF3CBEeytz63YvCMaqA" name="result">
+      <modelElement href="Plagiarism-Detector.uml#_0HDJIHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BgvHGHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BgvHGXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BgvHGnCBEeytz63YvCMaqA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_BgvHG3CBEeytz63YvCMaqA" name="PlagiarismResult">
+      <modelElement href="Plagiarism-Detector.uml#_0CA4IHCAEeytz63YvCMaqA"/>
+      <keywords xmi:id="_BgvHHHCBEeytz63YvCMaqA" keyword="create"/>
+      <stereotypes xmi:id="_BgvHHXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0CBfMHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BgvHHnCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BgvHH3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BgvHIHCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0CBfMXCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BgvHIXCBEeytz63YvCMaqA" name="PlagiarismResult">
+          <modelElement href="Plagiarism-Detector.uml#_0CAREHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BgvHInCBEeytz63YvCMaqA" name="PlagiarismResult">
+      <modelElement href="Plagiarism-Detector.uml#_0CCGQHCAEeytz63YvCMaqA"/>
+      <keywords xmi:id="_BgvHI3CBEeytz63YvCMaqA" keyword="create"/>
+      <visibility xmi:id="_BgvHJHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BgvHJXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BgvHJnCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0CCGRXCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BgvHJ3CBEeytz63YvCMaqA" name="PlagiarismResult">
+          <modelElement href="Plagiarism-Detector.uml#_0CAREHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BgvHKHCBEeytz63YvCMaqA" name="title">
+        <modelElement href="Plagiarism-Detector.uml#_0CCGQXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BgvHKXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BgvHKnCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_BgvHK3CBEeytz63YvCMaqA" name="result">
+        <modelElement href="Plagiarism-Detector.uml#_0CCGQnCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BgvHLHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BgvHLXCBEeytz63YvCMaqA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Boq7EHCBEeytz63YvCMaqA" comments="_BnM7cHCBEeytz63YvCMaqA" targetConnectionVisual="_Bn-XgHCBEeytz63YvCMaqA" name="SimilarityCalculator" associationsIn="_BofU4HCBEeytz63YvCMaqA" associationsOut="_BgsDwHCBEeytz63YvCMaqA _BmOrEHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0CIz8HCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_Boq7EXCBEeytz63YvCMaqA" position="1395.0,934.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Boq7EnCBEeytz63YvCMaqA" label="+"/>
+    <attributes xmi:id="_Boq7E3CBEeytz63YvCMaqA" name="results">
+      <modelElement href="Plagiarism-Detector.uml#_0HE-UXCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_Boq7FHCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_Boq7FXCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_Boq7FnCBEeytz63YvCMaqA" name="PlagiarismResult">
+        <modelElement href="Plagiarism-Detector.uml#_0CAREHCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Boq7F3CBEeytz63YvCMaqA" name="similarityAlgo">
+      <modelElement href="Plagiarism-Detector.uml#_0HFlYXCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_Boq7GHCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_Boq7GXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_Boq7GnCBEeytz63YvCMaqA" name="SimilarityAlgo">
+        <modelElement href="Plagiarism-Detector.uml#_0CG-wHCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Boq7G3CBEeytz63YvCMaqA" comments="_BomCkHCBEeytz63YvCMaqA" targetConnectionVisual="_BompoHCBEeytz63YvCMaqA" name="addTitleAndResult">
+      <modelElement href="Plagiarism-Detector.uml#_0CKCEHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_Boq7HHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_Boq7HXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Boq7HnCBEeytz63YvCMaqA" name="title">
+        <modelElement href="Plagiarism-Detector.uml#_0CKCEXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_Boq7H3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_Boq7IHCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Boq7IXCBEeytz63YvCMaqA" name="jaccardIndex">
+        <modelElement href="Plagiarism-Detector.uml#_0CKCEnCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_Boq7InCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_Boq7I3CBEeytz63YvCMaqA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Boq7JHCBEeytz63YvCMaqA" comments="_BopF4HCBEeytz63YvCMaqA" targetConnectionVisual="_BopF4XCBEeytz63YvCMaqA" name="getResults">
+      <modelElement href="Plagiarism-Detector.uml#_0Gl2IHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_Boq7JXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_Boq7JnCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Boq7J3CBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0Gl2JHCAEeytz63YvCMaqA"/>
+        <type xmi:id="_Boq7KHCBEeytz63YvCMaqA" name="PlagiarismResult">
+          <modelElement href="Plagiarism-Detector.uml#_0CAREHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Boq7KXCBEeytz63YvCMaqA" name="documents">
+        <modelElement href="Plagiarism-Detector.uml#_0Gl2IXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_Boq7KnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_Boq7K3CBEeytz63YvCMaqA" name="List">
+          <modelElement href="Plagiarism-Detector.uml#_0FTcsXCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Boq7LHCBEeytz63YvCMaqA" name="a">
+        <modelElement href="Plagiarism-Detector.uml#_0Gl2InCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_Boq7LXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_Boq7LnCBEeytz63YvCMaqA" name="Set">
+          <modelElement href="Plagiarism-Detector.uml#_0FN9IHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Boq7L3CBEeytz63YvCMaqA" name="sa">
+        <modelElement href="Plagiarism-Detector.uml#_0Gl2I3CAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_Boq7MHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_Boq7MXCBEeytz63YvCMaqA" name="SimilarityAlgo">
+          <modelElement href="Plagiarism-Detector.uml#_0CG-wHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BWqlEHCBEeytz63YvCMaqA" comments="_BVijsHCBEeytz63YvCMaqA" targetConnectionVisual="_BWVN4HCBEeytz63YvCMaqA" name="Hasher" associationsIn="_BWm6sHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0BabMHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BWqlEXCBEeytz63YvCMaqA" position="243.0,836.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BWqlEnCBEeytz63YvCMaqA" label="+"/>
+    <attributes xmi:id="_BWqlE3CBEeytz63YvCMaqA" defaultValue="new ArrayList&lt;String>()" name="shingles">
+      <modelElement href="Plagiarism-Detector.uml#_0G5_MHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BWqlFHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0G6mQHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BWqlFXCBEeytz63YvCMaqA" label="~"/>
+      <cardinality xmi:id="_BWqlFnCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_BWqlF3CBEeytz63YvCMaqA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_BWqlGHCBEeytz63YvCMaqA" name="Hasher">
+      <modelElement href="Plagiarism-Detector.uml#_0BbCQHCAEeytz63YvCMaqA"/>
+      <keywords xmi:id="_BWqlGXCBEeytz63YvCMaqA" keyword="create"/>
+      <stereotypes xmi:id="_BWqlGnCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0BbpUHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BWqlG3CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BWqlHHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BWqlHXCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0BbpUXCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BWqlHnCBEeytz63YvCMaqA" name="Hasher">
+          <modelElement href="Plagiarism-Detector.uml#_0BabMHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BWqlH3CBEeytz63YvCMaqA" name="hash">
+      <modelElement href="Plagiarism-Detector.uml#_0FZjUHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BWqlIHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BWqlIXCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BWqlInCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0FZjUnCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BWqlI3CBEeytz63YvCMaqA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BWqlJHCBEeytz63YvCMaqA" name="ht">
+        <modelElement href="Plagiarism-Detector.uml#_0FZjUXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BWqlJXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BWqlJnCBEeytz63YvCMaqA" name="HashingType">
+          <modelElement href="Plagiarism-Detector.uml#_0BeFknCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BWqlJ3CBEeytz63YvCMaqA" name="Hasher">
+      <modelElement href="Plagiarism-Detector.uml#_0GUJUHCAEeytz63YvCMaqA"/>
+      <keywords xmi:id="_BWqlKHCBEeytz63YvCMaqA" keyword="create"/>
+      <visibility xmi:id="_BWqlKXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BWqlKnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BWqlK3CBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0GUJVHCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BWqlLHCBEeytz63YvCMaqA" name="Hasher">
+          <modelElement href="Plagiarism-Detector.uml#_0BabMHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BWqlLXCBEeytz63YvCMaqA" name="shingles">
+        <modelElement href="Plagiarism-Detector.uml#_0GUJUXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BWqlLnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BWqlL3CBEeytz63YvCMaqA" name="List">
+          <modelElement href="Plagiarism-Detector.uml#_0FTcsXCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BSM703CBEeytz63YvCMaqA" comments="_BRtzoHCBEeytz63YvCMaqA" targetConnectionVisual="_BR-5YHCBEeytz63YvCMaqA" name="Document" associationsIn="_BQ57UHCBEeytz63YvCMaqA _BSIDUHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0BON8HCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BSNi4HCBEeytz63YvCMaqA" position="421.0,585.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BSNi4XCBEeytz63YvCMaqA" label="+"/>
+    <attributes xmi:id="_BSNi4nCBEeytz63YvCMaqA" name="title">
+      <modelElement href="Plagiarism-Detector.uml#_0G3i8HCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BSNi43CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BSNi5HCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BSNi5XCBEeytz63YvCMaqA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BSNi5nCBEeytz63YvCMaqA" defaultValue="new TreeSet&lt;Integer>()" name="hashes">
+      <modelElement href="Plagiarism-Detector.uml#_0G3i8XCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BSNi53CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BSNi6HCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_BSNi6XCBEeytz63YvCMaqA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_BSNi6nCBEeytz63YvCMaqA" name="Document">
+      <modelElement href="Plagiarism-Detector.uml#_0BO1AHCAEeytz63YvCMaqA"/>
+      <keywords xmi:id="_BSNi63CBEeytz63YvCMaqA" keyword="create"/>
+      <stereotypes xmi:id="_BSNi7HCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0BPcEHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BSNi7XCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BSNi7nCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BSNi73CBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0BPcEXCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BSNi8HCBEeytz63YvCMaqA" name="Document">
+          <modelElement href="Plagiarism-Detector.uml#_0BON8HCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BSNi8XCBEeytz63YvCMaqA" comments="_BSJRcHCBEeytz63YvCMaqA" targetConnectionVisual="_BSJRcXCBEeytz63YvCMaqA" name="setTitle">
+      <modelElement href="Plagiarism-Detector.uml#_0BQDIHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BSNi8nCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BSNi83CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BSNi9HCBEeytz63YvCMaqA" name="filePath">
+        <modelElement href="Plagiarism-Detector.uml#_0BQDIXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BSNi9XCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BSNi9nCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BSNi93CBEeytz63YvCMaqA" name="toString">
+      <modelElement href="Plagiarism-Detector.uml#_0BQqMHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BSNi-HCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0BQqMnCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BSNi-XCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0BRRQHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BSNi-nCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BSNi-3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BSNi_HCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0BQqMXCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BSNi_XCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BSNi_nCBEeytz63YvCMaqA" comments="_BSJ4gHCBEeytz63YvCMaqA" targetConnectionVisual="_BSKfkHCBEeytz63YvCMaqA" name="Document">
+      <modelElement href="Plagiarism-Detector.uml#_0GK_YHCAEeytz63YvCMaqA"/>
+      <keywords xmi:id="_BSNi_3CBEeytz63YvCMaqA" keyword="create"/>
+      <visibility xmi:id="_BSNjAHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BSNjAXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BSNjAnCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0GLmcnCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BSNjA3CBEeytz63YvCMaqA" name="Document">
+          <modelElement href="Plagiarism-Detector.uml#_0BON8HCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BSNjBHCBEeytz63YvCMaqA" name="title">
+        <modelElement href="Plagiarism-Detector.uml#_0GK_YXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BSNjBXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BSNjBnCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_BSNjB3CBEeytz63YvCMaqA" name="hashes">
+        <modelElement href="Plagiarism-Detector.uml#_0GK_YnCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BSNjCHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BSNjCXCBEeytz63YvCMaqA" name="Set">
+          <modelElement href="Plagiarism-Detector.uml#_0FN9IHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_BSNjCnCBEeytz63YvCMaqA" comments="_BSKfkXCBEeytz63YvCMaqA" targetConnectionVisual="_BSLGoHCBEeytz63YvCMaqA" name="setHashes">
+      <modelElement href="Plagiarism-Detector.uml#_0GNboHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BSNjC3CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BSNjDHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BSNjDXCBEeytz63YvCMaqA" name="hashes">
+        <modelElement href="Plagiarism-Detector.uml#_0GNboXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BSNjDnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BSNjD3CBEeytz63YvCMaqA" name="Set">
+          <modelElement href="Plagiarism-Detector.uml#_0FN9IHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BQ7JeXCBEeytz63YvCMaqA" comments="_BQtuEHCBEeytz63YvCMaqA" targetConnectionVisual="_BQzNoHCBEeytz63YvCMaqA" name="Database" associationsIn="_BQiu8HCBEeytz63YvCMaqA _BQz0sHCBEeytz63YvCMaqA" associationsOut="_BQiu8HCBEeytz63YvCMaqA _BQ57UHCBEeytz63YvCMaqA _BQ7JcHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0BIuYHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BQ7JenCBEeytz63YvCMaqA" position="443.0,339.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BQ7Je3CBEeytz63YvCMaqA" label="+"/>
+    <attributes xmi:id="_BQ7JfHCBEeytz63YvCMaqA" defaultValue="new ArrayList&lt;>()" name="root">
+      <modelElement href="Plagiarism-Detector.uml#_0G0foHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BQ7JfXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0G1GsHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BQ7JfnCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BQ7Jf3CBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_BQ7JgHCBEeytz63YvCMaqA" name="Document">
+        <modelElement href="Plagiarism-Detector.uml#_0BON8HCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BQ7JgXCBEeytz63YvCMaqA" defaultValue="null" name="db">
+      <modelElement href="Plagiarism-Detector.uml#_0G1GsXCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BQ7JgnCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0G1twHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BQ7Jg3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BQ7JhHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BQ7JhXCBEeytz63YvCMaqA" name="EmbeddedStorageManager">
+        <modelElement href="Plagiarism-Detector.uml#_0FIdkXCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BQ7JhnCBEeytz63YvCMaqA" defaultValue="null" name="instance" staticAttribute="true">
+      <modelElement href="Plagiarism-Detector.uml#_0G1twXCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BQ7Jh3CBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0G2U0HCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BQ7JiHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BQ7JiXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BQ7JinCBEeytz63YvCMaqA" name="Database">
+        <modelElement href="Plagiarism-Detector.uml#_0BIuYHCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_BQ7Ji3CBEeytz63YvCMaqA" name="Database">
+      <modelElement href="Plagiarism-Detector.uml#_0BKjkXCAEeytz63YvCMaqA"/>
+      <keywords xmi:id="_BQ7JjHCBEeytz63YvCMaqA" keyword="create"/>
+      <stereotypes xmi:id="_BQ7wgHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0BLKonCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BQ7wgXCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BQ7wgnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BQ7wg3CBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0BLKo3CAEeytz63YvCMaqA"/>
+        <type xmi:id="_BQ7whHCBEeytz63YvCMaqA" name="Database">
+          <modelElement href="Plagiarism-Detector.uml#_0BIuYHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BQ7whXCBEeytz63YvCMaqA" comments="_BQ1C0HCBEeytz63YvCMaqA" targetConnectionVisual="_BQ1C0XCBEeytz63YvCMaqA" name="query">
+      <modelElement href="Plagiarism-Detector.uml#_0BLxsHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BQ7whnCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BQ7wh3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_BQ7wiHCBEeytz63YvCMaqA" comments="_BQ1p4HCBEeytz63YvCMaqA" targetConnectionVisual="_BQ1p4XCBEeytz63YvCMaqA" name="getAllDocuments">
+      <modelElement href="Plagiarism-Detector.uml#_0BLxsXCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BQ7wiXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BQ7winCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BQ7wi3CBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0BLxsnCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BQ7wjHCBEeytz63YvCMaqA" name="Document">
+          <modelElement href="Plagiarism-Detector.uml#_0BON8HCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BQ7wjXCBEeytz63YvCMaqA" comments="_BQ2Q8HCBEeytz63YvCMaqA" targetConnectionVisual="_BQ2Q8XCBEeytz63YvCMaqA" name="addDocument">
+      <modelElement href="Plagiarism-Detector.uml#_0FKSwHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BQ7wjnCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BQ7wj3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BQ7wkHCBEeytz63YvCMaqA" name="d">
+        <modelElement href="Plagiarism-Detector.uml#_0FKSwXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BQ7wkXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BQ7wknCBEeytz63YvCMaqA" name="Document">
+          <modelElement href="Plagiarism-Detector.uml#_0BON8HCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BOTTQHCBEeytz63YvCMaqA" name="Controller" associationsOut="_BOKJUHCBEeytz63YvCMaqA _BOLXcHCBEeytz63YvCMaqA _BOMlkHCBEeytz63YvCMaqA _BONMoHCBEeytz63YvCMaqA _BOOawHCBEeytz63YvCMaqA _BOPB0HCBEeytz63YvCMaqA _BOQP8HCBEeytz63YvCMaqA _BOQ3AHCBEeytz63YvCMaqA _BOSFIHCBEeytz63YvCMaqA _BOSsMHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0CNFYHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BOTTQXCBEeytz63YvCMaqA" position="1075.0,1038.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BOTTQnCBEeytz63YvCMaqA" label="+"/>
+    <attributes xmi:id="_BOTTQ3CBEeytz63YvCMaqA" name="container">
+      <modelElement href="Plagiarism-Detector.uml#_0HGMcHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BOTTRHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HGzgHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BOTTRXCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0HGzgXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BOTTRnCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOTTR3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BOTTSHCBEeytz63YvCMaqA" name="VBox">
+        <modelElement href="Plagiarism-Detector.uml#_0F0aEXCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BOTTSXCBEeytz63YvCMaqA" name="chartArea">
+      <modelElement href="Plagiarism-Detector.uml#_0HGzg3CAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BOTTSnCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HHakHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BOTTS3CBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0HHakXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BOTTTHCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOTTTXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BOTTTnCBEeytz63YvCMaqA" name="VBox">
+        <modelElement href="Plagiarism-Detector.uml#_0F0aEXCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BOTTT3CBEeytz63YvCMaqA" name="txtFile">
+      <modelElement href="Plagiarism-Detector.uml#_0HHak3CAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BOTTUHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HIBoHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BOTTUXCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0HIBoXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BOTTUnCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOTTU3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BOTTVHCBEeytz63YvCMaqA" name="TextField">
+        <modelElement href="Plagiarism-Detector.uml#_0FzL8XCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BOTTVXCBEeytz63YvCMaqA" name="btnClose">
+      <modelElement href="Plagiarism-Detector.uml#_0HIosHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BOTTVnCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HIosXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BOTTV3CBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0HJPwHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BOTTWHCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOTTWXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BOTTWnCBEeytz63YvCMaqA" name="Button">
+        <modelElement href="Plagiarism-Detector.uml#_0Fx90XCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BOTTW3CBEeytz63YvCMaqA" name="btnOpen">
+      <modelElement href="Plagiarism-Detector.uml#_0HJPwnCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BOTTXHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HJPw3CAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BOTTXXCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0HJ20HCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BOTTXnCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOTTX3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BOTTYHCBEeytz63YvCMaqA" name="Button">
+        <modelElement href="Plagiarism-Detector.uml#_0Fx90XCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BOTTYXCBEeytz63YvCMaqA" name="btnCompare">
+      <modelElement href="Plagiarism-Detector.uml#_0HJ20nCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BOTTYnCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HJ203CAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BOTTY3CBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0HKd4HCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BOTTZHCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOTTZXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BOTTZnCBEeytz63YvCMaqA" name="Button">
+        <modelElement href="Plagiarism-Detector.uml#_0Fx90XCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BOTTZ3CBEeytz63YvCMaqA" name="hashcode">
+      <modelElement href="Plagiarism-Detector.uml#_0HKd4nCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BOTTaHCBEeytz63YvCMaqA" name="MultiDeclaration">
+        <modelElement href="Plagiarism-Detector.uml#_0HKd43CAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BOTTaXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HLE8HCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BOTTanCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0HLsAHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BOTTa3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOTTbHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BOTTbXCBEeytz63YvCMaqA" name="RadioButton">
+        <modelElement href="Plagiarism-Detector.uml#_0Fyk4XCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BOTTbnCBEeytz63YvCMaqA" defaultValue="new ServiceHandler()" name="sh">
+      <modelElement href="Plagiarism-Detector.uml#_0HLsAnCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BOTTb3CBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HMTEHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BOTTcHCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOTTcXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BOTTcnCBEeytz63YvCMaqA" name="ServiceHandler">
+        <modelElement href="Plagiarism-Detector.uml#_0CW2YHCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BOTTc3CBEeytz63YvCMaqA" defaultValue="new ArrayList&lt;>()" name="results">
+      <modelElement href="Plagiarism-Detector.uml#_0HMTEXCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BOTTdHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HM6IHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BOTTdXCBEeytz63YvCMaqA" label="~"/>
+      <cardinality xmi:id="_BOTTdnCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_BOTTd3CBEeytz63YvCMaqA" name="PlagiarismResult">
+        <modelElement href="Plagiarism-Detector.uml#_0CAREHCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BOTTeHCBEeytz63YvCMaqA" name="hashingMethod">
+      <modelElement href="Plagiarism-Detector.uml#_0HM6IXCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BOTTeXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HNhMHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BOTTenCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOTTe3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BOTTfHCBEeytz63YvCMaqA" name="HashingMethod">
+        <modelElement href="Plagiarism-Detector.uml#_0BdegHCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BOTTfXCBEeytz63YvCMaqA" name="minhash">
+      <modelElement href="Plagiarism-Detector.uml#_0HkGgnCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BOTTfnCBEeytz63YvCMaqA" name="MultiDeclaration">
+        <modelElement href="Plagiarism-Detector.uml#_0HkGg3CAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BOTTf3CBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HktkHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BOTTgHCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BOTTgXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BOTTgnCBEeytz63YvCMaqA" name="RadioButton">
+        <modelElement href="Plagiarism-Detector.uml#_0Fyk4XCAEeytz63YvCMaqA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_BOTTg3CBEeytz63YvCMaqA" comments="_BN4cgHCBEeytz63YvCMaqA" targetConnectionVisual="_BOA_YHCBEeytz63YvCMaqA" name="getHasher">
+      <modelElement href="Plagiarism-Detector.uml#_0CO6kHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BOTThHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BOTThXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_BOTThnCBEeytz63YvCMaqA" name="initialize">
+      <modelElement href="Plagiarism-Detector.uml#_0CPhoHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BOTTh3CBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0CPhoXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BOTTiHCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0CQIsHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BOTTiXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BOTTinCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Beg5gHCBEeytz63YvCMaqA" comments="_Bd-G8HCBEeytz63YvCMaqA" targetConnectionVisual="_Bd-G8XCBEeytz63YvCMaqA" name="Parserator" associationsIn="_Bd-uAHCBEeytz63YvCMaqA" subclassedBy="_Bd51gHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0B_C8HCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_Beg5gXCBEeytz63YvCMaqA" position="1665.0,606.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BehgkHCBEeytz63YvCMaqA" label="+"/>
+    <operations xmi:id="_BehgkXCBEeytz63YvCMaqA" name="parse">
+      <modelElement href="Plagiarism-Detector.uml#_0GehYnCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BehgknCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_Behgk3CBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BehglHCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0GfIcXCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BehglXCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BehglnCBEeytz63YvCMaqA" name="br">
+        <modelElement href="Plagiarism-Detector.uml#_0GfIcHCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_Behgl3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BehgmHCBEeytz63YvCMaqA" name="BufferedReader">
+          <modelElement href="Plagiarism-Detector.uml#_0FRngHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Bd_8IXCBEeytz63YvCMaqA" comments="_BdC54HCBEeytz63YvCMaqA" targetConnectionVisual="_BdeXsHCBEeytz63YvCMaqA" name="Parser" generalizations="_Bd51gHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0B7YkHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_Bd_8InCBEeytz63YvCMaqA" position="1648.0,747.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Bd_8I3CBEeytz63YvCMaqA" label="+"/>
+    <attributes xmi:id="_Bd_8JHCBEeytz63YvCMaqA" name="words">
+      <modelElement href="Plagiarism-Detector.uml#_0HB7AHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_Bd_8JXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HCiEHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_Bd_8JnCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_Bd_8J3CBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_Bd_8KHCBEeytz63YvCMaqA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Bd_8KXCBEeytz63YvCMaqA" name="Parser">
+      <modelElement href="Plagiarism-Detector.uml#_0B8msHCAEeytz63YvCMaqA"/>
+      <keywords xmi:id="_Bd_8KnCBEeytz63YvCMaqA" keyword="create"/>
+      <stereotypes xmi:id="_Bd_8K3CBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0B8ms3CAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_Bd_8LHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_Bd_8LXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Bd_8LnCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0B8mtHCAEeytz63YvCMaqA"/>
+        <type xmi:id="_Bd_8L3CBEeytz63YvCMaqA" name="Parser">
+          <modelElement href="Plagiarism-Detector.uml#_0B7YkHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Bd_8MHCBEeytz63YvCMaqA" name="parse">
+      <modelElement href="Plagiarism-Detector.uml#_0GdTQHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_Bd_8MXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0Gd6UXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Bd_8MnCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0GehYHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_Bd_8M3CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_Bd_8NHCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Bd_8NXCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0GdTQnCAEeytz63YvCMaqA"/>
+        <type xmi:id="_Bd_8NnCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Bd_8N3CBEeytz63YvCMaqA" name="br">
+        <modelElement href="Plagiarism-Detector.uml#_0GdTQXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_Bd_8OHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bd_8OXCBEeytz63YvCMaqA" name="BufferedReader">
+          <modelElement href="Plagiarism-Detector.uml#_0FRngHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_BiEj0HCBEeytz63YvCMaqA" comments="_BhQEcHCBEeytz63YvCMaqA" targetConnectionVisual="_BhulkHCBEeytz63YvCMaqA" name="Shingleator" associationsIn="_Bh_EQHCBEeytz63YvCMaqA" subclassedBy="_BizjoHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0CDUYHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BiEj0XCBEeytz63YvCMaqA" position="1680.0,282.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BiEj0nCBEeytz63YvCMaqA" label="+"/>
+    <operations xmi:id="_BiEj03CBEeytz63YvCMaqA" name="getShingles">
+      <modelElement href="Plagiarism-Detector.uml#_0GfvgHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BiEj1HCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BiEj1XCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BiEj1nCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0GfvgnCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BiEj13CBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BiEj2HCBEeytz63YvCMaqA" name="words">
+        <modelElement href="Plagiarism-Detector.uml#_0GfvgXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BiEj2XCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BiEj2nCBEeytz63YvCMaqA" name="List">
+          <modelElement href="Plagiarism-Detector.uml#_0FTcsXCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Bj698HCBEeytz63YvCMaqA" comments="_BjgHMHCBEeytz63YvCMaqA" targetConnectionVisual="_Bj2FcHCBEeytz63YvCMaqA" name="Shingler" generalizations="_BizjoHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0CD7cHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_Bj698XCBEeytz63YvCMaqA" position="1662.0,411.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Bj698nCBEeytz63YvCMaqA" label="+"/>
+    <attributes xmi:id="_Bj6983CBEeytz63YvCMaqA" defaultValue="3" name="SHINGLE_SIZE">
+      <modelElement href="Plagiarism-Detector.uml#_0HDwMHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_Bj699HCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HEXQHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_Bj699XCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_Bj699nCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_Bj6993CBEeytz63YvCMaqA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Bj69-HCBEeytz63YvCMaqA" name="shingles">
+      <modelElement href="Plagiarism-Detector.uml#_0HEXQXCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_Bj69-XCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HE-UHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_Bj69-nCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_Bj69-3CBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_Bj69_HCBEeytz63YvCMaqA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Bj69_XCBEeytz63YvCMaqA" name="Shingler">
+      <modelElement href="Plagiarism-Detector.uml#_0CEigHCAEeytz63YvCMaqA"/>
+      <keywords xmi:id="_Bj69_nCBEeytz63YvCMaqA" keyword="create"/>
+      <stereotypes xmi:id="_Bj69_3CBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0CFJknCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_Bj6-AHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_Bj6-AXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Bj6-AnCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0CFJk3CAEeytz63YvCMaqA"/>
+        <type xmi:id="_Bj6-A3CBEeytz63YvCMaqA" name="Shingler">
+          <modelElement href="Plagiarism-Detector.uml#_0CD7cHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Bj6-BHCBEeytz63YvCMaqA" name="getShingles">
+      <modelElement href="Plagiarism-Detector.uml#_0Gg9oHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_Bj6-BXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0GhksnCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Bj6-BnCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0Giy0HCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_Bj6-B3CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_Bj6-CHCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Bj6-CXCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0GhksHCAEeytz63YvCMaqA"/>
+        <type xmi:id="_Bj6-CnCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Bj6-C3CBEeytz63YvCMaqA" name="words">
+        <modelElement href="Plagiarism-Detector.uml#_0Gg9oXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_Bj6-DHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_Bj6-DXCBEeytz63YvCMaqA" name="List">
+          <modelElement href="Plagiarism-Detector.uml#_0FTcsXCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Ba1TYHCBEeytz63YvCMaqA" comments="_BZw8YHCBEeytz63YvCMaqA" targetConnectionVisual="_BaWyQHCBEeytz63YvCMaqA" name="Jaccard" generalizations="_BmIkcHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0BfTsHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_Ba1TYXCBEeytz63YvCMaqA" position="1567.0,115.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Ba1TYnCBEeytz63YvCMaqA" label="+"/>
+    <attributes xmi:id="_Ba1TY3CBEeytz63YvCMaqA" name="n">
+      <modelElement href="Plagiarism-Detector.uml#_0G6mQXCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_Ba1TZHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0G9pkHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_Ba1TZXCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_Ba1TZnCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_Ba1TZ3CBEeytz63YvCMaqA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ba1TaHCBEeytz63YvCMaqA" name="intersectionCardinality">
+      <modelElement href="Plagiarism-Detector.uml#_0G9pkXCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_Ba1TaXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0G-QoHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_Ba1TanCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_Ba1Ta3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_Ba1TbHCBEeytz63YvCMaqA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ba1TbXCBEeytz63YvCMaqA" name="unionCardinality">
+      <modelElement href="Plagiarism-Detector.uml#_0G-QoXCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_Ba1TbnCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0G-3sHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_Ba1Tb3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_Ba1TcHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_Ba1TcXCBEeytz63YvCMaqA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Ba1TcnCBEeytz63YvCMaqA" name="Jaccard">
+      <modelElement href="Plagiarism-Detector.uml#_0Bf6wHCAEeytz63YvCMaqA"/>
+      <keywords xmi:id="_Ba1Tc3CBEeytz63YvCMaqA" keyword="create"/>
+      <stereotypes xmi:id="_Ba1TdHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0Bgh0HCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_Ba1TdXCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_Ba1TdnCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ba1Td3CBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0Bgh0XCAEeytz63YvCMaqA"/>
+        <type xmi:id="_Ba1TeHCBEeytz63YvCMaqA" name="Jaccard">
+          <modelElement href="Plagiarism-Detector.uml#_0BfTsHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Ba1TeXCBEeytz63YvCMaqA" name="compareSimilarity">
+      <modelElement href="Plagiarism-Detector.uml#_0GXzsHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_Ba1TenCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0GXztHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Ba1Te3CBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0GZo4XCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_Ba1TfHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_Ba1TfXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ba1TfnCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0GXzs3CAEeytz63YvCMaqA"/>
+        <type xmi:id="_Ba1Tf3CBEeytz63YvCMaqA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Ba1TgHCBEeytz63YvCMaqA" name="a">
+        <modelElement href="Plagiarism-Detector.uml#_0GXzsXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_Ba1TgXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_Ba1TgnCBEeytz63YvCMaqA" name="Set">
+          <modelElement href="Plagiarism-Detector.uml#_0FN9IHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Ba1Tg3CBEeytz63YvCMaqA" name="b">
+        <modelElement href="Plagiarism-Detector.uml#_0GXzsnCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_Ba1ThHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_Ba1ThXCBEeytz63YvCMaqA" name="Set">
+          <modelElement href="Plagiarism-Detector.uml#_0FN9IHCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_BZCjoHCBEeytz63YvCMaqA" comments="_BYOEQHCBEeytz63YvCMaqA" targetConnectionVisual="_BYw20HCBEeytz63YvCMaqA" name="HashingType" subclassedBy="_BZAucHCBEeytz63YvCMaqA _BbXe4HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0BeFknCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BZCjoXCBEeytz63YvCMaqA" position="2139.0,351.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BZCjonCBEeytz63YvCMaqA" label="+"/>
+    <operations xmi:id="_BZCjo3CBEeytz63YvCMaqA" name="hash">
+      <modelElement href="Plagiarism-Detector.uml#_0GVXcHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BZCjpHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BZCjpXCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BZCjpnCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0GV-gXCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BZCjp3CBEeytz63YvCMaqA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BZCjqHCBEeytz63YvCMaqA" name="shingles">
+        <modelElement href="Plagiarism-Detector.uml#_0GV-gHCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BZCjqXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BZCjqnCBEeytz63YvCMaqA" name="List">
+          <modelElement href="Plagiarism-Detector.uml#_0FTcsXCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BVI7EHCBEeytz63YvCMaqA" comments="_BUASoHCBEeytz63YvCMaqA" targetConnectionVisual="_BU0yAHCBEeytz63YvCMaqA" name="HashCoder" generalizations="_BZAucHCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0BYmAHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BVI7EXCBEeytz63YvCMaqA" position="2114.0,557.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BVI7EnCBEeytz63YvCMaqA" label="+"/>
+    <attributes xmi:id="_BVI7E3CBEeytz63YvCMaqA" defaultValue="new TreeSet&lt;Integer>()" name="hashedShingles">
+      <modelElement href="Plagiarism-Detector.uml#_0G4xEHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BVI7FHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0G5YIXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BVI7FXCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BVI7FnCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_BVI7F3CBEeytz63YvCMaqA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_BVI7GHCBEeytz63YvCMaqA" name="hash">
+      <modelElement href="Plagiarism-Detector.uml#_0GQe8HCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BVI7GXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0GRGAXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BVI7GnCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0GSUIHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BVI7G3CBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BVI7HHCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BVI7HXCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0GQe8nCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BVI7HnCBEeytz63YvCMaqA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BVI7H3CBEeytz63YvCMaqA" name="shingles">
+        <modelElement href="Plagiarism-Detector.uml#_0GQe8XCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BVI7IHCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BVI7IXCBEeytz63YvCMaqA" name="List">
+          <modelElement href="Plagiarism-Detector.uml#_0FTcsXCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BcHFwHCBEeytz63YvCMaqA" comments="_BbzjwHCBEeytz63YvCMaqA" targetConnectionVisual="_BcDbYHCBEeytz63YvCMaqA" name="MinHasher" generalizations="_BbXe4HCBEeytz63YvCMaqA">
+    <modelElement href="Plagiarism-Detector.uml#_0BjlIHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BcHFwXCBEeytz63YvCMaqA" position="2475.0,465.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BcHFwnCBEeytz63YvCMaqA" label="+"/>
+    <attributes xmi:id="_BcHFw3CBEeytz63YvCMaqA" name="hashedShingles">
+      <modelElement href="Plagiarism-Detector.uml#_0G_ewHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BcHFxHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HAF0HCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BcHFxXCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BcHFxnCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_BcHFx3CBEeytz63YvCMaqA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BcHFyHCBEeytz63YvCMaqA" name="hashes">
+      <modelElement href="Plagiarism-Detector.uml#_0HAF0XCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BcHFyXCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HAs4HCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BcHFynCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BcHFy3CBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_BcHFzHCBEeytz63YvCMaqA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BcHFzXCBEeytz63YvCMaqA" defaultValue="250" name="K">
+      <modelElement href="Plagiarism-Detector.uml#_0HAs4XCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BcHFznCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HBT8HCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BcHFz3CBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BcHF0HCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BcHF0XCBEeytz63YvCMaqA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_BcHF0nCBEeytz63YvCMaqA" defaultValue="40" name="SEED">
+      <modelElement href="Plagiarism-Detector.uml#_0HBT8XCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BcHF03CBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0HBT83CAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BcHF1HCBEeytz63YvCMaqA" label="-"/>
+      <cardinality xmi:id="_BcHF1XCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <type xmi:id="_BcHF1nCBEeytz63YvCMaqA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_BcHF13CBEeytz63YvCMaqA" name="MinHasher">
+      <modelElement href="Plagiarism-Detector.uml#_0B4VQHCAEeytz63YvCMaqA"/>
+      <keywords xmi:id="_BcHF2HCBEeytz63YvCMaqA" keyword="create"/>
+      <stereotypes xmi:id="_BcHF2XCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0B48UnCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BcHF2nCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BcHF23CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_BcHF3HCBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0B48U3CAEeytz63YvCMaqA"/>
+        <type xmi:id="_BcHF3XCBEeytz63YvCMaqA" name="MinHasher">
+          <modelElement href="Plagiarism-Detector.uml#_0BjlIHCAEeytz63YvCMaqA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_BcHF3nCBEeytz63YvCMaqA" name="hash">
+      <modelElement href="Plagiarism-Detector.uml#_0Ga3AHCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BcHF33CBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0GbeEHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BcHF4HCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0GcFIXCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BcHF4XCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BcHF4nCBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_BcHF43CBEeytz63YvCMaqA">
+        <modelElement href="Plagiarism-Detector.uml#_0Ga3AnCAEeytz63YvCMaqA"/>
+        <type xmi:id="_BcHF5HCBEeytz63YvCMaqA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_BcHF5XCBEeytz63YvCMaqA" name="shingles">
+        <modelElement href="Plagiarism-Detector.uml#_0Ga3AXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BcHF5nCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BcHF53CBEeytz63YvCMaqA" name="List">
+          <modelElement href="Plagiarism-Detector.uml#_0FTcsXCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BMMacHCBEeytz63YvCMaqA" name="AppWindow">
+    <modelElement href="Plagiarism-Detector.uml#_0CL3QHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BMMacXCBEeytz63YvCMaqA" position="1702.0,1096.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BMMacnCBEeytz63YvCMaqA" label="+"/>
+    <operations xmi:id="_BMMac3CBEeytz63YvCMaqA" name="start">
+      <modelElement href="Plagiarism-Detector.uml#_0GpggXCAEeytz63YvCMaqA"/>
+      <stereotypes xmi:id="_BMMadHCBEeytz63YvCMaqA" name="LegacyStyledElement">
+        <modelElement href="Plagiarism-Detector.uml#_0Gpgg3CAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_BMMadXCBEeytz63YvCMaqA" name="Annotations">
+        <modelElement href="Plagiarism-Detector.uml#_0GqHkHCAEeytz63YvCMaqA"/>
+      </stereotypes>
+      <visibility xmi:id="_BMMadnCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BMMad3CBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BMMaeHCBEeytz63YvCMaqA" name="stage">
+        <modelElement href="Plagiarism-Detector.uml#_0GpggnCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BMMaeXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+        <type xmi:id="_BMMaenCBEeytz63YvCMaqA" name="Stage">
+          <modelElement href="Plagiarism-Detector.uml#_0FqpEXCAEeytz63YvCMaqA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_BQUFcHCBEeytz63YvCMaqA" comments="_BP_8YHCBEeytz63YvCMaqA" targetConnectionVisual="_BQMwsHCBEeytz63YvCMaqA" name="Runner">
+    <modelElement href="Plagiarism-Detector.uml#_0CVBMHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BQUFcXCBEeytz63YvCMaqA" position="1701.0,1211.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_BQUFcnCBEeytz63YvCMaqA" label="+"/>
+    <operations xmi:id="_BQUFc3CBEeytz63YvCMaqA" name="main" staticOperation="true">
+      <modelElement href="Plagiarism-Detector.uml#_0CVoQHCAEeytz63YvCMaqA"/>
+      <visibility xmi:id="_BQUFdHCBEeytz63YvCMaqA" label="+"/>
+      <cardinality xmi:id="_BQUFdXCBEeytz63YvCMaqA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_BQUFdnCBEeytz63YvCMaqA" name="args">
+        <modelElement href="Plagiarism-Detector.uml#_0CVoQXCAEeytz63YvCMaqA"/>
+        <cardinality xmi:id="_BQUFd3CBEeytz63YvCMaqA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_BQUFeHCBEeytz63YvCMaqA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_BXK7YHCBEeytz63YvCMaqA" name="HashingMethod">
+    <modelElement href="Plagiarism-Detector.uml#_0BdegHCAEeytz63YvCMaqA"/>
+    <visualProperties xmi:id="_BXK7YXCBEeytz63YvCMaqA" position="800.0,213.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_BXK7YnCBEeytz63YvCMaqA" name="LegacyStyledElement">
+      <modelElement href="Plagiarism-Detector.uml#_0BdegXCAEeytz63YvCMaqA"/>
+    </stereotypes>
+    <visibility xmi:id="_BXK7Y3CBEeytz63YvCMaqA" label="+"/>
+    <literals xmi:id="_BXK7ZHCBEeytz63YvCMaqA" name="HASHCODE">
+      <modelElement href="Plagiarism-Detector.uml#_0BeFkHCAEeytz63YvCMaqA"/>
+    </literals>
+    <literals xmi:id="_BXK7ZXCBEeytz63YvCMaqA" name="MINHASH">
+      <modelElement href="Plagiarism-Detector.uml#_0BeFkXCAEeytz63YvCMaqA"/>
+    </literals>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

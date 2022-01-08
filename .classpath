@@ -6,15 +6,15 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/javafx-sdk-17.0.1/lib/javafx.base.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/javafx-sdk-17.0.1/lib/javafx.controls.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/javafx-sdk-17.0.1/lib/javafx.fxml.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/javafx-sdk-17.0.1/lib/javafx.graphics.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/MicroStream-4.0/lib/base.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/MicroStream-4.0/lib/persistence.binary.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/MicroStream-4.0/lib/persistence.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/MicroStream-4.0/lib/storage.embedded.configuration.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/MicroStream-4.0/lib/storage.embedded.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/MicroStream-4.0/lib/storage.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/fx/lib/javafx.base.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/fx/lib/javafx.controls.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/fx/lib/javafx.fxml.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/fx/lib/javafx.graphics.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/microstream/lib/base.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/microstream/lib/persistence.binary.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/microstream/lib/persistence.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/microstream/lib/storage.embedded.configuration.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/microstream/lib/storage.embedded.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Patrick/Desktop/College/OOP/Plagiarism-Detector/lib/microstream/lib/storage.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

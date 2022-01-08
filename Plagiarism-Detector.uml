@@ -1,0 +1,1569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_zknKcHCAEeytz63YvCMaqA" name="Plagiarism_Detector">
+    <eAnnotations xmi:id="_zqXNIHCAEeytz63YvCMaqA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_zqXNIXCAEeytz63YvCMaqA" source="codegen">
+        <details xmi:id="_zqX0MHCAEeytz63YvCMaqA" key="codegenDirectory" value="/Plagiarism-Detector/src"/>
+        <details xmi:id="_2SpeAHCAEeytz63YvCMaqA" key="AssociatedSourceCode" value="/Plagiarism-Detector/src/ie/gmit/sw/MinHasher.java;2004668107/1;/Plagiarism-Detector/src/ie/gmit/sw/Shingler.java;4216895706/1;/Plagiarism-Detector/src/ie/gmit/sw/Database.java;1065312673/1;/Plagiarism-Detector/src/ie/gmit/sw/Document.java;3113170908/1;/Plagiarism-Detector/src/ie/gmit/sw/Handleator.java;2472850638/1;/Plagiarism-Detector/src/ie/gmit/sw/HashCoder.java;2073964964/1;/Plagiarism-Detector/src/ie/gmit/sw/Hasher.java;3197951209/1;/Plagiarism-Detector/src/ie/gmit/sw/HashingMethod.java;2556669941/1;/Plagiarism-Detector/src/ie/gmit/sw/HashingType.java;3203514632/1;/Plagiarism-Detector/src/ie/gmit/sw/Jaccard.java;2571842364/1;/Plagiarism-Detector/src/ie/gmit/sw/Parser.java;478337963/1;/Plagiarism-Detector/src/ie/gmit/sw/Parserator.java;1874763015/1;/Plagiarism-Detector/src/ie/gmit/sw/PlagiarismResult.java;3430463412/1;/Plagiarism-Detector/src/ie/gmit/sw/Shingleator.java;3100428331/1;/Plagiarism-Detector/src/ie/gmit/sw/SimilarityAlgo.java;3760608066/1;/Plagiarism-Detector/src/ie/gmit/sw/SimilarityCalculator.java;3942106713/1;/Plagiarism-Detector/src/ie/gmit/sw/gui/AppWindow.java;2857005278/1;/Plagiarism-Detector/src/ie/gmit/sw/gui/Controller.java;4192433147/1;/Plagiarism-Detector/src/ie/gmit/sw/gui/Runner.java;2764607605/1;/Plagiarism-Detector/src/ie/gmit/sw/ServiceHandler.java;3031476874/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_0BJ8gHCAEeytz63YvCMaqA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_0BJ8gXCAEeytz63YvCMaqA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_0BJ8gnCAEeytz63YvCMaqA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_0BJ8g3CAEeytz63YvCMaqA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_0BJ8hHCAEeytz63YvCMaqA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_0BJ8hXCAEeytz63YvCMaqA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_0BJ8hnCAEeytz63YvCMaqA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_0BJ8h3CAEeytz63YvCMaqA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_0BKjkHCAEeytz63YvCMaqA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_z_oSgHCAEeytz63YvCMaqA" name="ie">
+      <packagedElement xmi:type="uml:Package" xmi:id="_z_oSgXCAEeytz63YvCMaqA" name="gmit">
+        <packagedElement xmi:type="uml:Package" xmi:id="_z_tLAHCAEeytz63YvCMaqA" name="sw">
+          <packagedElement xmi:type="uml:Package" xmi:id="_0AVdIHCAEeytz63YvCMaqA" name="gui">
+            <packagedElement xmi:type="uml:Class" xmi:id="_0CL3QHCAEeytz63YvCMaqA" name="AppWindow">
+              <generalization xmi:id="_0GqHknCAEeytz63YvCMaqA" general="_0FnlwHCAEeytz63YvCMaqA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HbjqXCAEeytz63YvCMaqA" name="start" specification="_0GpggXCAEeytz63YvCMaqA">
+                <ownedParameter xmi:id="_0HbjqnCAEeytz63YvCMaqA" name="stage" type="_0FqpEXCAEeytz63YvCMaqA"/>
+                <language>java</language>
+                <body>FXMLLoader loader = new FXMLLoader(getClass().getResource(&quot;/res/fxml/window.fxml&quot;));&#xD;
+ 	Parent root = loader.load(); //Load the GUI&#xD;
+&#xD;
+ 	Scene scene = new Scene(root); //Create a scene to display&#xD;
+     stage.setTitle(&quot;GMIT - B.Sc. in Computing (Software Development)&quot;);&#xD;
+     stage.setScene(scene);&#xD;
+     stage.setResizable(false);&#xD;
+     stage.show();&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_0GpggXCAEeytz63YvCMaqA" name="start" method="_0HbjqXCAEeytz63YvCMaqA" raisedException="_0Go5cHCAEeytz63YvCMaqA">
+                <ownedParameter xmi:id="_0GpggnCAEeytz63YvCMaqA" name="stage" type="_0FqpEXCAEeytz63YvCMaqA"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_0CNFYHCAEeytz63YvCMaqA" name="Controller">
+              <ownedAttribute xmi:id="_0HGMcHCAEeytz63YvCMaqA" name="container" visibility="private" type="_0F0aEXCAEeytz63YvCMaqA" association="_0Hw60XCAEeytz63YvCMaqA"/>
+              <ownedAttribute xmi:id="_0HGzg3CAEeytz63YvCMaqA" name="chartArea" visibility="private" type="_0F0aEXCAEeytz63YvCMaqA" association="_0Hxh4XCAEeytz63YvCMaqA"/>
+              <ownedAttribute xmi:id="_0HHak3CAEeytz63YvCMaqA" name="txtFile" visibility="private" type="_0FzL8XCAEeytz63YvCMaqA" association="_0HywAHCAEeytz63YvCMaqA"/>
+              <ownedAttribute xmi:id="_0HIosHCAEeytz63YvCMaqA" name="btnClose" visibility="private" type="_0Fx90XCAEeytz63YvCMaqA" association="_0HzXEXCAEeytz63YvCMaqA"/>
+              <ownedAttribute xmi:id="_0HJPwnCAEeytz63YvCMaqA" name="btnOpen" visibility="private" type="_0Fx90XCAEeytz63YvCMaqA" association="_0Hz-IXCAEeytz63YvCMaqA"/>
+              <ownedAttribute xmi:id="_0HJ20nCAEeytz63YvCMaqA" name="btnCompare" visibility="private" type="_0Fx90XCAEeytz63YvCMaqA" association="_0H0lMXCAEeytz63YvCMaqA"/>
+              <ownedAttribute xmi:id="_0HKd4nCAEeytz63YvCMaqA" name="hashcode" visibility="private" type="_0Fyk4XCAEeytz63YvCMaqA" association="_0H1MQXCAEeytz63YvCMaqA"/>
+              <ownedAttribute xmi:id="_0HLsAnCAEeytz63YvCMaqA" name="sh" visibility="private" type="_0CW2YHCAEeytz63YvCMaqA" association="_0H2aYXCAEeytz63YvCMaqA">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_0HLsA3CAEeytz63YvCMaqA" value="new ServiceHandler()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_0HMTEXCAEeytz63YvCMaqA" name="results" visibility="package" type="_0CAREHCAEeytz63YvCMaqA" isOrdered="true" association="_0H3BcXCAEeytz63YvCMaqA">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HMTEnCAEeytz63YvCMaqA" value="*"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_0HMTE3CAEeytz63YvCMaqA" value="new ArrayList&lt;>()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_0HM6IXCAEeytz63YvCMaqA" name="hashingMethod" visibility="private" type="_0BdegHCAEeytz63YvCMaqA"/>
+              <ownedAttribute xmi:id="_0HkGgnCAEeytz63YvCMaqA" name="minhash" visibility="private" type="_0Fyk4XCAEeytz63YvCMaqA" association="_0H-WMXCAEeytz63YvCMaqA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HcKsHCAEeytz63YvCMaqA" name="getHasher" specification="_0CO6kHCAEeytz63YvCMaqA">
+                <language>java</language>
+                <body>if(minhash.isSelected()) {&#xD;
+			hashingMethod = HashingMethod.MINHASH;&#xD;
+		} else if(hashcode.isSelected()) {&#xD;
+			hashingMethod = HashingMethod.HASHCODE;&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HcKsXCAEeytz63YvCMaqA" name="initialize" specification="_0CPhoHCAEeytz63YvCMaqA">
+                <language>java</language>
+                <body>btnClose.setOnAction(e -> ((Stage) btnClose.getScene().getWindow()).close());&#xD;
+		&#xD;
+		/*&#xD;
+		 * Plant an observer on the button btnCompare. The action or call-back method&#xD;
+		 * should compute the Jaccard similarity of the text file specified from the&#xD;
+		 * FileChooser against the subject document(s) stored by the application. When&#xD;
+		 * the Jaccard similarity has been computed, the application should display the&#xD;
+		 * result in some way.&#xD;
+		 */&#xD;
+		btnCompare.setOnAction(e -> {&#xD;
+			/*&#xD;
+			 * Do the comparing with Jaccard Similarity and MinHash and compute the data&#xD;
+			 * for the Pie Chart. *** Do not hard-code these values *** as shown below.&#xD;
+			 * The data needs to be computed dynamically.&#xD;
+			 */&#xD;
+			// Call the process method of ServiceHandler sh to handle all processing&#xD;
+			// of the document. This will return a list of results to be displayed.&#xD;
+			try {&#xD;
+				results = sh.process(txtFile.getText(), hashingMethod);&#xD;
+			} catch (IOException ioe) {&#xD;
+				ioe.printStackTrace();&#xD;
+			}&#xD;
+			&#xD;
+			// Instantiate an ObservableList of PieChart Data&#xD;
+			ObservableList&lt;PieChart.Data> data = FXCollections.observableArrayList();&#xD;
+			&#xD;
+			// For each result in the results of plagiarism calculations&#xD;
+			for (PlagiarismResult result : results) {&#xD;
+				// Add a new PieChart.Data object with the document name and the plagiarism&#xD;
+				// percentage to the data ObservableList&#xD;
+				data.add(new PieChart.Data(result.getTitle(), result.getResult()));&#xD;
+			}&#xD;
+		&#xD;
+			//Display the results in a pie chart&#xD;
+			PieChart chart = new PieChart(data); //Use PieChart from javafx.scene.chart&#xD;
+			chartArea.getChildren().clear(); //Remove any existing chart&#xD;
+			chartArea.getChildren().add(chart); //Add the new chart to the tree&#xD;
+		});&#xD;
+		&#xD;
+		//The class FileChooser is not a control and cannot be specified in FXML&#xD;
+		FileChooser fc = new FileChooser(); //A leaf node&#xD;
+		fc.getExtensionFilters().addAll(new FileChooser.ExtensionFilter(&quot;Text Files&quot;, &quot;*.txt&quot;)); //Filter for TXT files&#xD;
+		btnOpen.setOnAction(e -> { //Plant an observer on the button btnOpen&#xD;
+			File f = fc.showOpenDialog(container.getScene().getWindow());&#xD;
+			&#xD;
+			txtFile.setText(f.getAbsolutePath());&#xD;
+		});&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_0CO6kHCAEeytz63YvCMaqA" name="getHasher" method="_0HcKsHCAEeytz63YvCMaqA">
+                <ownedComment xmi:id="_0HktkXCAEeytz63YvCMaqA">
+                  <body>Gets the HashingMethod the client wishes to use to hash&#xD;
+	 * the documents. Default is MinHash</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_0CPhoHCAEeytz63YvCMaqA" name="initialize" method="_0HcKsXCAEeytz63YvCMaqA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_0CVBMHCAEeytz63YvCMaqA" name="Runner">
+              <ownedComment xmi:id="_0HlUoHCAEeytz63YvCMaqA">
+                <body>Do not edit or change this class.</body>
+              </ownedComment>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HdY0HCAEeytz63YvCMaqA" name="main" specification="_0CVoQHCAEeytz63YvCMaqA">
+                <ownedParameter xmi:id="_0HdY0XCAEeytz63YvCMaqA" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HdY0nCAEeytz63YvCMaqA" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Application.launch(AppWindow.class, args);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_0CVoQHCAEeytz63YvCMaqA" name="main" isStatic="true" method="_0HdY0HCAEeytz63YvCMaqA">
+                <ownedParameter xmi:id="_0CVoQXCAEeytz63YvCMaqA" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0CWPUHCAEeytz63YvCMaqA" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_0Hw60XCAEeytz63YvCMaqA" name="" memberEnd="_0Hw60nCAEeytz63YvCMaqA _0HGMcHCAEeytz63YvCMaqA">
+              <ownedEnd xmi:id="_0Hw60nCAEeytz63YvCMaqA" name="" type="_0CNFYHCAEeytz63YvCMaqA" association="_0Hw60XCAEeytz63YvCMaqA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_0Hxh4XCAEeytz63YvCMaqA" name="" memberEnd="_0Hxh4nCAEeytz63YvCMaqA _0HGzg3CAEeytz63YvCMaqA">
+              <ownedEnd xmi:id="_0Hxh4nCAEeytz63YvCMaqA" name="" type="_0CNFYHCAEeytz63YvCMaqA" association="_0Hxh4XCAEeytz63YvCMaqA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_0HywAHCAEeytz63YvCMaqA" name="" memberEnd="_0HywAXCAEeytz63YvCMaqA _0HHak3CAEeytz63YvCMaqA">
+              <ownedEnd xmi:id="_0HywAXCAEeytz63YvCMaqA" name="" type="_0CNFYHCAEeytz63YvCMaqA" association="_0HywAHCAEeytz63YvCMaqA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_0HzXEXCAEeytz63YvCMaqA" name="" memberEnd="_0HzXEnCAEeytz63YvCMaqA _0HIosHCAEeytz63YvCMaqA">
+              <ownedEnd xmi:id="_0HzXEnCAEeytz63YvCMaqA" name="" type="_0CNFYHCAEeytz63YvCMaqA" association="_0HzXEXCAEeytz63YvCMaqA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_0Hz-IXCAEeytz63YvCMaqA" name="" memberEnd="_0Hz-InCAEeytz63YvCMaqA _0HJPwnCAEeytz63YvCMaqA">
+              <ownedEnd xmi:id="_0Hz-InCAEeytz63YvCMaqA" name="" type="_0CNFYHCAEeytz63YvCMaqA" association="_0Hz-IXCAEeytz63YvCMaqA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_0H0lMXCAEeytz63YvCMaqA" name="" memberEnd="_0H0lMnCAEeytz63YvCMaqA _0HJ20nCAEeytz63YvCMaqA">
+              <ownedEnd xmi:id="_0H0lMnCAEeytz63YvCMaqA" name="" type="_0CNFYHCAEeytz63YvCMaqA" association="_0H0lMXCAEeytz63YvCMaqA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_0H1MQXCAEeytz63YvCMaqA" name="" memberEnd="_0H1MQnCAEeytz63YvCMaqA _0HKd4nCAEeytz63YvCMaqA">
+              <ownedEnd xmi:id="_0H1MQnCAEeytz63YvCMaqA" name="" type="_0CNFYHCAEeytz63YvCMaqA" association="_0H1MQXCAEeytz63YvCMaqA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_0H2aYXCAEeytz63YvCMaqA" name="" memberEnd="_0H2aYnCAEeytz63YvCMaqA _0HLsAnCAEeytz63YvCMaqA">
+              <ownedEnd xmi:id="_0H2aYnCAEeytz63YvCMaqA" name="" type="_0CNFYHCAEeytz63YvCMaqA" association="_0H2aYXCAEeytz63YvCMaqA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_0H3BcXCAEeytz63YvCMaqA" name="" memberEnd="_0H3BcnCAEeytz63YvCMaqA _0HMTEXCAEeytz63YvCMaqA">
+              <ownedEnd xmi:id="_0H3BcnCAEeytz63YvCMaqA" name="" type="_0CNFYHCAEeytz63YvCMaqA" association="_0H3BcXCAEeytz63YvCMaqA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_0H-WMXCAEeytz63YvCMaqA" name="" memberEnd="_0H-WMnCAEeytz63YvCMaqA _0HkGgnCAEeytz63YvCMaqA">
+              <ownedEnd xmi:id="_0H-WMnCAEeytz63YvCMaqA" name="" type="_0CNFYHCAEeytz63YvCMaqA" association="_0H-WMXCAEeytz63YvCMaqA"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0BIuYHCAEeytz63YvCMaqA" name="Database">
+            <ownedComment xmi:id="_0HhqQHCAEeytz63YvCMaqA">
+              <body>Database provides a way of accessing the database for all other classes.&#xD;
+A database should only be instantiated once, so for this reason I made it a &#xD;
+singleton. This will ensure we can access the same database from anywhere.&#xD;
+This class follows the SRP.</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_0G0foHCAEeytz63YvCMaqA" name="root" visibility="private" type="_0BON8HCAEeytz63YvCMaqA" isOrdered="true" association="_0HtQcHCAEeytz63YvCMaqA">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0G0foXCAEeytz63YvCMaqA" value="*"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0G0fonCAEeytz63YvCMaqA" value="new ArrayList&lt;>()"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0G1GsXCAEeytz63YvCMaqA" name="db" visibility="private" type="_0FIdkXCAEeytz63YvCMaqA" association="_0Ht3gXCAEeytz63YvCMaqA">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0G1GsnCAEeytz63YvCMaqA" value="null"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0G1twXCAEeytz63YvCMaqA" name="instance" isStatic="true" type="_0BIuYHCAEeytz63YvCMaqA" isReadOnly="true" association="_0HvFoHCAEeytz63YvCMaqA">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0G2U0XCAEeytz63YvCMaqA" value="null"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HWEEHCAEeytz63YvCMaqA" name="addDocument" specification="_0FKSwHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HWEEXCAEeytz63YvCMaqA" name="d" type="_0BON8HCAEeytz63YvCMaqA"/>
+              <language>java</language>
+              <body>// Add Document d to the root&#xD;
+		root.add(d);&#xD;
+		// If there is no active database, initialise one&#xD;
+		if(db == null) {&#xD;
+			try {&#xD;
+				db = EmbeddedStorage.start(root, Paths.get(&quot;./storage&quot;));&#xD;
+			} catch (Exception e) {&#xD;
+				System.out.println(e);&#xD;
+			}&#xD;
+		}&#xD;
+		// Store root in database&#xD;
+		db.storeRoot();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HWEEnCAEeytz63YvCMaqA" name="query" specification="_0BLxsHCAEeytz63YvCMaqA">
+              <language>java</language>
+              <body>System.out.println(&quot;[Query] Show all documents&quot;);&#xD;
+		&#xD;
+		Collection&lt;String> titles = root.stream()&#xD;
+		.map(d ->d.getTitle())&#xD;
+		.collect(Collectors.toCollection(LinkedList::new));&#xD;
+&#xD;
+		System.out.println(titles);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HWEE3CAEeytz63YvCMaqA" name="getAllDocuments" specification="_0BLxsXCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HWEFHCAEeytz63YvCMaqA" type="_0BON8HCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HWEFXCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return root;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0BKjkXCAEeytz63YvCMaqA" name="Database" visibility="private">
+              <eAnnotations xmi:id="_0BLKoHCAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0BLKoXCAEeytz63YvCMaqA" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_0BLKo3CAEeytz63YvCMaqA" type="_0BIuYHCAEeytz63YvCMaqA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0BLxsHCAEeytz63YvCMaqA" name="query" method="_0HWEEnCAEeytz63YvCMaqA">
+              <ownedComment xmi:id="_0HhqQnCAEeytz63YvCMaqA">
+                <body>Displays the titles of all documents in the database.</body>
+              </ownedComment>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0BLxsXCAEeytz63YvCMaqA" name="getAllDocuments" method="_0HWEE3CAEeytz63YvCMaqA">
+              <ownedComment xmi:id="_0HhqQ3CAEeytz63YvCMaqA">
+                <body>Gets a list of all the documents in database.&#xD;
+	 * &#xD;
+	 * @return list of documents</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0BLxsnCAEeytz63YvCMaqA" type="_0BON8HCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0BLxs3CAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0FKSwHCAEeytz63YvCMaqA" name="addDocument" method="_0HWEEHCAEeytz63YvCMaqA">
+              <ownedComment xmi:id="_0HhqQXCAEeytz63YvCMaqA">
+                <body>Adds a document to the microstream database.&#xD;
+	 * &#xD;
+	 * @param d - Document object to be added to database</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0FKSwXCAEeytz63YvCMaqA" name="d" type="_0BON8HCAEeytz63YvCMaqA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0BON8HCAEeytz63YvCMaqA" name="Document">
+            <ownedComment xmi:id="_0HhqRHCAEeytz63YvCMaqA">
+              <body>Document is an abstract template of what each document should look&#xD;
+like. By templating objects, we provide some general OOP.</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_0G3i8HCAEeytz63YvCMaqA" name="title" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0G3i8XCAEeytz63YvCMaqA" name="hashes" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0G4KAHCAEeytz63YvCMaqA" value="*"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0G4KAXCAEeytz63YvCMaqA" value="new TreeSet&lt;Integer>()"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HWrIHCAEeytz63YvCMaqA" name="Document" specification="_0GK_YHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HWrIXCAEeytz63YvCMaqA" name="title">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0HWrInCAEeytz63YvCMaqA" name="hashes" type="_0FN9IHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0HWrI3CAEeytz63YvCMaqA" type="_0BON8HCAEeytz63YvCMaqA" direction="return"/>
+              <language>java</language>
+              <body>super();&#xD;
+		this.title = title;&#xD;
+		this.hashes = hashes;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HXSMHCAEeytz63YvCMaqA" name="setTitle" specification="_0BQDIHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HXSMXCAEeytz63YvCMaqA" name="filePath">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>// Create temp file using filePath&#xD;
+		File f = new File(filePath);&#xD;
+		// Get the &quot;name.txt&quot; from the filePath&#xD;
+		String tempTitle = f.getName();&#xD;
+		int size = tempTitle.length();&#xD;
+		// Using the size of the string, remove the last 4 characters&#xD;
+		// which will remove the &quot;.txt&quot;&#xD;
+		tempTitle = tempTitle.substring(0, (size - 4));&#xD;
+		// The documents also contain the author name separated by a &quot;-&quot;&#xD;
+		// so I will split this string by the &quot;-&quot; character to be left with&#xD;
+		// the title followed by the author name so set the title to the&#xD;
+		// first element of splitTitle array as this is the title post split&#xD;
+		String[] splitTitle = tempTitle.split(&quot;-&quot;);&#xD;
+		// Set title&#xD;
+		this.title = splitTitle[0];&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HXSMnCAEeytz63YvCMaqA" name="setHashes" specification="_0GNboHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HXSM3CAEeytz63YvCMaqA" name="hashes" type="_0FN9IHCAEeytz63YvCMaqA"/>
+              <language>java</language>
+              <body>this.hashes = hashes;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HXSNHCAEeytz63YvCMaqA" name="toString" specification="_0BQqMHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HXSNXCAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return &quot;Text: &quot; + title;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0BO1AHCAEeytz63YvCMaqA" name="Document">
+              <eAnnotations xmi:id="_0BO1AXCAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0BO1AnCAEeytz63YvCMaqA" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_0BPcEXCAEeytz63YvCMaqA" type="_0BON8HCAEeytz63YvCMaqA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0BQDIHCAEeytz63YvCMaqA" name="setTitle" method="_0HXSMHCAEeytz63YvCMaqA">
+              <ownedComment xmi:id="_0HiRUHCAEeytz63YvCMaqA">
+                <body>Set the title of document.&#xD;
+	 * &#xD;
+	 * @param filePath - Manipulated to get document title</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0BQDIXCAEeytz63YvCMaqA" name="filePath">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0BQqMHCAEeytz63YvCMaqA" name="toString" method="_0HXSNHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0BQqMXCAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0GK_YHCAEeytz63YvCMaqA" name="Document" method="_0HWrIHCAEeytz63YvCMaqA">
+              <eAnnotations xmi:id="_0GLmcHCAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0GLmcXCAEeytz63YvCMaqA" key="create"/>
+              </eAnnotations>
+              <ownedComment xmi:id="_0HhqRXCAEeytz63YvCMaqA">
+                <body>Constructor with Fields.&#xD;
+	 * &#xD;
+	 * @param title - Title of document&#xD;
+	 * @param hashes - Set of hashes</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0GK_YXCAEeytz63YvCMaqA" name="title">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0GK_YnCAEeytz63YvCMaqA" name="hashes" type="_0FN9IHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0GLmcnCAEeytz63YvCMaqA" type="_0BON8HCAEeytz63YvCMaqA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0GNboHCAEeytz63YvCMaqA" name="setHashes" method="_0HXSMnCAEeytz63YvCMaqA">
+              <ownedComment xmi:id="_0HiRUXCAEeytz63YvCMaqA">
+                <body>Set the hashes&#xD;
+	 * &#xD;
+	 * @param hashes - Used to compare against other documents</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0GNboXCAEeytz63YvCMaqA" name="hashes" type="_0FN9IHCAEeytz63YvCMaqA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_0BSfYHCAEeytz63YvCMaqA" name="Handleator">
+            <ownedComment xmi:id="_0HiRUnCAEeytz63YvCMaqA">
+              <body>Interface which states what a Handleator should do. This interface follows the &#xD;
+facade design pattern as it is composed of other interfaces which allows us to handle&#xD;
+all functionality from the one place. As this application is quite complicated with&#xD;
+the amount of classes that all abide by the SRP. I felt it would be beneficial to use&#xD;
+an interface like this to connect everything together.</body>
+            </ownedComment>
+            <ownedOperation xmi:id="_0BTtgHCAEeytz63YvCMaqA" name="readDocument">
+              <ownedComment xmi:id="_0HiRU3CAEeytz63YvCMaqA">
+                <body>Reads document and adds it to a BufferedReader using filePath.&#xD;
+	 * &#xD;
+	 * @param filePath - String containing the path to file</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0BTtgXCAEeytz63YvCMaqA" name="filePath">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0BUUkHCAEeytz63YvCMaqA" name="displayDocument">
+              <ownedComment xmi:id="_0HiRVnCAEeytz63YvCMaqA">
+                <body>Responsible for getting the set of words that has been parsed.&#xD;
+	 * &#xD;
+	 * @return list of words</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0BUUkXCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0BUUknCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0BU7oHCAEeytz63YvCMaqA" name="addDocument">
+              <ownedComment xmi:id="_0HiRV3CAEeytz63YvCMaqA">
+                <body>Delegates work to Database to add a document.</body>
+              </ownedComment>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0BU7oXCAEeytz63YvCMaqA" name="compareSimilarity">
+              <ownedComment xmi:id="_0HiRWHCAEeytz63YvCMaqA">
+                <body>Delegates work to the SimilarityCalculator where the similarity &#xD;
+	 * of the document compared to all other documents is calculated.&#xD;
+	 * &#xD;
+	 * @return list of PlagiarismResults</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0BU7onCAEeytz63YvCMaqA" type="_0CAREHCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0BU7o3CAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0BVisHCAEeytz63YvCMaqA" name="checkForFullPlagiarism">
+              <ownedComment xmi:id="_0HiRWXCAEeytz63YvCMaqA">
+                <body>Checks if the document fully plagiarises any other document in the&#xD;
+	 * database. If it does we do not want to store it.&#xD;
+	 * &#xD;
+	 * @return boolean depending on if there is full plagiarism or not</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0BVisXCAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0FUq0HCAEeytz63YvCMaqA" name="processDocument">
+              <ownedComment xmi:id="_0HiRVXCAEeytz63YvCMaqA">
+                <body>Responsible for delegating work to the Shingler and Hasher to &#xD;
+	 * shingle and hash the document.&#xD;
+	 * &#xD;
+	 * @param hashingMethod - Enum which states the hashing method to use</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0FUq0XCAEeytz63YvCMaqA" name="hashingMethod" type="_0BdegHCAEeytz63YvCMaqA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0FUq0nCAEeytz63YvCMaqA" name="process" raisedException="_0FSOkXCAEeytz63YvCMaqA">
+              <ownedComment xmi:id="_0Hi4YHCAEeytz63YvCMaqA">
+                <body>Responsible for calling all the other methods. In controller.java, the client can&#xD;
+	 * simply call the Process method instead of having to call each method individually.&#xD;
+	 * This helps the Handleator follow the facade pattern.&#xD;
+	 * &#xD;
+	 * @param fileName - String containing the path to file&#xD;
+	 * @param hashingMethod - Enum which states the hashing method to use&#xD;
+	 * &#xD;
+	 * @return list of PlagiarismResults&#xD;
+	 * @throws IOException - File handling</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0FVR4HCAEeytz63YvCMaqA" name="fileName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0FVR4XCAEeytz63YvCMaqA" name="hashingMethod" type="_0BdegHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0FVR4nCAEeytz63YvCMaqA" type="_0CAREHCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0FVR43CAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0GPQ0HCAEeytz63YvCMaqA" name="parseDocument" raisedException="_0FSOkXCAEeytz63YvCMaqA">
+              <ownedComment xmi:id="_0HiRVHCAEeytz63YvCMaqA">
+                <body>Delegates work to the Parserator which parses the file using the &#xD;
+	 * BufferedReader.&#xD;
+	 * &#xD;
+	 * @param title - Used to add title to document&#xD;
+	 * @param br - BufferedReader that contains file contents&#xD;
+	 * @throws IOException - File handling</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0GPQ0XCAEeytz63YvCMaqA" name="title">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0GPQ0nCAEeytz63YvCMaqA" name="br" type="_0FRngHCAEeytz63YvCMaqA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0BYmAHCAEeytz63YvCMaqA" name="HashCoder">
+            <ownedComment xmi:id="_0Hi4YXCAEeytz63YvCMaqA">
+              <body>Implementation of HashingType. HashCoder is a hashing function which performs&#xD;
+a .hashCode() representation of shingles. HashCoder is-a HashingType (Inheritance).&#xD;
+This class also follows the SRP.</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_0G4xEHCAEeytz63YvCMaqA" name="hashedShingles" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0G4xEXCAEeytz63YvCMaqA" value="*"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0G5YIHCAEeytz63YvCMaqA" value="new TreeSet&lt;Integer>()"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_0FWgAHCAEeytz63YvCMaqA" client="_0BYmAHCAEeytz63YvCMaqA" supplier="_0BeFknCAEeytz63YvCMaqA" contract="_0BeFknCAEeytz63YvCMaqA"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HX5QHCAEeytz63YvCMaqA" name="hash" specification="_0GQe8HCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HX5QXCAEeytz63YvCMaqA" name="shingles" type="_0FTcsXCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0HX5QnCAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HX5Q3CAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>for (String shingle : shingles) {&#xD;
+			// Get hash code of each shingle and add it to hashedShingles&#xD;
+			hashedShingles.add(shingle.hashCode());&#xD;
+		}&#xD;
+		// Return the hashedShingles&#xD;
+		return hashedShingles;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0GQe8HCAEeytz63YvCMaqA" name="hash" method="_0HX5QHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0GQe8XCAEeytz63YvCMaqA" name="shingles" type="_0FTcsXCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0GQe8nCAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0GRGAHCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0BabMHCAEeytz63YvCMaqA" name="Hasher">
+            <ownedComment xmi:id="_0Hi4YnCAEeytz63YvCMaqA">
+              <body>Hasher is a gateway method which is used to invoke an algorithm.&#xD;
+This will allow me to use the strategy pattern in other classes by passing&#xD;
+an instance of the HashingType interface into the hash function.</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_0G5_MHCAEeytz63YvCMaqA" name="shingles" visibility="package" isOrdered="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0G5_MXCAEeytz63YvCMaqA" value="*"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0G5_MnCAEeytz63YvCMaqA" value="new ArrayList&lt;String>()"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HYgUHCAEeytz63YvCMaqA" name="Hasher" specification="_0GUJUHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HYgUXCAEeytz63YvCMaqA" name="shingles" type="_0FTcsXCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0HYgUnCAEeytz63YvCMaqA" type="_0BabMHCAEeytz63YvCMaqA" direction="return"/>
+              <language>java</language>
+              <body>this.shingles = shingles;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HYgU3CAEeytz63YvCMaqA" name="hash" specification="_0FZjUHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HYgVHCAEeytz63YvCMaqA" name="ht" type="_0BeFknCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0HYgVXCAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HYgVnCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>// Delegate the hashing to the hashing algorithm and return&#xD;
+		// its result&#xD;
+		return ht.hash(shingles);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0BbCQHCAEeytz63YvCMaqA" name="Hasher">
+              <eAnnotations xmi:id="_0BbCQXCAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0BbCQnCAEeytz63YvCMaqA" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_0BbpUXCAEeytz63YvCMaqA" type="_0BabMHCAEeytz63YvCMaqA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0FZjUHCAEeytz63YvCMaqA" name="hash" method="_0HYgU3CAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0FZjUXCAEeytz63YvCMaqA" name="ht" type="_0BeFknCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0FZjUnCAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0FZjU3CAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0GUJUHCAEeytz63YvCMaqA" name="Hasher" method="_0HYgUHCAEeytz63YvCMaqA">
+              <eAnnotations xmi:id="_0GUJUnCAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0GUJU3CAEeytz63YvCMaqA" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_0GUJUXCAEeytz63YvCMaqA" name="shingles" type="_0FTcsXCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0GUJVHCAEeytz63YvCMaqA" type="_0BabMHCAEeytz63YvCMaqA" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_0BdegHCAEeytz63YvCMaqA" name="HashingMethod">
+            <ownedLiteral xmi:id="_0BeFkHCAEeytz63YvCMaqA" name="HASHCODE"/>
+            <ownedLiteral xmi:id="_0BeFkXCAEeytz63YvCMaqA" name="MINHASH"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_0BeFknCAEeytz63YvCMaqA" name="HashingType">
+            <ownedComment xmi:id="_0Hi4Y3CAEeytz63YvCMaqA">
+              <body>Interface for all hashing methods. All classes which implement&#xD;
+this interface provide a method of hashing a document for the jaccard &#xD;
+calculations and also for creating a Document object which will be stored&#xD;
+in the database. This interface follows the SRP.</body>
+            </ownedComment>
+            <ownedOperation xmi:id="_0GVXcHCAEeytz63YvCMaqA" name="hash">
+              <ownedParameter xmi:id="_0GV-gHCAEeytz63YvCMaqA" name="shingles" type="_0FTcsXCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0GV-gXCAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0GV-gnCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0BfTsHCAEeytz63YvCMaqA" name="Jaccard">
+            <ownedComment xmi:id="_0Hi4ZHCAEeytz63YvCMaqA">
+              <body>Implementation of SimilarityAlgo. This class uses the Jaccard&#xD;
+index algorithm to calculate the jaccard index which informs us&#xD;
+of the similarity between two sets. The algorithm is |A n B| / |A u B|.&#xD;
+Jaccard is-a SimilarityAlgo (Inheritance). Upholds the SRP.</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_0G6mQXCAEeytz63YvCMaqA" name="n" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0G9CgHCAEeytz63YvCMaqA" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0G9pkXCAEeytz63YvCMaqA" name="intersectionCardinality" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0G-QoXCAEeytz63YvCMaqA" name="unionCardinality" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_0Fb_kHCAEeytz63YvCMaqA" client="_0BfTsHCAEeytz63YvCMaqA" supplier="_0CG-wHCAEeytz63YvCMaqA" contract="_0CG-wHCAEeytz63YvCMaqA"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HZHYHCAEeytz63YvCMaqA" name="compareSimilarity" specification="_0GXzsHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HZHYXCAEeytz63YvCMaqA" name="a" type="_0FN9IHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0HZHYnCAEeytz63YvCMaqA" name="b" type="_0FN9IHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0HZHY3CAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>unionCardinality = a.size() + b.size();&#xD;
+		// Create treeset with integers from set a&#xD;
+		n = new TreeSet&lt;Integer>(a);&#xD;
+		// Keep only common integers from both sets&#xD;
+		n.retainAll(b);&#xD;
+		// The cardinality of intersection is the size of n after retaining b&#xD;
+		intersectionCardinality = n.size();&#xD;
+		// Return calculation (| A n B | / | A | + | B | - | A n B |)&#xD;
+		return Double.valueOf(intersectionCardinality)&#xD;
+				/ (Double.valueOf(unionCardinality) - Double.valueOf((intersectionCardinality)));&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0Bf6wHCAEeytz63YvCMaqA" name="Jaccard">
+              <eAnnotations xmi:id="_0Bf6wXCAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0Bf6wnCAEeytz63YvCMaqA" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_0Bgh0XCAEeytz63YvCMaqA" type="_0BfTsHCAEeytz63YvCMaqA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0GXzsHCAEeytz63YvCMaqA" name="compareSimilarity" method="_0HZHYHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0GXzsXCAEeytz63YvCMaqA" name="a" type="_0FN9IHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0GXzsnCAEeytz63YvCMaqA" name="b" type="_0FN9IHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0GXzs3CAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0BjlIHCAEeytz63YvCMaqA" name="MinHasher">
+            <ownedComment xmi:id="_2cy4gHCAEeytz63YvCMaqA">
+              <body>Implementation of HashingType. MinHasher is a hashing function which hashes each&#xD;
+shingle by getting their minimal hashcodes and storing the first 250.&#xD;
+HashCoder is-a HashingType (Inheritance). This class also follows the SRP.</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_0G_ewHCAEeytz63YvCMaqA" name="hashedShingles" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0G_ewXCAEeytz63YvCMaqA" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0HAF0XCAEeytz63YvCMaqA" name="hashes" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HAF0nCAEeytz63YvCMaqA" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0HAs4XCAEeytz63YvCMaqA" name="K" visibility="private" isLeaf="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0HAs4nCAEeytz63YvCMaqA" value="250"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0HBT8XCAEeytz63YvCMaqA" name="SEED" visibility="private" isLeaf="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0HBT8nCAEeytz63YvCMaqA" value="40"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_0Feb0XCAEeytz63YvCMaqA" client="_0BjlIHCAEeytz63YvCMaqA" supplier="_0BeFknCAEeytz63YvCMaqA" contract="_0BeFknCAEeytz63YvCMaqA"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HZucHCAEeytz63YvCMaqA" name="hash" specification="_0Ga3AHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HZucXCAEeytz63YvCMaqA" name="shingles" type="_0FTcsXCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0HZucnCAEeytz63YvCMaqA" direction="return">
+                <name xsi:nil="true"/>
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HZuc3CAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>hashedShingles = new TreeSet&lt;Integer>();&#xD;
+		hashes = new TreeSet&lt;Integer>();&#xD;
+		&#xD;
+		// Get sequence of random numbers&#xD;
+		Random r = new Random(SEED);&#xD;
+		// Generate K number of hashes to be added to the set&#xD;
+		for (int i = 0; i &lt; K; i++) {&#xD;
+			// Each hash is the next integer in the random sequence.&#xD;
+			hashes.add(r.nextInt());&#xD;
+		}&#xD;
+		// For each integer in hashes.&#xD;
+		for (Integer hash : hashes) {&#xD;
+			// Set the minimum to the maximum int value as if we are decreasing&#xD;
+			// its value, this must be default to avoid the risk of error&#xD;
+			int min = Integer.MAX_VALUE;&#xD;
+			// For each shingle in shingles&#xD;
+			for (String shingle : shingles) {&#xD;
+				// Compute each shingles hash code by using a hash function, which&#xD;
+				// is just the shingles hash code to the power of a random hash&#xD;
+				int minHash = shingle.hashCode() ^ hash;&#xD;
+				// If the result of the above function is smaller than the min (MAX_VALUE),&#xD;
+				// then set that as the new min&#xD;
+				if (minHash &lt; min)&#xD;
+					min = minHash;&#xD;
+			}&#xD;
+			// Add the min to the set&#xD;
+			hashedShingles.add(min);&#xD;
+		}&#xD;
+		// Return hashedShingles&#xD;
+		return hashedShingles;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0B4VQHCAEeytz63YvCMaqA" name="MinHasher">
+              <eAnnotations xmi:id="_0B48UHCAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0B48UXCAEeytz63YvCMaqA" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_0B48U3CAEeytz63YvCMaqA" type="_0BjlIHCAEeytz63YvCMaqA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0Ga3AHCAEeytz63YvCMaqA" name="hash" method="_0HZucHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0Ga3AXCAEeytz63YvCMaqA" name="shingles" type="_0FTcsXCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0Ga3AnCAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Ga3A3CAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0B7YkHCAEeytz63YvCMaqA" name="Parser">
+            <ownedComment xmi:id="_0HjfcHCAEeytz63YvCMaqA">
+              <body>Implementation of Parserator. This class parses the document that we&#xD;
+are going to compare. Parser is-a Parserator (Inheritance). This class also&#xD;
+follows the SRP.</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_0HB7AHCAEeytz63YvCMaqA" name="words" visibility="private" isOrdered="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HB7AXCAEeytz63YvCMaqA" value="*"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_0Fg4EHCAEeytz63YvCMaqA" client="_0B7YkHCAEeytz63YvCMaqA" supplier="_0B_C8HCAEeytz63YvCMaqA" contract="_0B_C8HCAEeytz63YvCMaqA"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HZudHCAEeytz63YvCMaqA" name="parse" specification="_0GdTQHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HZudXCAEeytz63YvCMaqA" name="br" type="_0FRngHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0HZudnCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HZud3CAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>words = new ArrayList&lt;String>();&#xD;
+		// Create a temp blank string&#xD;
+		String line = &quot;&quot;;&#xD;
+		try {&#xD;
+			// While there are lines to be read, read them&#xD;
+			while((line = br.readLine()) != null) {&#xD;
+				// Everytime a space is encountered, split the line&#xD;
+				String[] split = line.split(&quot; &quot;);&#xD;
+				// For each split, add it to words&#xD;
+				for(int i = 0; i &lt; split.length; i++) {&#xD;
+					words.add(split[i]);&#xD;
+				}&#xD;
+			}&#xD;
+		} finally {&#xD;
+			// Close buffered reader&#xD;
+			br.close();&#xD;
+		}&#xD;
+		// Return the list of words&#xD;
+		return words;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0B8msHCAEeytz63YvCMaqA" name="Parser">
+              <eAnnotations xmi:id="_0B8msXCAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0B8msnCAEeytz63YvCMaqA" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_0B8mtHCAEeytz63YvCMaqA" type="_0B7YkHCAEeytz63YvCMaqA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0GdTQHCAEeytz63YvCMaqA" name="parse" method="_0HZudHCAEeytz63YvCMaqA" raisedException="_0FSOkXCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0GdTQXCAEeytz63YvCMaqA" name="br" type="_0FRngHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0GdTQnCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Gd6UHCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_0B_C8HCAEeytz63YvCMaqA" name="Parserator">
+            <ownedComment xmi:id="_0HjfcXCAEeytz63YvCMaqA">
+              <body>Parserator is an interface which describes each parserator&#xD;
+object. Parserator objects are used to parse documents.&#xD;
+Follows the SRP.</body>
+            </ownedComment>
+            <ownedOperation xmi:id="_0GehYnCAEeytz63YvCMaqA" name="parse" raisedException="_0FSOkXCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0GfIcHCAEeytz63YvCMaqA" name="br" type="_0FRngHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0GfIcXCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0GfIcnCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0CAREHCAEeytz63YvCMaqA" name="PlagiarismResult">
+            <ownedComment xmi:id="_0HjfcnCAEeytz63YvCMaqA">
+              <body>PlagiarismResult is an abstract template of what each plagiarism result&#xD;
+should look like. By templating objects, we provide some general OOP.</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_0HCiEXCAEeytz63YvCMaqA" name="title" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0HDJIHCAEeytz63YvCMaqA" name="result" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HaVgHCAEeytz63YvCMaqA" name="PlagiarismResult" specification="_0CCGQHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HaVgXCAEeytz63YvCMaqA" name="title">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0HaVgnCAEeytz63YvCMaqA" name="result">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0HaVg3CAEeytz63YvCMaqA" type="_0CAREHCAEeytz63YvCMaqA" direction="return"/>
+              <language>java</language>
+              <body>this.title = title;&#xD;
+		this.result = result;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0CA4IHCAEeytz63YvCMaqA" name="PlagiarismResult">
+              <eAnnotations xmi:id="_0CA4IXCAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0CA4InCAEeytz63YvCMaqA" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_0CBfMXCAEeytz63YvCMaqA" type="_0CAREHCAEeytz63YvCMaqA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0CCGQHCAEeytz63YvCMaqA" name="PlagiarismResult" method="_0HaVgHCAEeytz63YvCMaqA">
+              <eAnnotations xmi:id="_0CCGQ3CAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0CCGRHCAEeytz63YvCMaqA" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_0CCGQXCAEeytz63YvCMaqA" name="title">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0CCGQnCAEeytz63YvCMaqA" name="result">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0CCGRXCAEeytz63YvCMaqA" type="_0CAREHCAEeytz63YvCMaqA" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_0CDUYHCAEeytz63YvCMaqA" name="Shingleator">
+            <ownedComment xmi:id="_0Hjfc3CAEeytz63YvCMaqA">
+              <body>Interface which describes each Shingleator object.&#xD;
+Shingleator objects are used to create shingles from parsed documents.&#xD;
+Follows the SRP.</body>
+            </ownedComment>
+            <ownedOperation xmi:id="_0GfvgHCAEeytz63YvCMaqA" name="getShingles">
+              <ownedParameter xmi:id="_0GfvgXCAEeytz63YvCMaqA" name="words" type="_0FTcsXCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0GfvgnCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Gfvg3CAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0CD7cHCAEeytz63YvCMaqA" name="Shingler">
+            <ownedComment xmi:id="_2cy4gXCAEeytz63YvCMaqA">
+              <body>Implementation of Shingleator. This class simply creates&#xD;
+shingles of size k. Shingler is-a Shingleator (Inheritance).&#xD;
+Follows the SRP.</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_0HDwMHCAEeytz63YvCMaqA" name="SHINGLE_SIZE" visibility="private" isLeaf="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_0HDwMXCAEeytz63YvCMaqA" value="3"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0HEXQXCAEeytz63YvCMaqA" name="shingles" visibility="private" isOrdered="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HEXQnCAEeytz63YvCMaqA" value="*"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_0Fj7YHCAEeytz63YvCMaqA" client="_0CD7cHCAEeytz63YvCMaqA" supplier="_0CDUYHCAEeytz63YvCMaqA" contract="_0CDUYHCAEeytz63YvCMaqA"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0Ha8kHCAEeytz63YvCMaqA" name="getShingles" specification="_0Gg9oHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0Ha8kXCAEeytz63YvCMaqA" name="words" type="_0FTcsXCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0Ha8knCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <name xsi:nil="true"/>
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Ha8k3CAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>shingles = new ArrayList&lt;String>();&#xD;
+		// Create a temp blank string to store each shingle&#xD;
+		String shingle = &quot;&quot;;&#xD;
+		// Set the count to 0&#xD;
+		int count = 0;&#xD;
+		// Loop over the list of words&#xD;
+		for (int i = 0; i &lt; words.size(); i++) {&#xD;
+			// Add each word to the shingle&#xD;
+			shingle += words.get(i);&#xD;
+			// Increment count&#xD;
+			count++;&#xD;
+			// If the count is the same size as the shingle size&#xD;
+			if (count == SHINGLE_SIZE) {&#xD;
+				// Add the shingle to shingles&#xD;
+				shingles.add(shingle);&#xD;
+				// Reset string&#xD;
+				shingle = &quot;&quot;;&#xD;
+				// Reset count&#xD;
+				count = 0;&#xD;
+			}&#xD;
+			// If we are at the end of the loop and the count is less than the shingle size, add&#xD;
+			// the shingle anyway.&#xD;
+			if (count &lt; SHINGLE_SIZE &amp;&amp; i == words.size() - 1) {&#xD;
+				shingles.add(shingle);&#xD;
+			}&#xD;
+		}&#xD;
+		&#xD;
+		// Return the shingles&#xD;
+		return shingles;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0CEigHCAEeytz63YvCMaqA" name="Shingler">
+              <eAnnotations xmi:id="_0CFJkHCAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0CFJkXCAEeytz63YvCMaqA" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_0CFJk3CAEeytz63YvCMaqA" type="_0CD7cHCAEeytz63YvCMaqA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0Gg9oHCAEeytz63YvCMaqA" name="getShingles" method="_0Ha8kHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0Gg9oXCAEeytz63YvCMaqA" name="words" type="_0FTcsXCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0GhksHCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0GhksXCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_0CG-wHCAEeytz63YvCMaqA" name="SimilarityAlgo">
+            <ownedComment xmi:id="_0HjfdXCAEeytz63YvCMaqA">
+              <body>Interface which describes all SimilarityAlgo objects.&#xD;
+A SimilarityAlgo is used to compare two documents and&#xD;
+calculate their similarity. Follows the SRP.</body>
+            </ownedComment>
+            <ownedOperation xmi:id="_0GjZ4HCAEeytz63YvCMaqA" name="compareSimilarity">
+              <ownedParameter xmi:id="_0GjZ4XCAEeytz63YvCMaqA" name="a" type="_0FN9IHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0GjZ4nCAEeytz63YvCMaqA" name="b" type="_0FN9IHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0GjZ43CAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0CIz8HCAEeytz63YvCMaqA" name="SimilarityCalculator">
+            <ownedComment xmi:id="_0HjfdnCAEeytz63YvCMaqA">
+              <body>SimilarityCalculator is a gateway method which is used to invoke an algorithm.&#xD;
+This will allow me to use the strategy pattern in other classes by passing&#xD;
+an instance of the SimilarityAlgo interface into the getResukts function.</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_0HE-UXCAEeytz63YvCMaqA" name="results" visibility="private" type="_0CAREHCAEeytz63YvCMaqA" isOrdered="true" association="_0HvssXCAEeytz63YvCMaqA">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HE-UnCAEeytz63YvCMaqA" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0HFlYXCAEeytz63YvCMaqA" name="similarityAlgo" visibility="private" type="_0CG-wHCAEeytz63YvCMaqA" association="_0HwTwXCAEeytz63YvCMaqA"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HbjoHCAEeytz63YvCMaqA" name="getResults" specification="_0Gl2IHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HbjoXCAEeytz63YvCMaqA" name="documents" type="_0FTcsXCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0HbjonCAEeytz63YvCMaqA" name="a" type="_0FN9IHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0Hbjo3CAEeytz63YvCMaqA" name="sa" type="_0CG-wHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0HbjpHCAEeytz63YvCMaqA" type="_0CAREHCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HbjpXCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>// Instantiate results&#xD;
+		results = new ArrayList&lt;>();&#xD;
+		// Set similarityAlgo&#xD;
+		similarityAlgo = sa;&#xD;
+		// Stores jaccardIndex (0-1)&#xD;
+		double jaccardIndex;&#xD;
+		// Stores the total jaccardIndex of all documents&#xD;
+		double totalResult = 0;&#xD;
+		// Plagiarism Result (Starts at 1)&#xD;
+		double noPlagiarismResult = 1;&#xD;
+		&#xD;
+		// If there are no stored documents yet, then call the addTitleAndResult&#xD;
+		// method to add not plagiarised with a value of 1 as this document&#xD;
+		// we wish to compare cant be plagiarised as no documents against to compare&#xD;
+		// against&#xD;
+		if (documents.size() == 0) {&#xD;
+			addTitleAndResult(&quot;Not Plagiarised&quot;, 1);&#xD;
+		} else {&#xD;
+			// Loop over the size of documents&#xD;
+			for (int i = 0; i &lt; documents.size(); i++) {&#xD;
+				// Get the jaccard index by calling the compareSimilarity method of similarityAlgo&#xD;
+				jaccardIndex = similarityAlgo.compareSimilarity(a, documents.get(i).getHashes());&#xD;
+				// If the jaccardIndex is greater than 0.02 (0.2% plagiarism), then&#xD;
+				// add it to results (I dont want to see very small figures)&#xD;
+				if(jaccardIndex > 0.02) {&#xD;
+					// Increment the totalResult when we have a valid plagiarism value&#xD;
+					totalResult += jaccardIndex;&#xD;
+					addTitleAndResult(documents.get(i).getTitle(), jaccardIndex);&#xD;
+				} &#xD;
+			}&#xD;
+			// If the total plagiarism result was less than 1 and&#xD;
+			// there is a document or more in the database.&#xD;
+			// Then calculate the percentage that is not plagiarised&#xD;
+			if(totalResult &lt; 1 &amp;&amp; documents.size() > 0) {&#xD;
+				// 1 - totalResult&#xD;
+				noPlagiarismResult -= totalResult;&#xD;
+				addTitleAndResult(&quot;Not Plagiarised&quot;, noPlagiarismResult);&#xD;
+			}&#xD;
+		}&#xD;
+		// Return the results - list of plagiarism results&#xD;
+		return results;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HbjpnCAEeytz63YvCMaqA" name="addTitleAndResult" specification="_0CKCEHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0Hbjp3CAEeytz63YvCMaqA" name="title">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0HbjqHCAEeytz63YvCMaqA" name="jaccardIndex">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>// The jaccard index is between 0 and 1. By multiplying it by 100, I will&#xD;
+		// get a percentile which will need to be used to display to the user&#xD;
+		double result = jaccardIndex * 100;&#xD;
+		// Add a new PlagiarismResult object to the results list&#xD;
+		results.add(new PlagiarismResult(title, jaccardIndex));&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0CKCEHCAEeytz63YvCMaqA" name="addTitleAndResult" method="_0HbjpnCAEeytz63YvCMaqA">
+              <ownedComment xmi:id="_0HkGgXCAEeytz63YvCMaqA">
+                <body>Adds a PlagiarismResult to the list of results to&#xD;
+	 * be displayed to the client.&#xD;
+	 * &#xD;
+	 * @param title - Title of the document&#xD;
+	 * @param jaccardIndex - Similarity amount (0-1)</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0CKCEXCAEeytz63YvCMaqA" name="title">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0CKCEnCAEeytz63YvCMaqA" name="jaccardIndex">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0Gl2IHCAEeytz63YvCMaqA" name="getResults" method="_0HbjoHCAEeytz63YvCMaqA">
+              <ownedComment xmi:id="_0HkGgHCAEeytz63YvCMaqA">
+                <body>Calculates the similarity of a set of hashes against all the other&#xD;
+	 * documents sets of hashes in the database.&#xD;
+	 * &#xD;
+	 * @param documents - List of documents&#xD;
+	 * @param a - Set of hashes from the document we wish to compare&#xD;
+	 * @param sa - Instance of similarityAlgo;&#xD;
+	 * &#xD;
+	 * @return a list of PlagiarismResults</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0Gl2IXCAEeytz63YvCMaqA" name="documents" type="_0FTcsXCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0Gl2InCAEeytz63YvCMaqA" name="a" type="_0FN9IHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0Gl2I3CAEeytz63YvCMaqA" name="sa" type="_0CG-wHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0Gl2JHCAEeytz63YvCMaqA" type="_0CAREHCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Gl2JXCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0CW2YHCAEeytz63YvCMaqA" name="ServiceHandler">
+            <ownedComment xmi:id="_0HlUoXCAEeytz63YvCMaqA">
+              <body>Implementation of Handleator. This is the main handler that connects&#xD;
+all other classes together to allow the whole application to be ran from this&#xD;
+class alone. The client sees nothing going on in this class as it is abstracted. This &#xD;
+class follows the facade pattern.</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_0HOIQHCAEeytz63YvCMaqA" name="words" visibility="private" isOrdered="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HOIQXCAEeytz63YvCMaqA" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0HOvUHCAEeytz63YvCMaqA" name="plagiarismResults" visibility="private" type="_0CAREHCAEeytz63YvCMaqA" isOrdered="true" association="_0H3ogXCAEeytz63YvCMaqA">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HOvUXCAEeytz63YvCMaqA" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0HPWYHCAEeytz63YvCMaqA" name="br" visibility="private" type="_0FRngHCAEeytz63YvCMaqA" association="_0H4PkXCAEeytz63YvCMaqA"/>
+            <ownedAttribute xmi:id="_0HP9cHCAEeytz63YvCMaqA" name="parserator" visibility="private" type="_0B_C8HCAEeytz63YvCMaqA" association="_0H5dsXCAEeytz63YvCMaqA"/>
+            <ownedAttribute xmi:id="_0HP9cnCAEeytz63YvCMaqA" name="db" visibility="private" type="_0BIuYHCAEeytz63YvCMaqA" association="_0H6EwXCAEeytz63YvCMaqA"/>
+            <ownedAttribute xmi:id="_0HQkgXCAEeytz63YvCMaqA" name="shingleator" visibility="private" type="_0CDUYHCAEeytz63YvCMaqA" association="_0H6r0XCAEeytz63YvCMaqA"/>
+            <ownedAttribute xmi:id="_0HRLkXCAEeytz63YvCMaqA" name="hasher" visibility="private" type="_0BabMHCAEeytz63YvCMaqA" association="_0H758XCAEeytz63YvCMaqA"/>
+            <ownedAttribute xmi:id="_0HRyoHCAEeytz63YvCMaqA" name="sc" visibility="private" type="_0CIz8HCAEeytz63YvCMaqA" association="_0H8hAXCAEeytz63YvCMaqA"/>
+            <ownedAttribute xmi:id="_0HRyonCAEeytz63YvCMaqA" name="d" visibility="private" type="_0BON8HCAEeytz63YvCMaqA" association="_0H9vIXCAEeytz63YvCMaqA"/>
+            <interfaceRealization xmi:id="_0F7HwHCAEeytz63YvCMaqA" client="_0CW2YHCAEeytz63YvCMaqA" supplier="_0BSfYHCAEeytz63YvCMaqA" contract="_0BSfYHCAEeytz63YvCMaqA"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HdY03CAEeytz63YvCMaqA" name="ServiceHandler" specification="_0CYrkHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HdY1HCAEeytz63YvCMaqA" type="_0CW2YHCAEeytz63YvCMaqA" direction="return"/>
+              <language>java</language>
+              <body>parserator = new Parser();&#xD;
+		db = Database.getInstance();&#xD;
+		shingleator = new Shingler();&#xD;
+		sc = new SimilarityCalculator();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HdY1XCAEeytz63YvCMaqA" name="readDocument" specification="_0CZSoHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HdY1nCAEeytz63YvCMaqA" name="filePath">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>try {&#xD;
+			br = new BufferedReader(new FileReader(filePath));&#xD;
+		} catch (FileNotFoundException e) {&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0Hd_4HCAEeytz63YvCMaqA" name="parseDocument" specification="_0GuZAHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0Hd_4XCAEeytz63YvCMaqA" name="title">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0Hd_4nCAEeytz63YvCMaqA" name="br" type="_0FRngHCAEeytz63YvCMaqA"/>
+              <language>java</language>
+              <body>try {&#xD;
+			// Set the words to the list parse returns&#xD;
+			words = parserator.parse(br);&#xD;
+			// Set the title of the document&#xD;
+			d.setTitle(title);&#xD;
+		} catch (IOException e) {&#xD;
+			System.out.println(e);&#xD;
+		}	&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0Hd_43CAEeytz63YvCMaqA" name="processDocument" specification="_0F8V4HCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0Hd_5HCAEeytz63YvCMaqA" name="hashingMethod" type="_0BdegHCAEeytz63YvCMaqA"/>
+              <language>java</language>
+              <body>hasher = new Hasher(shingleator.getShingles(words));&#xD;
+		// Using a ternary operator, create a new instance of HashCoder or MinHasher.&#xD;
+		// This gets passed into the hash function which then returns a set of hashed&#xD;
+		// shingles which is then passed to the document and set as its hashes.&#xD;
+		d.setHashes(&#xD;
+				hasher.hash(hashingMethod == hashingMethod.HASHCODE ? new HashCoder() : new MinHasher())&#xD;
+		);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0Hd_5XCAEeytz63YvCMaqA" name="displayDocument" specification="_0CagwHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0Hd_5nCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Hd_53CAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return words;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0Hem8HCAEeytz63YvCMaqA" name="addDocument" specification="_0CbH03CAEeytz63YvCMaqA">
+              <language>java</language>
+              <body>db.addDocument(d);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0Hem8XCAEeytz63YvCMaqA" name="compareSimilarity" specification="_0Cbu43CAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0Hem8nCAEeytz63YvCMaqA" type="_0CAREHCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Hem83CAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return sc.getResults(new ArrayList&lt;Document>(db.getAllDocuments()), d.getHashes()&#xD;
+				, new Jaccard());&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0Hem9HCAEeytz63YvCMaqA" name="checkForFullPlagiarism" specification="_0Cc9AnCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0Hem9XCAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>for (PlagiarismResult result : plagiarismResults) {&#xD;
+			// Check if one of the results has the title of &quot;Not Plagiarised&quot;&#xD;
+			if(result.getTitle().equalsIgnoreCase(&quot;Not Plagiarised&quot;)) {&#xD;
+				// If it does and it's value is not equal to 0&#xD;
+				if(result.getResult() != 0) {&#xD;
+					// Return false as this document is not fully plagiarised&#xD;
+					return false;&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		// Return true as Document is fully plagiarised&#xD;
+		return true;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0HfOAHCAEeytz63YvCMaqA" name="process" specification="_0F-LEHCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0HfOAXCAEeytz63YvCMaqA" name="filePath">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0HfOAnCAEeytz63YvCMaqA" name="hashingMethod" type="_0BdegHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0HfOA3CAEeytz63YvCMaqA" type="_0CAREHCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0HfOBHCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>d = new Document();&#xD;
+		// Instantiate new ArrayList of PlagiarismResults&#xD;
+		plagiarismResults = new ArrayList&lt;PlagiarismResult>();&#xD;
+		// Using the file path, read the document and add it to a&#xD;
+		// buffered reader.&#xD;
+		readDocument(filePath);&#xD;
+		// Then parse the file and get a list&#xD;
+		// of words.&#xD;
+		parseDocument(filePath, br);&#xD;
+		// Using these words I can now shingle and hash them&#xD;
+		processDocument(hashingMethod);&#xD;
+		&#xD;
+		// Compare the hashed document with all other in database&#xD;
+		plagiarismResults = compareSimilarity();&#xD;
+		// Check if any of the document does not plagiarise any other document by 100%, if&#xD;
+		// it doesnt then save it to database&#xD;
+		if(!checkForFullPlagiarism()) {&#xD;
+			db.addDocument(d);&#xD;
+		}&#xD;
+		// Return the plagiarismResults&#xD;
+		return plagiarismResults;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_0CYrkHCAEeytz63YvCMaqA" name="ServiceHandler" method="_0HdY03CAEeytz63YvCMaqA">
+              <eAnnotations xmi:id="_0CYrkXCAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_0CYrknCAEeytz63YvCMaqA" key="create"/>
+              </eAnnotations>
+              <ownedComment xmi:id="_0HlUonCAEeytz63YvCMaqA">
+                <body>Default Constructor which creates instances of other classes.&#xD;
+	 * If the ServiceHandler goes down, so does all the instantiated classes.</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_0CYrk3CAEeytz63YvCMaqA" type="_0CW2YHCAEeytz63YvCMaqA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0CZSoHCAEeytz63YvCMaqA" name="readDocument" method="_0HdY1XCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0CZSoXCAEeytz63YvCMaqA" name="filePath">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0CagwHCAEeytz63YvCMaqA" name="displayDocument" method="_0Hd_5XCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0CagwXCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0CagwnCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0CbH03CAEeytz63YvCMaqA" name="addDocument" method="_0Hem8HCAEeytz63YvCMaqA"/>
+            <ownedOperation xmi:id="_0Cbu43CAEeytz63YvCMaqA" name="compareSimilarity" method="_0Hem8XCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0Cbu5HCAEeytz63YvCMaqA" type="_0CAREHCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0CcV8HCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0Cc9AnCAEeytz63YvCMaqA" name="checkForFullPlagiarism" method="_0Hem9HCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0Cc9A3CAEeytz63YvCMaqA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0F8V4HCAEeytz63YvCMaqA" name="processDocument" method="_0Hd_43CAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0F8V4XCAEeytz63YvCMaqA" name="hashingMethod" type="_0BdegHCAEeytz63YvCMaqA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0F-LEHCAEeytz63YvCMaqA" name="process" method="_0HfOAHCAEeytz63YvCMaqA" raisedException="_0FSOkXCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0F-LEXCAEeytz63YvCMaqA" name="filePath">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0F-LEnCAEeytz63YvCMaqA" name="hashingMethod" type="_0BdegHCAEeytz63YvCMaqA"/>
+              <ownedParameter xmi:id="_0F-LE3CAEeytz63YvCMaqA" type="_0CAREHCAEeytz63YvCMaqA" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0F-LFHCAEeytz63YvCMaqA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0GuZAHCAEeytz63YvCMaqA" name="parseDocument" method="_0Hd_4HCAEeytz63YvCMaqA" raisedException="_0FSOkXCAEeytz63YvCMaqA">
+              <ownedParameter xmi:id="_0GuZAXCAEeytz63YvCMaqA" name="title">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_0GuZAnCAEeytz63YvCMaqA" name="br" type="_0FRngHCAEeytz63YvCMaqA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0HtQcHCAEeytz63YvCMaqA" name="" memberEnd="_0HtQcXCAEeytz63YvCMaqA _0G0foHCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0HtQcXCAEeytz63YvCMaqA" name="" type="_0BIuYHCAEeytz63YvCMaqA" association="_0HtQcHCAEeytz63YvCMaqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0Ht3gXCAEeytz63YvCMaqA" name="" memberEnd="_0Ht3gnCAEeytz63YvCMaqA _0G1GsXCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0Ht3gnCAEeytz63YvCMaqA" name="" type="_0BIuYHCAEeytz63YvCMaqA" association="_0Ht3gXCAEeytz63YvCMaqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0HvFoHCAEeytz63YvCMaqA" name="" memberEnd="_0HvFoXCAEeytz63YvCMaqA _0G1twXCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0HvFoXCAEeytz63YvCMaqA" name="" type="_0BIuYHCAEeytz63YvCMaqA" association="_0HvFoHCAEeytz63YvCMaqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0HvssXCAEeytz63YvCMaqA" name="" memberEnd="_0HvssnCAEeytz63YvCMaqA _0HE-UXCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0HvssnCAEeytz63YvCMaqA" name="" type="_0CIz8HCAEeytz63YvCMaqA" association="_0HvssXCAEeytz63YvCMaqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0HwTwXCAEeytz63YvCMaqA" name="" memberEnd="_0HwTwnCAEeytz63YvCMaqA _0HFlYXCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0HwTwnCAEeytz63YvCMaqA" name="" type="_0CIz8HCAEeytz63YvCMaqA" association="_0HwTwXCAEeytz63YvCMaqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0H3ogXCAEeytz63YvCMaqA" name="" memberEnd="_0H3ognCAEeytz63YvCMaqA _0HOvUHCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0H3ognCAEeytz63YvCMaqA" name="" type="_0CW2YHCAEeytz63YvCMaqA" association="_0H3ogXCAEeytz63YvCMaqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0H4PkXCAEeytz63YvCMaqA" name="" memberEnd="_0H4PknCAEeytz63YvCMaqA _0HPWYHCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0H4PknCAEeytz63YvCMaqA" name="" type="_0CW2YHCAEeytz63YvCMaqA" association="_0H4PkXCAEeytz63YvCMaqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0H5dsXCAEeytz63YvCMaqA" name="" memberEnd="_0H5dsnCAEeytz63YvCMaqA _0HP9cHCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0H5dsnCAEeytz63YvCMaqA" name="" type="_0CW2YHCAEeytz63YvCMaqA" association="_0H5dsXCAEeytz63YvCMaqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0H6EwXCAEeytz63YvCMaqA" name="" memberEnd="_0H6EwnCAEeytz63YvCMaqA _0HP9cnCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0H6EwnCAEeytz63YvCMaqA" name="" type="_0CW2YHCAEeytz63YvCMaqA" association="_0H6EwXCAEeytz63YvCMaqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0H6r0XCAEeytz63YvCMaqA" name="" memberEnd="_0H6r0nCAEeytz63YvCMaqA _0HQkgXCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0H6r0nCAEeytz63YvCMaqA" name="" type="_0CW2YHCAEeytz63YvCMaqA" association="_0H6r0XCAEeytz63YvCMaqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0H758XCAEeytz63YvCMaqA" name="" memberEnd="_0H758nCAEeytz63YvCMaqA _0HRLkXCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0H758nCAEeytz63YvCMaqA" name="" type="_0CW2YHCAEeytz63YvCMaqA" association="_0H758XCAEeytz63YvCMaqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0H8hAXCAEeytz63YvCMaqA" name="" memberEnd="_0H8hAnCAEeytz63YvCMaqA _0HRyoHCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0H8hAnCAEeytz63YvCMaqA" name="" type="_0CW2YHCAEeytz63YvCMaqA" association="_0H8hAXCAEeytz63YvCMaqA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_0H9vIXCAEeytz63YvCMaqA" name="" memberEnd="_0H9vInCAEeytz63YvCMaqA _0HRyonCAEeytz63YvCMaqA">
+            <ownedEnd xmi:id="_0H9vInCAEeytz63YvCMaqA" name="" type="_0CW2YHCAEeytz63YvCMaqA" association="_0H9vIXCAEeytz63YvCMaqA"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_z_o5kHCAEeytz63YvCMaqA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_z_o5kXCAEeytz63YvCMaqA" name="nio">
+        <packagedElement xmi:type="uml:Package" xmi:id="_z_o5knCAEeytz63YvCMaqA" name="file">
+          <packagedElement xmi:type="uml:Class" xmi:id="_0E_6sHCAEeytz63YvCMaqA" name="Paths"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_z_pgoHCAEeytz63YvCMaqA" name="util">
+        <packagedElement xmi:type="uml:Package" xmi:id="_z_pgoXCAEeytz63YvCMaqA" name="stream">
+          <packagedElement xmi:type="uml:Class" xmi:id="_0FFaQXCAEeytz63YvCMaqA" name="Collectors"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_0FN9IHCAEeytz63YvCMaqA" name="Set"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FPLQHCAEeytz63YvCMaqA" name="TreeSet"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_0FTcsXCAEeytz63YvCMaqA" name="List"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FXuIHCAEeytz63YvCMaqA" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FdNsHCAEeytz63YvCMaqA" name="Random"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_z_vnQHCAEeytz63YvCMaqA" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FMH8HCAEeytz63YvCMaqA" name="File"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FRngHCAEeytz63YvCMaqA" name="BufferedReader"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FSOkXCAEeytz63YvCMaqA" name="IOException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FseQHCAEeytz63YvCMaqA" name="FileNotFoundException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FtFUXCAEeytz63YvCMaqA" name="FileReader"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_0GoSYHCAEeytz63YvCMaqA" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_0Go5cHCAEeytz63YvCMaqA" name="Exception"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_z_pgonCAEeytz63YvCMaqA" name="one">
+      <packagedElement xmi:type="uml:Package" xmi:id="_z_pgo3CAEeytz63YvCMaqA" name="microstream">
+        <packagedElement xmi:type="uml:Package" xmi:id="_z_pgpHCAEeytz63YvCMaqA" name="storage">
+          <packagedElement xmi:type="uml:Package" xmi:id="_z_pgpXCAEeytz63YvCMaqA" name="types">
+            <packagedElement xmi:type="uml:Class" xmi:id="_0FHPcXCAEeytz63YvCMaqA" name="EmbeddedStorage"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_0FIdkXCAEeytz63YvCMaqA" name="EmbeddedStorageManager"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_0AUPAHCAEeytz63YvCMaqA" name="javafx">
+      <packagedElement xmi:type="uml:Package" xmi:id="_0AUPAXCAEeytz63YvCMaqA" name="application">
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FnlwHCAEeytz63YvCMaqA" name="Application"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_0AUPAnCAEeytz63YvCMaqA" name="fxml">
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FoM0XCAEeytz63YvCMaqA" name="FXMLLoader"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_0FwvsHCAEeytz63YvCMaqA" name="FXML"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_0AU2EHCAEeytz63YvCMaqA" name="scene">
+        <packagedElement xmi:type="uml:Package" xmi:id="_0AWrQnCAEeytz63YvCMaqA" name="chart">
+          <packagedElement xmi:type="uml:Class" xmi:id="_0FxWwXCAEeytz63YvCMaqA" name="PieChart"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_0AWrQ3CAEeytz63YvCMaqA" name="control">
+          <packagedElement xmi:type="uml:Class" xmi:id="_0Fx90XCAEeytz63YvCMaqA" name="Button"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0Fyk4XCAEeytz63YvCMaqA" name="RadioButton"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0FzL8XCAEeytz63YvCMaqA" name="TextField"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_0AXSUHCAEeytz63YvCMaqA" name="layout">
+          <packagedElement xmi:type="uml:Class" xmi:id="_0F0aEXCAEeytz63YvCMaqA" name="VBox"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0Fpa8HCAEeytz63YvCMaqA" name="Parent"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FqCAXCAEeytz63YvCMaqA" name="Scene"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_0AU2EXCAEeytz63YvCMaqA" name="stage">
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FqpEXCAEeytz63YvCMaqA" name="Stage"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0F1BIXCAEeytz63YvCMaqA" name="FileChooser"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_0AWrQHCAEeytz63YvCMaqA" name="collections">
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FuTcHCAEeytz63YvCMaqA" name="FXCollections"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_0Fu6gXCAEeytz63YvCMaqA" name="ObservableList"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_0AWrQXCAEeytz63YvCMaqA" name="event">
+        <packagedElement xmi:type="uml:Class" xmi:id="_0FvhkXCAEeytz63YvCMaqA" name="ActionEvent"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_zqYbQHCAEeytz63YvCMaqA">
+      <eAnnotations xmi:id="_zqYbQXCAEeytz63YvCMaqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_zqZCUHCAEeytz63YvCMaqA" base_Package="_zknKcHCAEeytz63YvCMaqA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0BLKonCAEeytz63YvCMaqA" base_Element="_0BKjkXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0BPcEHCAEeytz63YvCMaqA" base_Element="_0BO1AHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0BQqMnCAEeytz63YvCMaqA" base_Element="_0BQqMHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0BRRQHCAEeytz63YvCMaqA" base_Element="_0BQqMHCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0BRRQXCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0BbpUHCAEeytz63YvCMaqA" base_Element="_0BbCQHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0BdegXCAEeytz63YvCMaqA" base_Element="_0BdegHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0Bgh0HCAEeytz63YvCMaqA" base_Element="_0Bf6wHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0B48UnCAEeytz63YvCMaqA" base_Element="_0B4VQHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0B8ms3CAEeytz63YvCMaqA" base_Element="_0B8msHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0CBfMHCAEeytz63YvCMaqA" base_Element="_0CA4IHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0CFJknCAEeytz63YvCMaqA" base_Element="_0CEigHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0CPhoXCAEeytz63YvCMaqA" base_Element="_0CPhoHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0CQIsHCAEeytz63YvCMaqA" base_Element="_0CPhoHCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0CQIsXCAEeytz63YvCMaqA" name="FXML"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0CZSonCAEeytz63YvCMaqA" base_Element="_0CZSoHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0CZ5sHCAEeytz63YvCMaqA" base_Element="_0CZSoHCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0CZ5sXCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0CbH0HCAEeytz63YvCMaqA" base_Element="_0CagwHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0CbH0XCAEeytz63YvCMaqA" base_Element="_0CagwHCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0CbH0nCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0Cbu4HCAEeytz63YvCMaqA" base_Element="_0CbH03CAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0Cbu4XCAEeytz63YvCMaqA" base_Element="_0CbH03CAEeytz63YvCMaqA">
+    <annotations xmi:id="_0Cbu4nCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0CcV8XCAEeytz63YvCMaqA" base_Element="_0Cbu43CAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0Cc9AHCAEeytz63YvCMaqA" base_Element="_0Cbu43CAEeytz63YvCMaqA">
+    <annotations xmi:id="_0Cc9AXCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0CdkEHCAEeytz63YvCMaqA" base_Element="_0Cc9AnCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0CdkEXCAEeytz63YvCMaqA" base_Element="_0Cc9AnCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0CdkEnCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_0FFaQHCAEeytz63YvCMaqA" base_Element="_0E_6sHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FHPcHCAEeytz63YvCMaqA" base_Element="_0FFaQXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FIdkHCAEeytz63YvCMaqA" base_Element="_0FHPcXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FJrsHCAEeytz63YvCMaqA" base_Element="_0FIdkXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FNWEHCAEeytz63YvCMaqA" base_Element="_0FMH8HCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FOkMHCAEeytz63YvCMaqA" base_Element="_0FN9IHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FPyUHCAEeytz63YvCMaqA" base_Element="_0FPLQHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FSOkHCAEeytz63YvCMaqA" base_Element="_0FRngHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FTcsHCAEeytz63YvCMaqA" base_Element="_0FSOkXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FUDwHCAEeytz63YvCMaqA" base_Element="_0FTcsXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FY8QHCAEeytz63YvCMaqA" base_Element="_0FXuIHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0Feb0HCAEeytz63YvCMaqA" base_Element="_0FdNsHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FoM0HCAEeytz63YvCMaqA" base_Element="_0FnlwHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0Foz4HCAEeytz63YvCMaqA" base_Element="_0FoM0XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FqCAHCAEeytz63YvCMaqA" base_Element="_0Fpa8HCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FqpEHCAEeytz63YvCMaqA" base_Element="_0FqCAXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FrQIHCAEeytz63YvCMaqA" base_Element="_0FqpEXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FtFUHCAEeytz63YvCMaqA" base_Element="_0FseQHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FtsYHCAEeytz63YvCMaqA" base_Element="_0FtFUXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0Fu6gHCAEeytz63YvCMaqA" base_Element="_0FuTcHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FvhkHCAEeytz63YvCMaqA" base_Element="_0Fu6gXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FwIoHCAEeytz63YvCMaqA" base_Element="_0FvhkXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FxWwHCAEeytz63YvCMaqA" base_Element="_0FwvsHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0Fx90HCAEeytz63YvCMaqA" base_Element="_0FxWwXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0Fyk4HCAEeytz63YvCMaqA" base_Element="_0Fx90XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0FzL8HCAEeytz63YvCMaqA" base_Element="_0Fyk4XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0F0aEHCAEeytz63YvCMaqA" base_Element="_0FzL8XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0F1BIHCAEeytz63YvCMaqA" base_Element="_0F0aEXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0F1oMHCAEeytz63YvCMaqA" base_Element="_0F1BIXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0F888HCAEeytz63YvCMaqA" base_Element="_0F8V4HCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0F9kAHCAEeytz63YvCMaqA" base_Element="_0F8V4HCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0F9kAXCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0F-yIHCAEeytz63YvCMaqA" base_Element="_0F-LEHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0F_ZMHCAEeytz63YvCMaqA" base_Element="_0F-LEHCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0F_ZMXCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_0GM0kHCAEeytz63YvCMaqA" genericsValue="Integer" base_Element="_0GK_YnCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Generics xmi:id="_0GOpwHCAEeytz63YvCMaqA" genericsValue="Integer" base_Element="_0GNboXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0GRGAXCAEeytz63YvCMaqA" base_Element="_0GQe8HCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Generics xmi:id="_0GRtEHCAEeytz63YvCMaqA" genericsValue="String" base_Element="_0GQe8XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0GSUIHCAEeytz63YvCMaqA" base_Element="_0GQe8HCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0GSUIXCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_0GUwYHCAEeytz63YvCMaqA" genericsValue="String" base_Element="_0GUJUXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Generics xmi:id="_0GWlkHCAEeytz63YvCMaqA" genericsValue="String" base_Element="_0GV-gHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0GXztHCAEeytz63YvCMaqA" base_Element="_0GXzsHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Generics xmi:id="_0GZB0HCAEeytz63YvCMaqA" genericsValue="Integer" base_Element="_0GXzsXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Generics xmi:id="_0GZo4HCAEeytz63YvCMaqA" genericsValue="Integer" base_Element="_0GXzsnCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0GZo4XCAEeytz63YvCMaqA" base_Element="_0GXzsHCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0GZo4nCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0GbeEHCAEeytz63YvCMaqA" base_Element="_0Ga3AHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Generics xmi:id="_0GcFIHCAEeytz63YvCMaqA" genericsValue="String" base_Element="_0Ga3AXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0GcFIXCAEeytz63YvCMaqA" base_Element="_0Ga3AHCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0GcsMHCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0Gd6UXCAEeytz63YvCMaqA" base_Element="_0GdTQHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0GehYHCAEeytz63YvCMaqA" base_Element="_0GdTQHCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0GehYXCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_0GgWkHCAEeytz63YvCMaqA" genericsValue="String" base_Element="_0GfvgXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0GhksnCAEeytz63YvCMaqA" base_Element="_0Gg9oHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Generics xmi:id="_0GiLwHCAEeytz63YvCMaqA" genericsValue="String" base_Element="_0Gg9oXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0Giy0HCAEeytz63YvCMaqA" base_Element="_0Gg9oHCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0Giy0XCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_0GkoAHCAEeytz63YvCMaqA" genericsValue="Integer" base_Element="_0GjZ4XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Generics xmi:id="_0GlPEHCAEeytz63YvCMaqA" genericsValue="Integer" base_Element="_0GjZ4nCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Generics xmi:id="_0GnEQHCAEeytz63YvCMaqA" genericsValue="Document" base_Element="_0Gl2IXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Generics xmi:id="_0GnrUHCAEeytz63YvCMaqA" genericsValue="Integer" base_Element="_0Gl2InCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0GpggHCAEeytz63YvCMaqA" base_Element="_0Go5cHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0Gpgg3CAEeytz63YvCMaqA" base_Element="_0GpggXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0GqHkHCAEeytz63YvCMaqA" base_Element="_0GpggXCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0GqHkXCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0GvAEHCAEeytz63YvCMaqA" base_Element="_0GuZAHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0GvnIHCAEeytz63YvCMaqA" base_Element="_0GuZAHCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0GvnIXCAEeytz63YvCMaqA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0G1GsHCAEeytz63YvCMaqA" base_Element="_0G0foHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0G1twHCAEeytz63YvCMaqA" base_Element="_0G1GsXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0G2U0HCAEeytz63YvCMaqA" base_Element="_0G1twXCAEeytz63YvCMaqA">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_0G2U0nCAEeytz63YvCMaqA" name="getInstance" isStatic="true" method="_0HVdAHCAEeytz63YvCMaqA">
+      <ownedParameter xmi:id="_0G274HCAEeytz63YvCMaqA" type="_0BIuYHCAEeytz63YvCMaqA" direction="return"/>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0G5YIXCAEeytz63YvCMaqA" base_Element="_0G4xEHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0G6mQHCAEeytz63YvCMaqA" base_Element="_0G5_MHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0G9pkHCAEeytz63YvCMaqA" base_Element="_0G6mQXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0G-QoHCAEeytz63YvCMaqA" base_Element="_0G9pkXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0G-3sHCAEeytz63YvCMaqA" base_Element="_0G-QoXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HAF0HCAEeytz63YvCMaqA" base_Element="_0G_ewHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HAs4HCAEeytz63YvCMaqA" base_Element="_0HAF0XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HBT8HCAEeytz63YvCMaqA" base_Element="_0HAs4XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HBT83CAEeytz63YvCMaqA" base_Element="_0HBT8XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HCiEHCAEeytz63YvCMaqA" base_Element="_0HB7AHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HEXQHCAEeytz63YvCMaqA" base_Element="_0HDwMHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HE-UHCAEeytz63YvCMaqA" base_Element="_0HEXQXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HFlYHCAEeytz63YvCMaqA" base_Element="_0HE-UXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HFlYnCAEeytz63YvCMaqA" base_Element="_0HFlYXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HGzgHCAEeytz63YvCMaqA" base_Element="_0HGMcHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0HGzgXCAEeytz63YvCMaqA" base_Element="_0HGMcHCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0HGzgnCAEeytz63YvCMaqA" name="FXML"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HHakHCAEeytz63YvCMaqA" base_Element="_0HGzg3CAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0HHakXCAEeytz63YvCMaqA" base_Element="_0HGzg3CAEeytz63YvCMaqA">
+    <annotations xmi:id="_0HHaknCAEeytz63YvCMaqA" name="FXML"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HIBoHCAEeytz63YvCMaqA" base_Element="_0HHak3CAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0HIBoXCAEeytz63YvCMaqA" base_Element="_0HHak3CAEeytz63YvCMaqA">
+    <annotations xmi:id="_0HIBonCAEeytz63YvCMaqA" name="FXML"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HIosXCAEeytz63YvCMaqA" base_Element="_0HIosHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0HJPwHCAEeytz63YvCMaqA" base_Element="_0HIosHCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0HJPwXCAEeytz63YvCMaqA" name="FXML"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HJPw3CAEeytz63YvCMaqA" base_Element="_0HJPwnCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0HJ20HCAEeytz63YvCMaqA" base_Element="_0HJPwnCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0HJ20XCAEeytz63YvCMaqA" name="FXML"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HJ203CAEeytz63YvCMaqA" base_Element="_0HJ20nCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0HKd4HCAEeytz63YvCMaqA" base_Element="_0HJ20nCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0HKd4XCAEeytz63YvCMaqA" name="FXML"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:MultiDeclaration xmi:id="_0HKd43CAEeytz63YvCMaqA" base_Property="_0HKd4nCAEeytz63YvCMaqA" siblings="_0HkGgnCAEeytz63YvCMaqA" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HLE8HCAEeytz63YvCMaqA" base_Element="_0HKd4nCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Annotations xmi:id="_0HLsAHCAEeytz63YvCMaqA" base_Element="_0HKd4nCAEeytz63YvCMaqA">
+    <annotations xmi:id="_0HLsAXCAEeytz63YvCMaqA" name="FXML"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HMTEHCAEeytz63YvCMaqA" base_Element="_0HLsAnCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HM6IHCAEeytz63YvCMaqA" base_Element="_0HMTEXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HNhMHCAEeytz63YvCMaqA" base_Element="_0HM6IXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HOIQnCAEeytz63YvCMaqA" base_Element="_0HOIQHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HOvUnCAEeytz63YvCMaqA" base_Element="_0HOvUHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HPWYXCAEeytz63YvCMaqA" base_Element="_0HPWYHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HP9cXCAEeytz63YvCMaqA" base_Element="_0HP9cHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HQkgHCAEeytz63YvCMaqA" base_Element="_0HP9cnCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HRLkHCAEeytz63YvCMaqA" base_Element="_0HQkgXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HRLknCAEeytz63YvCMaqA" base_Element="_0HRLkXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HRyoXCAEeytz63YvCMaqA" base_Element="_0HRyoHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HSZsHCAEeytz63YvCMaqA" base_Element="_0HRyonCAEeytz63YvCMaqA"/>
+  <uml:OpaqueBehavior xmi:id="_0HVdAHCAEeytz63YvCMaqA" name="getInstance" specification="_0G2U0nCAEeytz63YvCMaqA">
+    <ownedParameter xmi:id="_0HVdAXCAEeytz63YvCMaqA" type="_0BIuYHCAEeytz63YvCMaqA" direction="return"/>
+    <language>java</language>
+    <body>if (instance == null) {&#xD;
+			instance = new Database();&#xD;
+		}&#xD;
+		// Return the instance&#xD;
+		return instance;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:MultiDeclaration xmi:id="_0HkGg3CAEeytz63YvCMaqA" base_Property="_0HkGgnCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_0HktkHCAEeytz63YvCMaqA" base_Element="_0HkGgnCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0Ht3gHCAEeytz63YvCMaqA" base_Element="_0HtQcHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0HuekHCAEeytz63YvCMaqA" base_Element="_0Ht3gXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0HvssHCAEeytz63YvCMaqA" base_Element="_0HvFoHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0HwTwHCAEeytz63YvCMaqA" base_Element="_0HvssXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0Hw60HCAEeytz63YvCMaqA" base_Element="_0HwTwXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0Hxh4HCAEeytz63YvCMaqA" base_Element="_0Hw60XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0HyI8HCAEeytz63YvCMaqA" base_Element="_0Hxh4XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0HzXEHCAEeytz63YvCMaqA" base_Element="_0HywAHCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0Hz-IHCAEeytz63YvCMaqA" base_Element="_0HzXEXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H0lMHCAEeytz63YvCMaqA" base_Element="_0Hz-IXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H1MQHCAEeytz63YvCMaqA" base_Element="_0H0lMXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H2aYHCAEeytz63YvCMaqA" base_Element="_0H1MQXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H3BcHCAEeytz63YvCMaqA" base_Element="_0H2aYXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H3ogHCAEeytz63YvCMaqA" base_Element="_0H3BcXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H4PkHCAEeytz63YvCMaqA" base_Element="_0H3ogXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H5dsHCAEeytz63YvCMaqA" base_Element="_0H4PkXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H6EwHCAEeytz63YvCMaqA" base_Element="_0H5dsXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H6r0HCAEeytz63YvCMaqA" base_Element="_0H6EwXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H758HCAEeytz63YvCMaqA" base_Element="_0H6r0XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H8hAHCAEeytz63YvCMaqA" base_Element="_0H758XCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H9vIHCAEeytz63YvCMaqA" base_Element="_0H8hAXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H-WMHCAEeytz63YvCMaqA" base_Element="_0H9vIXCAEeytz63YvCMaqA"/>
+  <UMLLabProfile:Reference xmi:id="_0H-9QHCAEeytz63YvCMaqA" base_Element="_0H-WMXCAEeytz63YvCMaqA"/>
+</xmi:XMI>

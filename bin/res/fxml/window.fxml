@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
-
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
 <!-- 
 	************** READ THE FOLLOWING **************
 	The root element of the GUI is the following VBox. Note that the controller 
-	is specified as the attribute fx:controller="ie.gmit.sw.Controller"
+	is specified as the attribute fx:controller="ie.gmit.sw.gui.Controller"
 -->
-<VBox fx:id="container" prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ie.gmit.sw.Controller">
+
+<VBox fx:id="container" prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ie.gmit.sw.gui.Controller">
 	<padding>
-        <Insets top="10" bottom="10" left="10" right="10"/>
+        <Insets bottom="10" left="10" right="10" top="10" />
     </padding>
   	<children>
 		<TitledPane text="Query Document">
@@ -21,6 +26,11 @@
 					<TextField fx:id="txtFile" prefWidth="400" />
 					<Button fx:id="btnOpen" mnemonicParsing="false" text="Select File" />
 					<Button fx:id="btnCompare" mnemonicParsing="false" text="Compare Document" />
+	                <RadioButton fx:id="minhash" mnemonicParsing="false" onAction="#getHasher" selected="true" text="MinHash">
+                  <toggleGroup>
+	                      <ToggleGroup fx:id="Hasher" />
+                  </toggleGroup></RadioButton>
+	                <RadioButton fx:id="hashcode" mnemonicParsing="false" onAction="#getHasher" text="HashCode" toggleGroup="$Hasher" />
 				</children>
 			</HBox>
 		</TitledPane>	
